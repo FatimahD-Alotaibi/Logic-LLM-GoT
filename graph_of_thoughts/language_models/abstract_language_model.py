@@ -13,13 +13,13 @@ import os
 import logging
 
 
-class AbstractLanguageModel(ABC): 
+class AbstractLanguageModel(ABC):
     """
     Abstract base class that defines the interface for all language models.
     """
 
     def __init__(
-            self, config_path: str = "", model_name: str = "", cache: bool = False
+        self, config_path: str = "", model_name: str = "", cache: bool = False
     ) -> None:
         """
         Initialize the AbstractLanguageModel instance with configuration, model details, and caching options.
