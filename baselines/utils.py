@@ -6,11 +6,11 @@ from typing import Any
 
 @backoff.on_exception(backoff.expo, openai.RateLimitError)
 def completions_with_backoff(**kwargs):
-    return openai.Completion.create(**kwargs)
+    return openai.completions.create(**kwargs)
 
 @backoff.on_exception(backoff.expo, openai.RateLimitError)
 def chat_completions_with_backoff(**kwargs):
-    return openai.ChatCompletion.create(**kwargs)
+    return openai.chat.completions.create(**kwargs)
 
 async def dispatch_openai_chat_requests(
     messages_list: list[list[dict[str,Any]]],
@@ -33,7 +33,7 @@ async def dispatch_openai_chat_requests(
         List of responses from OpenAI API.
     """
     async_responses = [
-        openai.ChatCompletion.acreate(
+        openai.chat.completions.create(
             model=model,
             messages=x,
             temperature=temperature,
@@ -54,7 +54,7 @@ async def dispatch_openai_prompt_requests(
     stop_words: list[str]
 ) -> list[str]:
     async_responses = [
-        openai.Completion.acreate(
+        openai.completions.create(
             model=model,
             prompt=x,
             temperature=temperature,
@@ -87,7 +87,7 @@ class OpenAIModel:
                 top_p = 1.0,
                 stop = self.stop_words
         )
-        generated_text = response['choices'][0]['message']['content'].strip()
+        generated_text = response.choices[0].message.content.strip()
         return generated_text
     
     # used for text/code-davinci
@@ -102,7 +102,7 @@ class OpenAIModel:
             presence_penalty = 0.0,
             stop = self.stop_words
         )
-        generated_text = response['choices'][0]['text'].strip()
+        generated_text = response.choices[0].text.strip()
         return generated_text
 
     def generate(self, input_string, temperature = 0.0):
@@ -124,7 +124,7 @@ class OpenAIModel:
                     open_ai_messages_list, self.model_name, temperature, self.max_new_tokens, 1.0, self.stop_words
             )
         )
-        return [x['choices'][0]['message']['content'].strip() for x in predictions]
+        return [x.choices[0].message.content.strip() for x in predictions]
     
     def batch_prompt_generate(self, prompt_list, temperature = 0.0):
         predictions = asyncio.run(
@@ -132,7 +132,7 @@ class OpenAIModel:
                     prompt_list, self.model_name, temperature, self.max_new_tokens, 1.0, self.stop_words
             )
         )
-        return [x['choices'][0]['text'].strip() for x in predictions]
+        return [x.choices[0].text.strip() for x in predictions]
 
     def batch_generate(self, messages_list, temperature = 0.0):
         if self.model_name in ['text-davinci-002', 'code-davinci-002', 'text-davinci-003']:
@@ -153,5 +153,5 @@ class OpenAIModel:
             frequency_penalty = 0.0,
             presence_penalty = 0.0
         )
-        generated_text = response['choices'][0]['text'].strip()
+        generated_text = response.choices[0].text.strip()
         return generated_text
