@@ -81,7 +81,7 @@ def get_choice(answer_str):
     return None
 
 def evaluate_QA(result_file):
-    with open(result_file, 'r') as f:
+    with open(result_file, 'r', encoding='utf-8') as f:
         QA_results = json.load(f)
 
     total_em = 0.0
