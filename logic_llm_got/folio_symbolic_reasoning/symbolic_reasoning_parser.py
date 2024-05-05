@@ -1,16 +1,13 @@
-import os
 import logging
-import datetime
 import json
-import csv
 from collections import Counter
 from functools import partial
-from typing import Dict, List, Callable, Union
-from graph_of_thoughts import controller, language_models, operations, prompter, parser
+from typing import Dict, List
+from graph_of_thoughts import parser
 
-class KeywordCountingParser(parser.Parser):
+class SymbolicReasoningParser(parser.Parser):
     """
-    KeywordCountingParser provides the parsing of language model reponses
+    SymbolicCountingParser provides the parsing of language model reponses
     specific to the keyword counting example.
 
     Inherits from the Parser class and implements its abstract methods.
@@ -46,42 +43,6 @@ class KeywordCountingParser(parser.Parser):
             return text
         except:
             return "{}"
-
-    def parse_aggregation_answer(
-        self, states: List[Dict], texts: List[str]
-    ) -> Union[Dict, List[Dict]]:
-        """
-        Parse the response from the language model for an aggregation prompt.
-
-        :param states: The thought states used to generate the prompt.
-        :type states: List[Dict]
-        :param texts: The responses to the prompt from the language model.
-        :type texts: List[str]
-        :return: The new thought states after parsing the respones from the language model.
-        :rtype: Union[Dict, List[Dict]]
-        :raise AssertionError: If more than two thought states are provided.
-        """
-
-        assert len(states) <= 2, "Expected 2 states for aggregation answer."
-        if len(states) == 0:
-            states = [
-                {"current": "{}", "sub_text": ""},
-                {"current": "{}", "sub_text": ""},
-            ]
-        elif len(states) == 1:
-            states.append({"current": "{}", "sub_text": ""})
-        new_states = []
-        for text in texts:
-            answer = self.strip_answer_json(text)
-            new_state = states[0].copy()
-            new_state["sub_text"] = (
-                states[0]["sub_text"] if "sub_text" in states[0] else ""
-            ) + (states[1]["sub_text"] if "sub_text" in states[1] else "")
-            new_state["current"] = answer
-            new_state["aggr1"] = states[0]["current"]
-            new_state["aggr2"] = states[1]["current"]
-            new_states.append(new_state)
-        return new_states
 
     def parse_improve_answer(self, state: Dict, texts: List[str]) -> Dict:
         """
