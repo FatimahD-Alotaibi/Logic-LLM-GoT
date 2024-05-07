@@ -4,7 +4,7 @@ import datetime
 import json
 from typing import List, Callable
 from graph_of_thoughts import operations, language_models, controller
-from methods import io, cot, tot, got # Import the methods
+from methods import got # Import the methods
 
 def run(
     data_ids: List[int],
@@ -133,7 +133,7 @@ def run(
                     "option_2": data[4], # Option B) False
                     "option_3": data[5], # Option C) Uncertain
                     "raw_logic_programs": data[6], #The raw logic 
-                    "ground_truth": data[7], # The correct response
+                    "ground_truth": data[7], # The correct answer
                     "current": "", # The predicted response
                     "phase": 0,
                     "method": method.__name__
@@ -158,13 +158,15 @@ def run(
 
 if __name__ == "__main__":
     """
-    Input (x)   : an unordered list of 32 numbers between 0 and 9 (inclusive)
-    Output (y)  : a sorted list of 32 numbers between 0 and 9 (inclusive)
-    Correct     : y == sorted(x)
-    Input Example:
-        [0, 1, 9, 4, 2, 2, 0, 5, 1...]
-    Output Example:
-        [0, 0, 0, 0, 1, 1, 1, 1, 2...]
+    Context     : A paragraph of contextual information.
+    Question    : A question statement based on the context provided.
+    Logic Programs      : The logic process addressing the question using symbols
+    Option 1    : Answer choice A) 
+    Option 2    : Answer choice B)
+    Option 3    : Answer choice C)
+
+    Output (y)  : The answer choice
+    Correct     : y == ground_truth
     """
     budget = 30
     samples = [item for item in range(0, 204)] # Because there are a 204 
