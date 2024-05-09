@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A person is either a Grand Slam champion or an Oscar-nominated actor. All people who are Grand Slam champions are professional tennis players. All Oscar-nominated actors are celebrities. All professional tennis players are athletes. If a person is a celebrity then they are well paid. If a person is an athlete then they are famous. All well-paid people live in tax havens. If Djokovic is famous and is an athlete, then Djokovic lives in well paid.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Djokovic is a Grand Slam champion.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrandSlamChampion(x) ::: x is a Grand Slam champion.\nOscarNominatedActor(x) ::: x is an Oscar-nominated actor.\nProfessionalTennisPlayer(x) ::: x is a professional tennis player.\nCelebrity(x) ::: x is a celebrity.\nAthlete(x) ::: x is an athlete.\nWellPaid(x) ::: x is well paid.\nLiveInTaxHaven(x) ::: x lives in a tax haven.\nPremises:\n∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x)) ::: A person is either a Grand Slam champion or an Oscar-nominated actor.\n∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x)) ::: All people who are Grand Slam champions are professional tennis players.\n∀x (OscarNominatedActor(x) → Celebrity(x)) ::: All Oscar-nominated actors are celebrities.\n∀x (ProfessionalTennisPlayer(x) → Athlete(x)) ::: All professional tennis players are athletes.\n∀x (Celebrity(x) → WellPaid(x)) ::: If a person is a celebrity then they are well paid.\n∀x (Athlete(x) → Famous(x)) ::: If a person is an athlete then they are famous.\n∀x (WellPaid(x) → LiveInTaxHaven(x)) ::: All well-paid people live in tax havens.\n(Famous(djokovic) ∧ Athlete(djokovic)) → WellPaid(djokovic) ::: If Djokovic is famous and is an athlete, then Djokovic is well paid.\nConclusion:\nGrandSlamChampion(djokovic) ::: Djokovic is a Grand Slam champion."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1810,
+    "completion_tokens": 7,
+    "cost": 0.002729
+  }
+]

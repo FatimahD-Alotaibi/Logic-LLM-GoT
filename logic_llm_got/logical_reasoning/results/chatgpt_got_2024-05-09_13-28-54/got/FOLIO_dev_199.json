@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Ailton Silva, born in 1995, is commonly known as Ailton. Ailton is a football player who was loaned out to Braga. Ailton Silva is a Brazillian footballer who plays for Nautico. Nautico is a football club along with Braga. Fluminense is a football club.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No one playing for Nautico is Brazilian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBorn(x, y) ::: x is born in year y.\nKnownAs(x, y) ::: x is commonly known as y.\nPlayer(x) ::: x is a football player.\nLoanedTo(x, y) ::: x was loaned out to y.\nBrazilian(x) ::: x is a Brazilian.\nPlaysFor(x, y) ::: x plays for y.\nClub(x) ::: x is a football club.\nPremises:\nBorn(ailtonSilva, year1995) ∧ KnownAs(ailtonSilva, ailton) ::: Ailton Silva, born in 1995, is commonly known as Ailton.\nPlayer(ailton) ∧ LoanedTo(ailton, braga) ::: Ailton is a football player who was loaned out to Braga.\nBrazilian(ailtonSilva) ∧ Player(ailtonSilva) ∧ PlaysFor(ailtonSilva, nautico) ::: Ailton Silva is a Brazillian footballer who plays for Nautico.\nClub(nautico) ∧ Club(braga) ::: Nautico is a football club along with Braga.\nClub(fluminense) ::: Fluminense is a football club.\nConclusion:\n¬∃x (PlaysFor(x, nautico) ∧ Brazilian(x)) ::: No one playing for Nautico is Brazilian."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1709,
+    "completion_tokens": 5,
+    "cost": 0.0025735000000000003
+  }
+]

@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All students are humans. If someone studies, then they are a student. A person either studys or teaches. No young person teaches. Jerry neither teaches nor is a manager. Rose is young or a student.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Jerry is young.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStudent(x) ::: x is a student.\nHuman(x) ::: x is a human.\nStudy(x) ::: x studies.\nTeach(x) ::: x teaches.\nYoung(x) ::: x is young.\nManager(x) ::: x is a manager.\nPremises:\n∀x (Student(x) → Human(x)) ::: All students are humans.\n∀x (Study(x) → Student(x)) ::: If someone studies, then they are a student.\n∀x (Study(x) ⊕ Teach(x)) ::: A person either studies or teaches.\n∀x (Young(x) → ¬Teach(x)) ::: No young person teaches.\n¬(Teach(jerry) ∨ Manager(jerry)) ::: Jerry neither teaches nor is a manager.\nYoung(rose) ∨ Student(rose) ::: Rose is young or a student.\nConclusion:\nYoung(jerry) ::: Jerry is young."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1584,
+    "completion_tokens": 5,
+    "cost": 0.002386
+  }
+]

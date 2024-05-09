@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If something is a deadly disease, then its survival rate is low. All severe cancers are deadly diseases. Bile duct cancer is a severe cancer. All Cholangiocarcinoma is bile duct cancer. No one with mild flu has a low survival rate. If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nDeadlyDisease(x) ::: x is a deadly disease.\nLowSurvivalRate(x) ::: x has a low survival rate.\nSevereCancer(x) ::: x is a severe cancer.\nBileDuctCancer(x) ::: x is a bile duct cancer.\nCholangiocarcinoma(x) ::: x is a Cholangiocarcinoma.\nMildFlu(x) ::: x is a mild flu.\nColorectalCancer(x) ::: x is a colorectal cancer.\nPremises:\n∀x (DeadlyDisease(x) → LowSurvivalRate(x)) ::: If something is a deadly disease, then its survival rate is low.\n∀x (SevereCancer(x) → DeadlyDisease(x)) ::: All severe cancers are deadly diseases.\nSevereCancer(bileDuctCancer) ::: Bile duct cancer is a severe cancer.\n∀x (Cholangiocarcinoma(x) → BileDuctCancer(x)) ::: All Cholangiocarcinoma is bile duct cancer.\n∀x (MildFlu(x) → ¬LowSurvivalRate(x)) ::: No one with mild flu has a low survival rate.\n(ColorectalCancer(x) ∧ BileDuctCancer(x) ∧ LowSurvivalRate(x)) → ¬BileDuctCancer(x) ::: If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer.\nConclusion:\n¬(ColorectalCancer(x) ∧ MildFlu(x) ∧ Cholangiocarcinoma(x)) → (BileDuctCancer(x) ∨ Cholangiocarcinoma(x)) ::: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1864,
+    "completion_tokens": 5,
+    "cost": 0.0028060000000000003
+  }
+]

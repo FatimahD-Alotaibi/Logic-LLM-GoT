@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\".\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x stars y.\nPiloted(x, y, z) ::: x piloted in month y on channel z.\nWorkingTitle(x, y) ::: y is the working title for x.\nScriptEditor(x, y) ::: x is the script editor for y.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\nScriptEditor(andrewCollins, theSecretDudeSociety) ::: Andrew Collins was the script editor for a series with the working title \"The Secret Dude Society\"."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1661,
+    "completion_tokens": 5,
+    "cost": 0.0025015000000000003
+  }
+]

@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All rabbits are cute. Some turtles exist. An animal is either a rabbit or a squirrel. If something is skittish, then it is not still. All squirrels are skittish. Rock is still.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Rock is a turtle.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRabbit(x) ::: x is a rabbit.\nCute(x) ::: x is cute.\nTurtle(x) ::: x is a turtle.\nAnimal(x) ::: x is an animal.\nSquirrel(x) ::: x is a squirrel.\nSkittish(x) ::: x is skittish.\nStill(x) ::: x is still.\nPremises:\n∀x (Rabbit(x) → Cute(x)) ::: All rabbits are cute.\n∃x Turtle(x) ::: Some turtles exist.\n∀x (Animal(x) → (Rabbit(x) ⊕ Squirrel(x))) ::: An animal is either a rabbit or a squirrel.\n∀x (Skittish(x) → ¬Still(x)) ::: If something is skittish, then it is not still.\n∀x (Squirrel(x) → Skittish(x)) ::: All squirrels are skittish.\nStill(rock) ::: Rock is still.\nConclusion:\nTurtle(rock) ::: Rock is a turtle."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1608,
+    "completion_tokens": 5,
+    "cost": 0.002422
+  }
+]

@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The Picuris Mountains are a mountain range in New Mexico or Texas. Juan de Onate visited the Picuris Mountains. The Harding Pegmatite Mine, located in the Picuris Mountains, was donated. There are no mountain ranges in texas that have mines which have been donated.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Harding Pegmatite Mine is not located in a mountain range in New Mexico.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMountainRange(x) ::: x is a mountain range.\nIn(x, y) ::: x is in y.\nVisit(x, y) ::: x visited y.\nMine(x) ::: x is a mine.\nLocatedIn(x, y) ::: x is located in y.\nDonated(x) ::: x was donated.\nPremises:\n(MountainRange(picuris) ∧ In(picuris, newMexico)) ⊕ (MountainRange(picuris) ∧ In(picuris, texas)) ::: The Picuris Mountains are a mountain range in New Mexico or Texas.\nVisit(juan, picuris) ::: Juan de Onate visited the Picuris Mountains.\nMine(harding) ∧ LocatedIn(harding, picuris) ∧ Donated(harding) ::: The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.\n¬∃x ∃y (MountainRange(y) ∧ In(y, texas) ∧ Mine(x) ∧ LocatedIn(x, y) ∧ Donated(x)) ::: There are no mountain ranges in texas that have mines which have been donated.\nConclusion:\n¬(LocatedIn(harding, newMexico) ∧ MountainRange(newMexico)) ::: The Harding Pegmatite Mine is not located in a mountain range in New Mexico."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1689,
+    "completion_tokens": 5,
+    "cost": 0.0025435
+  }
+]

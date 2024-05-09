@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All cows are bovines. Some pets are cows. If something is a bovine, then it is domesticated. No domesticated animals are alligators. Ted is an aligator.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If Ted is a cow, then Ted is not a pet.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCow(x) ::: x is a cow.\nBovine(x) ::: x is a bovine.\nPet(x) ::: x is a pet.\nDomesticated(x) ::: x is domesticated.\nAlligator(x) ::: x is an alligator.\nPremises:\n∀x (Cow(x) → Bovine(x)) ::: All cows are bovines.\n∃x (Pet(x) ∧ Cow(x)) ::: Some pets are cows.\n∀x (Bovine(x) → Domesticated(x)) ::: If something is a bovine, then it is domesticated.\n∀x (Domesticated(x) → ¬Alligator(x)) ::: No domesticated animals are alligators.\nAlligator(ted) ::: Ted is an aligator.\nConclusion:\n(Cow(ted) → ¬Pet(ted)) ::: If Ted is a cow, then Ted is not a pet."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1589,
+    "completion_tokens": 5,
+    "cost": 0.0023935000000000002
+  }
+]

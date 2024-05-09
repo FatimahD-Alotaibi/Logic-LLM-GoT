@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: It costs US $205 to take the GRE test. ETS provides financial aid to those GRE applicants who prove economic hardship. Economic hardship refers to difficulty caused by having too little money or too few resources. Tom lives in a single-parent family. His dad has been out of work for more than a year.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? It cost below US $300 to take the GRE test.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCost(x, y) ::: x costs y.\nProvideAid(x, y) ::: x provides financial aid to y.\nEconomicHardship(x) ::: x has economic hardship.\nSingleParentFamily(x) ::: x lives in a single-parent family.\nOutOfWork(x, y) ::: x has been out of work for more than y.\nPremises:\nCost(GRE, 205) ::: It costs US $205 to take the GRE test.\n∀x (EconomicHardship(x) → ProvideAid(ETS, x)) ::: ETS provides financial aid to those GRE applicants who prove economic hardship.\nSingleParentFamily(tom) ::: Tom lives in a single-parent family.\nOutOfWork(tomDad, year1) ::: His dad has been out of work for more than a year.\nConclusion:\nCost(GRE, x) ∧ x < 300 ::: It cost below US $300 to take the GRE test."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1616,
+    "completion_tokens": 5,
+    "cost": 0.0024340000000000004
+  }
+]

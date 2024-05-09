@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Symphony No. 9 is a music piece. Composers write music pieces. Beethoven wrote Symphony No. 9. Vienna Music Society premiered Symphony No. 9. Vienna Music Society is an orchestra. Beethoven leads the Vienna Music Society. Orchestras are led by conductors.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beethoven is a composer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMusicPiece(x) ::: x is a music piece.\nComposer(x) ::: x is a composer.\nWrite(x, y) ::: x writes y.\nPremiere(x, y) ::: x premieres y.\nOrchestra(x) ::: x is an orchestra.\nLead(x, y) ::: x leads y.\nConductor(x) ::: x is a conductor.\nPremises:\nMusicPiece(symphonyNo9) ::: Symphony No. 9 is a music piece.\n∀x (Composer(x) → ∃y (MusicPiece(y) ∧ Write(x, y))) ::: Composers write music pieces.\nWrite(beethoven, symphonyNo9) ::: Beethoven wrote Symphony No. 9.\nPremiere(viennaMusicSociety, symphonyNo9) ::: Vienna Music Society premiered Symphony No. 9.\nOrchestra(viennaMusicSociety) ::: Vienna Music Society is an orchestra.\nLead(beethoven, viennaMusicSociety) ::: Beethoven leads the Vienna Music Society.\n∀x (Orchestra(x) → ∃y (Conductor(y) ∧ Lead(y, x))) ::: Orchestras are led by conductors.\nConclusion:\nComposer(beethoven) ::: Beethoven is a composer."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1672,
+    "completion_tokens": 5,
+    "cost": 0.002518
+  }
+]

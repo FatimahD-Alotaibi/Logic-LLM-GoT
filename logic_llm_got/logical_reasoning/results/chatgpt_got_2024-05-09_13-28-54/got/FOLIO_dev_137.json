@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Plungers suck. Vacuums suck. Vampires suck. Space is a vacuum. A duster is a household appliance that doesn't suck.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? If something is a household appliance, it sucks.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPlunger(x) ::: x is a plunger.\nVacuum(x) ::: x is a vacuum.\nVampire(x) ::: x is a vampire.\nSpace(x) ::: x is a space.\nDuster(x) ::: x is a duster.\nHouseholdAppliance(x) ::: x is a household appliance.\nSuck(x) ::: x sucks.\nPremises:\n∀x (Plunger(x) → Suck(x)) ::: Plungers suck.\n∀x (Vacuum(x) → Suck(x)) ::: Vacuums suck.\n∀x (Vampire(x) → Suck(x)) ::: Vampires suck.\n∀x (Space(x) → Vacuum(x)) ::: Space is a vacuum.\n∀x (Duster(x) → ¬Suck(x)) ∧ HouseholdAppliance(duster) ::: A duster is a household appliance that doesn't suck.\nConclusion:\n∀x (HouseholdAppliance(x) → Suck(x)) ::: If something is a household appliance, it sucks."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1608,
+    "completion_tokens": 5,
+    "cost": 0.002422
+  }
+]

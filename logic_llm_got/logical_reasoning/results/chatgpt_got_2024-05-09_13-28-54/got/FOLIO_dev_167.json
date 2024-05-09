@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Heinrich Scmidt was a Nazi German politician. Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Heinrich Schmidt was either German or Russian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGerman(x) ::: x is a German person.\nPolitician(x) ::: x is a politician.\nMember(x, y) ::: x is a member of y.\nRussian(x) ::: x is a Russian person.\nPremises:\nGerman(heinrich) ∧ Politician(heinrich) ::: Heinrich Scmidt was a Nazi German politician.\nMember(heinrich, prussianStateParliament) ∧ Member(heinrich, naziReichstag) ::: Heinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag.\nConclusion:\nGerman(heinrich) ⊕ Russian(heinrich) ::: Heinrich Schmidt was either German or Russian."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1532,
+    "completion_tokens": 5,
+    "cost": 0.002308
+  }
+]

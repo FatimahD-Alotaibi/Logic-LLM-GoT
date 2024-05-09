@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All growth companies’ stocks are volatile. If the stock price is volatile, then it is not suitable for a retirement fund. Some companies’ stocks are growth companies’ stocks. All mature companies’ stocks are suitable for a retirement fund. KO is a mature company’s stock.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? KO is a company stock and a growth company’s stock.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nGrowthCompanyStock(x) ::: x is a growth company's stock.\nVolatile(x) ::: x is volatile.\nSuitableForRetirementFund(x) ::: x is suitable for a retirement fund.\nMatureCompanyStock(x) ::: x is a mature company's stock.\nCompanyStock(x) ::: x is a company's stock.\nPremises:\n∀x (GrowthCompanyStock(x) → Volatile(x)) ::: All growth companies’ stocks are volatile.\n∀x (Volatile(x) → ¬SuitableForRetirementFund(x)) ::: If the stock price is volatile, then it is not suitable for a retirement fund.\n∃x (CompanyStock(x) ∧ GrowthCompanyStock(x)) ::: Some companies’ stocks are growth companies’ stocks.\n∀x (MatureCompanyStock(x) → SuitableForRetirementFund(x)) ::: All mature companies’ stocks are suitable for a retirement fund.\nMatureCompanyStock(KO) ::: KO is a mature company’s stock.\nConclusion:\nCompanyStock(KO) ∧ GrowthCompanyStock(KO) ::: KO is a company stock and a growth company’s stock."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1650,
+    "completion_tokens": 5,
+    "cost": 0.002485
+  }
+]

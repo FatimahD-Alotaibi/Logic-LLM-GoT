@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Monkeypox is an infectious disease caused by the monkeypox virus. Monkeypox virus can occur in certain animals, including humans. Humans are mammals. Mammals are animals. Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on. People feel tired when they get a glu.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? There is an animal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nInfectiousDisease(x) ::: x is an infectious disease.\nCausedBy(x, y) ::: x is caused by y.\nOccurIn(x, y) ::: x can occur in y.\nHuman(x) ::: x is a human.\nMammal(x) ::: x is a mammal.\nAnimal(x) ::: x is an animal.\nSymptonOf(x, y) ::: x is a sympton of y.\nFeelTired(x) ::: x feels tired.\nGetGlu(x) ::: x gets a glu.\nPremises:\nInfectiousDisease(monkeypox) ∧ CausedBy(monkeypox, monkeypoxVirus) ::: Monkeypox is an infectious disease caused by the monkeypox virus.\n∀x (Animal(x) → OccurIn(monkeypoxVirus, x)) ::: Monkeypox virus can occur in certain animals.\n∀x (Human(x) → Mammal(x)) ::: Humans are mammals.\n∀x (Mammal(x) → Animal(x)) ::: Mammals are animals.\nSymptonOf(fever, monkeypox) ∧ SymptonOf(headache, monkeypox) ∧ SymptonOf(musclePains, monkeypox) ∧ SymptonOf(feelingTired, monkeypox) ::: Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.\n∀x (GetGlu(x) → FeelTired(x)) ::: People feel tired when they get a glu.\nConclusion:\n∃x Animal(x) ::: There is an animal."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1764,
+    "completion_tokens": 5,
+    "cost": 0.002656
+  }
+]

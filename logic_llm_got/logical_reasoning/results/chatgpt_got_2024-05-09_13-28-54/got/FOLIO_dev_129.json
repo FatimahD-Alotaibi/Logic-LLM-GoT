@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All people who have a wedding are people who have at least one child. All people who travel to Paris for their honeymoon are people who have a wedding. All weddings that occur in July belong to people who travel to Paris for their honeymoon. Some weddings in July are well-attended. If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding. If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? John does not have a wedding that is well-attended.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWedding(x) ::: x has a wedding.\nChild(x) ::: x has at least one child.\nTravelParis(x) ::: x travels to Paris for their honeymoon.\nJulyWedding(x) ::: x has a wedding in July.\nWellAttended(x) ::: x has a well-attended wedding.\nPremises:\n∀x (Wedding(x) → Child(x)) ::: All people who have a wedding are people who have at least one child.\n∀x (TravelParis(x) → Wedding(x)) ::: All people who travel to Paris for their honeymoon are people who have a wedding.\n∀x (JulyWedding(x) → TravelParis(x)) ::: All weddings that occur in July belong to people who travel to Paris for their honeymoon.\n∃x (JulyWedding(x) ∧ WellAttended(x)) ::: Some weddings in July are well-attended.\nChild(john) → ¬(TravelParis(john) ∧ Wedding(john)) ::: If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.\nWellAttended(john) → (JulyWedding(john) ⊕ TravelParis(john)) ::: If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon.\nConclusion:\n¬WellAttended(john) ::: John does not have a wedding that is well-attended."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1777,
+    "completion_tokens": 5,
+    "cost": 0.0026755
+  }
+]

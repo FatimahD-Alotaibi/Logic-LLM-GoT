@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Badults is a British Sitcom series, starring members of Pappy's. Badults piloted in July 2013 on BBC Three. The Working title \"The Secret Dude Society\" was used for Badults. Andrew Collins was the script editor for Badults\nQuestion: Based on the above information, is the following statement true, false, or uncertain? No members of Pappy's have starred for a show piloting on BBC Two or BBC Three.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBritishSitcom(x) ::: x is a British Sitcom series.\nStarring(x, y) ::: x is starring y.\nPiloted(x, y, z) ::: x is piloted in month y on z.\nWorkingTitle(x, y) ::: x has the working title y.\nScriptEditor(x, y) ::: x is the script editor for y.\nMemberOfPappys(x) ::: x is a member of Pappy's.\nPremises:\nBritishSitcom(badults) ∧ Starring(badults, pappys) ::: Badults is a British Sitcom series, starring members of Pappy's.\nPiloted(badults, july2013, bbcThree) ::: Badults piloted in July 2013 on BBC Three.\nWorkingTitle(badults, theSecretDudeSociety) ::: The Working title \"The Secret Dude Society\" was used for Badults.\nScriptEditor(andrewCollins, badults) ::: Andrew Collins was the script editor for Badults.\nConclusion:\n¬∃x (MemberOfPappys(x) ∧ ∃y (Starring(y, x) ∧ (Piloted(y, _, bbcTwo) ∨ Piloted(y, _, bbcThree)))) ::: No members of Pappy's have starred for a show piloting on BBC Two or BBC Three."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1713,
+    "completion_tokens": 9,
+    "cost": 0.0025875
+  }
+]

@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Robert Lewandowski is a striker. [BG] Strikers are soccer players. Robert Lewandowski left Bayern Munchen. [BG] If a player left a team they no longer play for that team.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Robert Lewandowski is a soccer player.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nStriker(x) ::: x is a striker.\nSoccerPlayer(x) ::: x is a soccer player.\nLeft(x, y) ::: x left y.\nPlayFor(x, y) ::: x plays for y.\nPremises:\nStriker(robert) ::: Robert Lewandowski is a striker.\n∀x (Striker(x) → SoccerPlayer(x)) ::: Strikers are soccer players.\nLeft(robert, bayernMunchen) ::: Robert Lewandowski left Bayern Munchen.\n∀x ∀y (Left(x, y) → ¬PlayFor(x, y)) ::: If a player left a team they no longer play for that team.\nConclusion:\nSoccerPlayer(robert) ::: Robert Lewandowski is a soccer player."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1558,
+    "completion_tokens": 5,
+    "cost": 0.002347
+  }
+]

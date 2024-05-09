@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Barutin Cove is named after the Bulgarian settlement of Barutin. Barutin Cove is on the southwest coast of Snow Island. The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island. The South Shetland Islands are considered part of Antarctica. If A is located in B and B is located in C, then A is located in C.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Barutin is named after all islands in Antarctica.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNamedAfter(x, y) ::: x is named after y.\nLocatedIn(x, y) ::: x is located in y.\nSettlement(x) ::: x is a settlement.\nCove(x) ::: x is a cove.\nIsland(x) ::: x is an island.\nPartOf(x, y) ::: x is part of y.\nPremises:\nNamedAfter(barutinCove, barutin) ∧ Settlement(barutin) ∧ Cove(barutinCove) ::: Barutin Cove is named after the Bulgarian settlement of Barutin.\nLocatedIn(barutinCove, snowIsland) ∧ Island(snowIsland) ::: Barutin Cove is on the southwest coast of Snow Island.\nIsland(southShetlandIslands) ∧ Island(snowIsland) ∧ Island(greenwichIsland) ∧ Island(deceptionIsland) ∧ LocatedIn(snowIsland, southShetlandIslands) ∧ LocatedIn(greenwichIsland, southShetlandIslands) ∧ LocatedIn(deceptionIsland, southShetlandIslands) ::: The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.\nPartOf(southShetlandIslands, antarctica) ::: The South Shetland Islands are considered part of Antarctica.\n∀x ∀y ∀z ((LocatedIn(x, y) ∧ LocatedIn(y, z)) → LocatedIn(x, z)) ::: If A is located in B and B is located in C, then A is located in C.\nConclusion:\n∀x (Island(x) ∧ PartOf(x, antarctica) → NamedAfter(barutin, x)) ::: Barutin is named after all islands in Antarctica."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1804,
+    "completion_tokens": 7,
+    "cost": 0.00272
+  }
+]

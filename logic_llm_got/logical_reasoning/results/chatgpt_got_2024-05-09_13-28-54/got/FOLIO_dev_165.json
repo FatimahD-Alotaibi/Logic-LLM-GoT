@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: On some Mondays at 8 pm, roses are given out on TV. Every rose given out on TV is on the Bachelor. Everything on the Bachelor portrays the lives of real people. All shows portraying the lives of real people are reality TV shows. Breaking Bad is not a reality TV show.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Breaking Bad is a TV show in which roses are given out on Monday at 8 pm.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMonday8pmRose(x) ::: On some Mondays at 8 pm, roses are given out on x.\nBachelorRose(x) ::: Every rose given out on x is on the Bachelor.\nBachelorRealLife(x) ::: Everything on x portrays the lives of real people.\nRealityTV(x) ::: x is a reality TV show.\nPremises:\n∃x (Monday8pmRose(x)) ::: On some Mondays at 8 pm, roses are given out on TV.\n∀x (Monday8pmRose(x) → BachelorRose(x)) ::: Every rose given out on TV is on the Bachelor.\n∀x (BachelorRose(x) → BachelorRealLife(x)) ::: Everything on the Bachelor portrays the lives of real people.\n∀x (BachelorRealLife(x) → RealityTV(x)) ::: All shows portraying the lives of real people are reality TV shows.\n¬RealityTV(breakingBad) ::: Breaking Bad is not a reality TV show.\nConclusion:\nMonday8pmRose(breakingBad) ::: Breaking Bad is a TV show in which roses are given out on Monday at 8 pm."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1655,
+    "completion_tokens": 5,
+    "cost": 0.0024925
+  }
+]

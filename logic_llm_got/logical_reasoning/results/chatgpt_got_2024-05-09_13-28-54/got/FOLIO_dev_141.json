@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a cartoon character is funny, then it is popular. If a cartoon character is ugly, then it is not popular. If a cartoon character is loved by children, then it is funny. If a cartoon character is from The Simpsons, then it is loved by children. If a cartoon character is yellow, then it is from The Simpsons. Ben is either from The Simpsons or funny.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Ben is ugly or yellow.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFunny(x) ::: x is a funny cartoon character.\nPopular(x) ::: x is a popular cartoon character.\nUgly(x) ::: x is an ugly cartoon character.\nLoved(x) ::: x is loved by children.\nSimpsons(x) ::: x is from The Simpsons.\nYellow(x) ::: x is yellow.\nPremises:\n∀x (Funny(x) → Popular(x)) ::: If a cartoon character is funny, then it is popular.\n∀x (Ugly(x) → ¬Popular(x)) ::: If a cartoon character is ugly, then it is not popular.\n∀x (Loved(x) → Funny(x)) ::: If a cartoon character is loved by children, then it is funny.\n∀x (Simpsons(x) → Loved(x)) ::: If a cartoon character is from The Simpsons, then it is loved by children.\n∀x (Yellow(x) → Simpsons(x)) ::: If a cartoon character is yellow, then it is from The Simpsons.\nSimpsons(ben) ⊕ Funny(ben) ::: Ben is either from The Simpsons or funny.\nConclusion:\nUgly(ben) ⊕ Yellow(ben) ::: Ben is ugly or yellow."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1683,
+    "completion_tokens": 5,
+    "cost": 0.0025345000000000003
+  }
+]

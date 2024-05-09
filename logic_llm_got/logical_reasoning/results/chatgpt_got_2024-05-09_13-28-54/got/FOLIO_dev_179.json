@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All horses have hooves. No humans have hooves.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some humans are horses.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHorse(x) ::: x is a horse.\nHuman(x) ::: x is a human.\nHooves(x) ::: x has hooves.\nPremises:\n∀x (Horse(x) → Hooves(x)) ::: All horses have hooves.\n∀x (Human(x) → ¬Hooves(x)) ::: No humans have hooves.\nConclusion:\n∃x (Human(x) ∧ Horse(x)) ::: Some humans are horses."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1456,
+    "completion_tokens": 5,
+    "cost": 0.002194
+  }
+]

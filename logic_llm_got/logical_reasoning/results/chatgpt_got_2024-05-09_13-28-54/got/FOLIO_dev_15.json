@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All squares have four sides. All four-sided things are shapes.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All squares are shapes.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nSquare(x) ::: x is a square.\nFourSided(x) ::: x has four sides.\nShape(x) ::: x is a shape.\nPremises:\n∀x (Square(x) → FourSided(x)) ::: All squares have four sides.\n∀x (FourSided(x) → Shape(x)) ::: All four-sided things are shapes.\nConclusion:\n∀x (Square(x) → Shape(x)) ::: All squares are shapes."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1458,
+    "completion_tokens": 5,
+    "cost": 0.002197
+  }
+]

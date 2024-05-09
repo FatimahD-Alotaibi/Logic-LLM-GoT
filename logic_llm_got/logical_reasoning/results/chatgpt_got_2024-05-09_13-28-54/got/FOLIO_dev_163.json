@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A hawk never lands. Some birds are hawks.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? All birds land\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHawk(x) ::: x is a hawk.\nBird(x) ::: x is a bird.\nLand(x) ::: x lands.\nPremises:\n∀x (Hawk(x) → ¬Land(x)) ::: A hawk never lands.\n∃x (Bird(x) ∧ Hawk(x)) ::: Some birds are hawks.\nConclusion:\n∀x (Bird(x) → Land(x)) ::: All birds land."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1447,
+    "completion_tokens": 5,
+    "cost": 0.0021805
+  }
+]

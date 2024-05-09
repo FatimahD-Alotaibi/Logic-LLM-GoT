@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A Japanese game company created the game the Legend of Zelda. All games in the Top 10 list are made by Japanese game companies. [BG] If a game sells more than one million copies, then it will be selected into the Top 10 list. The Legend of Zelda sold more than one million copies.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? The Legend of Zelda is in the Top 10 list.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nJapaneseCompany(x) ::: x is a Japanese game company.\nCreate(x, y) ::: x created the game y.\nTop10(x) ::: x is in the Top 10 list.\nSell(x, y) ::: x sold more than y copies.\nPremises:\n∃x (JapaneseCompany(x) ∧ Create(x, legendOfZelda)) ::: A Japanese game company created the game the Legend of Zelda.\n∀x (Top10(x) → ∃y (JapaneseCompany(y) ∧ Create(y, x))) ::: All games in the Top 10 list are made by Japanese game companies.\n∀x (Sell(x, oneMillion) → Top10(x)) ::: If a game sells more than one million copies, then it will be selected into the Top 10 list.\nSell(legendOfZelda, oneMillion) ::: The Legend of Zelda sold more than one million copies.\nConclusion:\nTop10(legendOfZelda) ::: The Legend of Zelda is in the Top 10 list."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1634,
+    "completion_tokens": 5,
+    "cost": 0.002461
+  }
+]

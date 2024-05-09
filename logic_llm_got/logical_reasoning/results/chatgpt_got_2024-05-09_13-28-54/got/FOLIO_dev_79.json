@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: No bakery is spicy. All cupcakes are bakeries. All hotpots are spicy. All products of Baked by Melissa are cupcakes. If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dried Thai chilies are a product of Baked by Melissa.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nBakery(x) ::: x is a bakery.\nSpicy(x) ::: x is spicy.\nCupcake(x) ::: x is a cupcake.\nHotpot(x) ::: x is a hotpot.\nProduct(x, y) ::: x is a product of y.\nPremises:\n∀x (Bakery(x) → ¬Spicy(x)) ::: No bakery is spicy.\n∀x (Cupcake(x) → Bakery(x)) ::: All cupcakes are bakeries.\n∀x (Hotpot(x) → Spicy(x)) ::: All hotpots are spicy.\n∀x (Product(x, bakedByMelissa) → Cupcake(x)) ::: All products of Baked by Melissa are cupcakes.\n(Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies)) → (Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)) ::: If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy.\nConclusion:\nProduct(driedThaiChilies, bakedByMelissa) ::: Dried Thai chilies are a product of Baked by Melissa."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1660,
+    "completion_tokens": 5,
+    "cost": 0.0025
+  }
+]

@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All fir trees are evergreens. Some objects of worship are fir trees.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some evergreens are not objects of worship.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nFir(x) ::: x is a fir tree.\nEvergreen(x) ::: x is an evergreen.\nWorship(x) ::: x is an object of worship.\nPremises:\n∀x (Fir(x) → Evergreen(x)) ::: All fir trees are evergreens.\n∃x (Worship(x) ∧ Fir(x)) ::: Some objects of worship are fir trees.\nConclusion:\n∃x (Evergreen(x) ∧ ¬Worship(x)) ::: Some evergreens are not objects of worship."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1480,
+    "completion_tokens": 5,
+    "cost": 0.00223
+  }
+]

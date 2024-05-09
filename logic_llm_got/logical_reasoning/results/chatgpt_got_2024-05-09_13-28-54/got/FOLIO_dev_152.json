@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: New Vessel Press is a publishing house which specializes in translating foreign literature into English. All of New Vessel Press's published books are in English. Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian. Palace of Flies is a book published by New Vessel Press.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Palace of Flies was translated from Italian.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nPublishingHouse(x) ::: x is a publishing house.\nSpecialize(x, y) ::: x specializes in y.\nBook(x) ::: x is a book.\nPublish(x, y) ::: x publishes y.\nEnglish(x) ::: x is in English.\nTranslate(x, y, z) ::: x is translated from y into z.\nPremises:\nPublishingHouse(newVesselPress) ∧ Specialize(newVesselPress, translatingForeignLiteratureIntoEnglish) ::: New Vessel Press is a publishing house which specializes in translating foreign literature into English.\n∀x (Book(x) ∧ Publish(newVesselPress, x) → English(x)) ::: All of New Vessel Press's published books are in English.\nBook(neapolitanChronicles) ∧ Publish(newVesselPress, neapolitanChronicles) ∧ Translate(neapolitanChronicles, italian, english) ::: Neapolitan Chronicles is a book published by New Vessel Press. Neapolitan Chronicles was translated from Italian.\nBook(palaceOfFlies) ∧ Publish(newVesselPress, palaceOfFlies) ::: Palace of Flies is a book published by New Vessel Press.\nConclusion:\nTranslate(palaceOfFlies, italian, english) ::: Palace of Flies was translated from Italian."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1690,
+    "completion_tokens": 5,
+    "cost": 0.002545
+  }
+]

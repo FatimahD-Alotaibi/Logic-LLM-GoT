@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Books contain tons of knowledge. [BG] When a person reads a book, that person gains knowledge. [BG] If a person gains knowledge, they become smarter. Harry read the book “Walden” by Henry Thoreau.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? A person who is smarter has gained knowledge.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nContain(x, y) ::: x contains y.\nRead(x, y) ::: x reads y.\nGain(x, y) ::: x gains y.\nSmarter(x) ::: x is smarter.\nBook(x) ::: x is a book.\nPerson(x) ::: x is a person.\nPremises:\n∀x (Book(x) → Contain(x, knowledge)) ::: Books contain tons of knowledge.\n∀x ∀y (Person(x) ∧ Read(x, y) → Gain(x, knowledge)) ::: When a person reads a book, that person gains knowledge.\n∀x (Person(x) ∧ Gain(x, knowledge) → Smarter(x)) ::: If a person gains knowledge, they become smarter.\nPerson(harry) ∧ Book(walden) ∧ Read(harry, walden) ::: Harry read the book “Walden” by Henry Thoreau.\nConclusion:\n∀x (Person(x) ∧ Smarter(x) → Gain(x, knowledge)) ::: A person who is smarter has gained knowledge."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1623,
+    "completion_tokens": 5,
+    "cost": 0.0024445
+  }
+]

@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All Romance languages are Indo-European languages. The Romance languages are a language family. All languages within a language family are related to each other. French and Spanish are both Romance languages. German is related to Spanish. Basque is not related to any other language.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? French is an Indo-European language.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nRomance(x) ::: x is a Romance language.\nIndoEuropean(x) ::: x is an Indo-European language.\nLanguageFamily(x) ::: x is a language family.\nRelated(x, y) ::: x is related to y.\nPremises:\n∀x (Romance(x) → IndoEuropean(x)) ::: All Romance languages are Indo-European languages.\nLanguageFamily(romance) ::: The Romance languages are a language family.\n∀x ∀y ((LanguageFamily(x) ∧ y ∈ x) → Related(y, x)) ::: All languages within a language family are related to each other.\nRomance(french) ∧ Romance(spanish) ::: French and Spanish are both Romance languages.\nRelated(german, spanish) ::: German is related to Spanish.\n∀x ¬Related(basque, x) ::: Basque is not related to any other language.\nConclusion:\nIndoEuropean(french) ::: French is an Indo-European language."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1604,
+    "completion_tokens": 5,
+    "cost": 0.002416
+  }
+]

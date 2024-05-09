@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: If a man is taller than another man, the taller one can block the other's shooting. Michael is a man who is taller than everyone else in his class. If person x is taller than person y, and person y is taller than person z, than x is taller than z Peter is a man who is taller than Michael. Michael can block any shooting from a person as long as the person does not jump when shooting. Michael cannot block Windy's shooting. Every shooter who can jump when shooting is a great shooter.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Peter is shorter than a man in Michael's class.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nTaller(x, y) ::: x is taller than y.\nBlock(x, y) ::: x can block y's shooting.\nMan(x) ::: x is a man.\nJump(x) ::: x can jump when shooting.\nGreatShooter(x) ::: x is a great shooter.\nPremises:\n∀x ∀y (Man(x) ∧ Man(y) ∧ Taller(x, y) → Block(x, y)) ::: If a man is taller than another man, the taller one can block the other's shooting.\nMan(michael) ∧ ∀x (Man(x) → Taller(michael, x)) ::: Michael is a man who is taller than everyone else in his class.\n∀x ∀y ∀z (Taller(x, y) ∧ Taller(y, z) → Taller(x, z)) ::: If person x is taller than person y, and person y is taller than person z, than x is taller than z\nMan(peter) ∧ Taller(peter, michael) ::: Peter is a man who is taller than Michael.\n∀x (¬Jump(x) → Block(michael, x)) ::: Michael can block any shooting from a person as long as the person does not jump when shooting.\n¬Block(michael, windy) ::: Michael cannot block Windy's shooting.\n∀x (Jump(x) → GreatShooter(x)) ::: Every shooter who can jump when shooting is a great shooter.\nConclusion:\n∃x (Man(x) ∧ Taller(x, peter)) ::: Peter is shorter than a man in Michael's class."
+        ],
+        "ground_truth": "B",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1793,
+    "completion_tokens": 5,
+    "cost": 0.0026995
+  }
+]

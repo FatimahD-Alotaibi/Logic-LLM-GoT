@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: Beijing is the capital of the People's Republic of China. Beijing is the world's most populous national capital city. Beijing is located in Northern China. Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games. Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Beijing has hosted both the 2008 Summer Olympics and a winter olympics.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nCapital(x, y) ::: x is the capital of y.\nMostPopulous(x) ::: x is the world's most populous national capital city.\nLocatedIn(x, y) ::: x is located in y.\nHosted(x, y) ::: x hosted y.\nUniversity(x) ::: x is a university.\nRank(x) ::: x consistently ranks among the best in the Asia-Pacific and the world.\nPremises:\nCapital(beijing, china) ::: Beijing is the capital of the People's Republic of China.\nMostPopulous(beijing) ::: Beijing is the world's most populous national capital city.\nLocatedIn(beijing, northernChina) ::: Beijing is located in Northern China.\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, summerParalympics2008) ::: Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.\nHosted(beijing, summerOlympics) ∧ Hosted(beijing, winterOlympics) ∧ Hosted(beijing, summerParalympics) ∧ Hosted(beijing, winterParalympics) ::: Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics.\n∀x (University(x) → Rank(x)) ::: Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world.\nConclusion:\nHosted(beijing, summerOlympics2008) ∧ Hosted(beijing, winterOlympics) ::: Beijing has hosted both the 2008 Summer Olympics and a winter olympics."
+        ],
+        "ground_truth": "A",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1786,
+    "completion_tokens": 5,
+    "cost": 0.002689
+  }
+]

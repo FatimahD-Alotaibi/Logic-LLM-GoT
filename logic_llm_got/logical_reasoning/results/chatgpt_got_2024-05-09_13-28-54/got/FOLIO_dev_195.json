@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: The winner of the 1992 du Maurier Classic was Steinhauer. Steinhauer participated in the 1992 du Maurier Classic. There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium. Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic. All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nWinner(x, y) ::: x is the winner of y.\nParticipate(x, y) ::: x participated in y.\nTie(x, y) ::: x is in a tie in y.\nFrom(x, y) ::: x is from y.\nLeaderboard(x, y) ::: x is on the leaderboard of y.\nPremises:\nWinner(steinhauer, duMaurierClassic1992) ::: The winner of the 1992 du Maurier Classic was Steinhauer.\nParticipate(steinhauer, duMaurierClassic1992) ::: Steinhauer participated in the 1992 du Maurier Classic.\n∃x (Tie(x, duMaurierClassic1992) ∧ From(x, belgium)) ::: There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.\nFrom(descampe, belgium) ∧ Leaderboard(descampe, duMaurierClassic1992) ::: Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.\n∀x (Leaderboard(x, duMaurierClassic1992) → Participate(x, duMaurierClassic1992)) ::: All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic.\nConclusion:\nTie(descampe, duMaurierClassic1992) ::: Descampe is in the six-way tie in the leaderboard of the 1992 du Maurier Classic."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1788,
+    "completion_tokens": 5,
+    "cost": 0.002692
+  }
+]

@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: All humans are mortal. All Greeks are humans.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Some Greeks are mortal.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nHuman(x) ::: x is a human.\nGreek(x) ::: x is a Greek.\nMortal(x) ::: x is mortal.\nPremises:\n∀x (Human(x) → Mortal(x)) ::: All humans are mortal.\n∀x (Greek(x) → Human(x)) ::: All Greeks are humans.\nConclusion:\n∃x (Greek(x) ∧ Mortal(x)) ::: Some Greeks are mortal."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1448,
+    "completion_tokens": 5,
+    "cost": 0.002182
+  }
+]

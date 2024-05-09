@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "A",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A man is either kind or evil. No ugly person is handsome. All evil people are ugly. All gentlemen are handsome. All CEOs are gentlemen. Harry is a gentleman.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Harry is a CEO.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMan(x) ::: x is a man.\nKind(x) ::: x is kind.\nEvil(x) ::: x is evil.\nUgly(x) ::: x is ugly.\nHandsome(x) ::: x is handsome.\nGentleman(x) ::: x is a gentleman.\nCEO(x) ::: x is a CEO.\nPremises:\n∀x (Man(x) → (Kind(x) ⊕ Evil(x))) ::: A man is either kind or evil.\n∀x (Ugly(x) → ¬Handsome(x)) ::: No ugly person is handsome.\n∀x (Evil(x) → Ugly(x)) ::: All evil people are ugly.\n∀x (Gentleman(x) → Handsome(x)) ::: All gentlemen are handsome.\n∀x (CEO(x) → Gentleman(x)) ::: All CEOs are gentlemen.\nGentleman(harry) ::: Harry is a gentleman.\nConclusion:\nCEO(harry) ::: Harry is a CEO."
+        ],
+        "ground_truth": "C",
+        "current": "C",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1595,
+    "completion_tokens": 5,
+    "cost": 0.0024025
+  }
+]

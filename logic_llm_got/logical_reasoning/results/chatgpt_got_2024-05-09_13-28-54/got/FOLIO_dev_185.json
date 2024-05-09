@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "C",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: A podcast is not a novel. [BG] If a person is born in American City, the person is American. [BG] If a book is novel and it is written by a person, then the person is a novel writer. Dani Shapiro is an American writer. Family History is written by Dani Shapiro. Family History is a novel written in 2003. Dani Shapiro created a podcast called Family Secrets. [BG] Boston is an American city.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Dani Shapiro is a novel writer.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nNovel(x) ::: x is a novel.\nPodcast(x) ::: x is a podcast.\nBornInAmericanCity(x) ::: x is born in American City.\nAmerican(x) ::: x is American.\nBook(x) ::: x is a book.\nWrittenBy(x, y) ::: x is written by y.\nNovelWriter(x) ::: x is a novel writer.\nAmericanWriter(x) ::: x is an American writer.\nCreated(x, y) ::: x created y.\nPremises:\n¬Podcast(novel) ::: A podcast is not a novel.\n∀x (BornInAmericanCity(x) → American(x)) ::: If a person is born in American City, the person is American.\n∀x ∀y ((Book(x) ∧ Novel(x) ∧ WrittenBy(x, y)) → NovelWriter(y)) ::: If a book is novel and it is written by a person, then the person is a novel writer.\nAmericanWriter(daniShapiro) ::: Dani Shapiro is an American writer.\nBook(familyHistory) ∧ WrittenBy(familyHistory, daniShapiro) ::: Family History is written by Dani Shapiro.\nBook(familyHistory) ∧ Novel(familyHistory) ::: Family History is a novel written in 2003.\nCreated(daniShapiro, familySecrets) ∧ Podcast(familySecrets) ::: Dani Shapiro created a podcast called Family Secrets.\nConclusion:\nNovelWriter(daniShapiro) ::: Dani Shapiro is a novel writer."
+        ],
+        "ground_truth": "A",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1757,
+    "completion_tokens": 5,
+    "cost": 0.0026455
+  }
+]

@@ -1,0 +1,341 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      },
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "operation": "keep_best_n",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "reasoning_problem": "Context: [BG] Some mammals have teeth. Platypus have no teeth. Platypus are mammals. Humans have teeth.\nQuestion: Based on the above information, is the following statement true, false, or uncertain? Platypus are reptiles.\nOptions: A) True B) False C) Uncertain",
+        "raw_logic_programs": [
+          "Predicates:\nMammal(x) ::: x is a mammal.\nTeeth(x) ::: x has teeth.\nReptile(x) ::: x is a reptile.\nHuman(x) ::: x is a human.\nPremises:\n∃x (Mammal(x) ∧ Teeth(x)) ::: Some mammals have teeth.\nMammal(platypus) ∧ ¬Teeth(platypus) ::: Platypus are mammals and have no teeth.\nHuman(humans) ∧ Teeth(humans) ::: Humans have teeth.\nConclusion:\nReptile(platypus) ::: Platypus are reptiles."
+        ],
+        "ground_truth": "C",
+        "current": "B",
+        "method": "got"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1508,
+    "completion_tokens": 5,
+    "cost": 0.002272
+  }
+]
