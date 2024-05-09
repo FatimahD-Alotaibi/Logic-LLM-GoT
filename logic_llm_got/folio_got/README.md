@@ -1,29 +1,35 @@
-# Graph Of Thoughts for Logical Reasoning Problems
+# Logical Reasoning
 
-## To use the Graph of Thoughts (GoT) method to answer a logical reasoning problem with the given structure, you can follow these steps:
+The use case in this directory gives an answer response to a Logical Reasoning Problem. To further improve logical reasoning, the problem contex is converted to symbolic logic.
+We provide implementations of four different approaches:
 
-1. **Represent the problem context, question, and options as a graph**
-   - Each element (context, question, options) can be a node in the graph.
-2. **Apply thought transformations to the graph to reason about the problem**
-   - This could involve:
-     - Aggregating relevant parts of the context to answer the question
-     - Refining the question based on the context
-     - Generating arguments for each option based on the question and context
-3. **Score each option based on the reasoning process**
-   - The score should reflect how well the option answers the question given the context.
-4. **Select the option with the highest score as the answer**
+- IO
+- Chain-of-Thought (ToT)
+- Tree of Thought (ToT)
+- Graph of Thoughts (GoT)
 
-   - If multiple options have similar high scores, select "Uncertain".
-   - For example, if the problem is:
-     Context: "All mammals have fur. Dogs are mammals."
-     Question: "Do all dogs have fur?"
-     Options: ["A) true, B) false, C) Uncertain"]
+## Data
 
-     The graph would have nodes for the context, question, and options. Thought transformations could:
-     Aggregate the context facts to conclude that since dogs are mammals, and all mammals have fur, dogs must have fur.
-     Refine the question to ask if the previous conclusion is always true.
-     Generate arguments for each option based on the reasoning.
-     Scoring the options would likely give the highest score to "A) true", as the reasoning supports that conclusion. The other options would have lower scores.
+We provide an input file with 204 samples. Choose either `logic_programs/FOLIO_dev_gpt-3.5-turbo.json` or `logic_programs/FOLIO_dev_gpt-4.json`.
+
+## Execution
+
+The file to execute the use case is called
+`logic_solver.py`. In the main body, one can
+select the specific samples to be run (variable samples) and the
+approaches (variable approaches). It is also possible to set a budget in
+dollars (variable budget).
+
+The Python scripts will create the directory `result`, if it is not
+already present. In the `result` directory, another directory is created
+for each run: `{name of LLM}_{list of approaches}_{day}_{start time}`.
+Inside each execution specific directory two files (`config.json`,
+`log.log`) and a separate directory for each selected approach are
+created. `config.json` contains the configuration of the run: input data,
+selected approaches, name of the LLM, and the budget. `log.log` contains
+the prompts and responses of the LLM as well as additional debug data.
+The approach directories contain a separate json file for every sample
+and the file contains the Graph Reasoning State (GRS) for that sample.
 
 ## The Prompter and Parser Classes
 
