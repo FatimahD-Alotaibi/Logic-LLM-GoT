@@ -1,7 +1,6 @@
 from typing import Dict, List, Union
 from graph_of_thoughts import parser
 import re
-import logging
 
 class SymbolicReasoningParser(parser.Parser):
     """
@@ -19,7 +18,12 @@ class SymbolicReasoningParser(parser.Parser):
 
     def extract_only_letter_character(self, text: str) -> str:
         """
-        
+        Helper function designed to extract letter character from the LLM response.
+
+        :param text: The LLM response
+        :type text: str
+        :return: The letter character
+        :rtype: str
         """
         match = re.search(r'[A-C]', text)
         if match:
