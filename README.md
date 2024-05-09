@@ -29,6 +29,6 @@ The generated logic programs will be saved in `outputs/logic_programs`. You can 
 ## Graph of Thoughts Implementation
 
 ```bash
-cd ./folio_got
-python reasoning_graph.py
+cd ./logical_reasoning
+python logic_solver.py
 ```
