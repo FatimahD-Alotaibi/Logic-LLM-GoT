@@ -2,7 +2,7 @@ from typing import Dict, List, Union
 from graph_of_thoughts import parser
 import re
 
-class SymbolicReasoningParser(parser.Parser):
+class LogicalReasoningParser(parser.Parser):
     """
     SymbolicCountingParser provides the parsing of language model reponses
     specific to the keyword counting example.

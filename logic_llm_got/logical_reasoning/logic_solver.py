@@ -4,8 +4,8 @@ import datetime
 import json
 from typing import List, Callable
 from graph_of_thoughts import operations, language_models, controller
-from logic_prompter import SymbolicReasoningPrompter
-from logic_parser import SymbolicReasoningParser
+from logic_prompter import LogicalReasoningPrompter
+from logic_parser import LogicalReasoningParser
 from methods import io, cot, tot, got # Import the methods
 
 def run(
@@ -125,8 +125,8 @@ def run(
             executor = controller.Controller(
                 lm,
                 operations_graph,
-                SymbolicReasoningPrompter(),
-                SymbolicReasoningParser(),
+                LogicalReasoningPrompter(),
+                LogicalReasoningParser(),
                 {
                     "reasoning_problem": data[1], # The logical reasoning problem
                     "raw_logic_programs": data[2], # The logical conclusion using symbolic reasoning

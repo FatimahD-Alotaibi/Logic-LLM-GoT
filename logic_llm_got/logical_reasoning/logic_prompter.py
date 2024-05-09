@@ -2,7 +2,7 @@ from typing import Dict, List
 from prompts import reasoning_prompt, reasoning_prompt_cot, improve_response_prompt, symbolic_logic_prompt
 from graph_of_thoughts import prompter
 
-class SymbolicReasoningPrompter(prompter.Prompter):
+class LogicalReasoningPrompter(prompter.Prompter):
     """
     SymbolicReasoningPrompter provides the generation of prompts specific to the
     Symbolic FOLIO example for the language models.
