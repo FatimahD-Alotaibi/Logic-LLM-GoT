@@ -6,6 +6,10 @@
 
 This implementation converts a natural language logical reasoning problem into symbolic logic using a formulator. The prompt undergoes transformation into a symbolic logic representation of the original question, which is then processed through a framework of thought graphs.
 
+## GoT with Symbolic Logic Reasoning
+
+This approach aims to evaluate the efficacy of the **Graph of Thoughts (GoT)** method in addressing logical reasoning problems. By integrating the power of GoT with **symbolic logic parsing**, this method offers a comprehensive solution to complex logical puzzles. The program initiates by converting the context and question of a problem into symbolic logic, extracting crucial details like premises, assumptions, and conclusions. It then proceeds to construct a semantic graph illustrating the interrelations among various concepts and propositions within the problem domain. This graph acts as a structured representation of the problem space, enabling the program to apply logical rules and inference techniques for drawing conclusions. Leveraging its understanding of symbolic logic and logical reasoning principles, the LLM navigates the graph, conducts logical operations, and deduces solutions to the given problem. Through iterative reasoning and inference processes guided by the GoT method, the program systematically explores the problem space, evaluates potential solutions, and arrives at logical conclusions.
+
 ## Logic Program Generation
 
 To generate logic programs for logical reasoning problems in each dataset, at the root directory, run the following commands:
@@ -21,3 +25,10 @@ python models/logic_program.py \
 ```
 
 The generated logic programs will be saved in `outputs/logic_programs`. You can also reuse the logic programs we generated in `./outputs/logic_programs`.
+
+## Graph of Thoughts Implementation
+
+```bash
+cd ./folio_got
+python reasoning_graph.py
+```
