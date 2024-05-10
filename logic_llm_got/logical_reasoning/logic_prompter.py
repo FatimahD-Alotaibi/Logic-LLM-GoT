@@ -13,6 +13,7 @@ class LogicalReasoningPrompter(prompter.Prompter):
     reasoning_prompt=reasoning_prompt
     reasoning_prompt_cot=reasoning_prompt_cot
     improve_response_prompt=improve_response_prompt
+    symbolic_logic_prompt=symbolic_logic_prompt
 
     def aggregation_prompt(self, state_dicts: List[Dict], **kwargs) -> str:
         """
@@ -53,7 +54,7 @@ class LogicalReasoningPrompter(prompter.Prompter):
         elif method.startswith("tot"):
             return self.reasoning_prompt_cot.format(input=reasoning_problem)
         elif method.startswith("got"):
-            return symbolic_logic_prompt.format(input=reasoning_problem, raw_logic_programs=raw_logic_programs)
+            return self.symbolic_logic_prompt.format(input=reasoning_problem, raw_logic_programs=raw_logic_programs)
         
         
     def improve_prompt(self, current: str, aggr1: str, aggr2: str, **kwargs) -> str:
