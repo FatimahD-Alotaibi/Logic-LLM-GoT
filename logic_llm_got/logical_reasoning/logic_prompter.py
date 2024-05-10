@@ -51,12 +51,7 @@ class LogicalReasoningPrompter(prompter.Prompter):
         elif method.startswith("cot"):
             return self.reasoning_prompt_cot.format(input=reasoning_problem)
         elif method.startswith("tot"):
-            if current is None or current == "":
-                return self.reasoning_prompt_cot.format(input=reasoning_problem)
-            return self.improve_response_prompt.format(
-                input=reasoning_problem,
-                incorrect_response=current
-            )
+            return self.reasoning_prompt_cot.format(input=reasoning_problem)
         elif method.startswith("got"):
             return symbolic_logic_prompt.format(input=reasoning_problem, raw_logic_programs=raw_logic_programs)
         
