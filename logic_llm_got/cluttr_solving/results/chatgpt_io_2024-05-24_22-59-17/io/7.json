@@ -1,0 +1,64 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "body_text": "[Dorothy] and her daughter [Kecia] went to see a movie yesterday and then got ice cream afterwards. [Dorothy] and her son, [Kent], went to the park, and had a wonderful time. [Thomas] was thrilled his brother, [Kent], was able to make it to the party. [James] watched the football game with his son [Thomas]. [James]'s daughter [Florence] was bored and played with her phone instead. [Florence] went to the mall, because she wanted to look for a present for her daughter, [Janet].",
+        "program": "statement: isRelationOf(janet, daughter, florence).\ndescription: [Florence] went to the mall, because she wanted to look for a present for her daughter, [Janet].\nstatement: isRelationOf(thomas, brother, kent).\ndescription: [Thomas] was thrilled his brother, [Kent], was able to make it to the party.\nstatement: isRelationOf(dorothy, mother, kecia).\ndescription: [Dorothy] and her daughter [Kecia] went to see a movie yesterday and then got ice cream afterwards.\nstatement: isRelationOf(kent, son, dorothy).\ndescription: [Dorothy] and her son, [Kent], went to the park, and had a wonderful time.\nstatement: isRelationOf(james, father, thomas).\ndescription: [James] watched the football game with his son [Thomas].\nstatement: isRelationOf(florence, daughter, james).\ndescription: [James]'s daughter [Florence] was bored and played with her phone instead.\n",
+        "goal": "relation(janet, nephew, kecia)",
+        "ground_truth": "False",
+        "current": "False",
+        "method": "io"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "body_text": "[Dorothy] and her daughter [Kecia] went to see a movie yesterday and then got ice cream afterwards. [Dorothy] and her son, [Kent], went to the park, and had a wonderful time. [Thomas] was thrilled his brother, [Kent], was able to make it to the party. [James] watched the football game with his son [Thomas]. [James]'s daughter [Florence] was bored and played with her phone instead. [Florence] went to the mall, because she wanted to look for a present for her daughter, [Janet].",
+        "program": "statement: isRelationOf(janet, daughter, florence).\ndescription: [Florence] went to the mall, because she wanted to look for a present for her daughter, [Janet].\nstatement: isRelationOf(thomas, brother, kent).\ndescription: [Thomas] was thrilled his brother, [Kent], was able to make it to the party.\nstatement: isRelationOf(dorothy, mother, kecia).\ndescription: [Dorothy] and her daughter [Kecia] went to see a movie yesterday and then got ice cream afterwards.\nstatement: isRelationOf(kent, son, dorothy).\ndescription: [Dorothy] and her son, [Kent], went to the park, and had a wonderful time.\nstatement: isRelationOf(james, father, thomas).\ndescription: [James] watched the football game with his son [Thomas].\nstatement: isRelationOf(florence, daughter, james).\ndescription: [James]'s daughter [Florence] was bored and played with her phone instead.\n",
+        "goal": "relation(janet, nephew, kecia)",
+        "ground_truth": "False",
+        "current": "False",
+        "method": "io"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "body_text": "[Dorothy] and her daughter [Kecia] went to see a movie yesterday and then got ice cream afterwards. [Dorothy] and her son, [Kent], went to the park, and had a wonderful time. [Thomas] was thrilled his brother, [Kent], was able to make it to the party. [James] watched the football game with his son [Thomas]. [James]'s daughter [Florence] was bored and played with her phone instead. [Florence] went to the mall, because she wanted to look for a present for her daughter, [Janet].",
+        "program": "statement: isRelationOf(janet, daughter, florence).\ndescription: [Florence] went to the mall, because she wanted to look for a present for her daughter, [Janet].\nstatement: isRelationOf(thomas, brother, kent).\ndescription: [Thomas] was thrilled his brother, [Kent], was able to make it to the party.\nstatement: isRelationOf(dorothy, mother, kecia).\ndescription: [Dorothy] and her daughter [Kecia] went to see a movie yesterday and then got ice cream afterwards.\nstatement: isRelationOf(kent, son, dorothy).\ndescription: [Dorothy] and her son, [Kent], went to the park, and had a wonderful time.\nstatement: isRelationOf(james, father, thomas).\ndescription: [James] watched the football game with his son [Thomas].\nstatement: isRelationOf(florence, daughter, james).\ndescription: [James]'s daughter [Florence] was bored and played with her phone instead.\n",
+        "goal": "relation(janet, nephew, kecia)",
+        "ground_truth": "False",
+        "current": "False",
+        "method": "io"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1043,
+    "completion_tokens": 1,
+    "cost": 0.0015665
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "body_text": "[Roger] loved going to the store with his mom [Sarah]. She always bought him snacks [Sarah], a female, took her husband who is a male, [Carlos], out for lunch. [Sarah] and [Carlos] have been married for 35 years. [Sarah] spent a great day shopping with her daughter, [Julie]. [Lisa] and [Roger] did the Father daughter dance at the recital and his wife [Julie] was so happy she cried [Lisa] and her aunt, [Jamie], went to the bookstore. [Lisa] bought some fantasy books, while [Jamie] picked up some mysteries. [Jamie] loves her son [Richard] very much. He loves her, too.",
+        "program": "statement: isRelationOf(richard, son, jamie).\ndescription: [Jamie] loves her son [Richard] very much.\nstatement: isRelationOf(sarah, mother, roger).\ndescription: [Roger] loved going to the store with his mom [Sarah].\nstatement: isRelationOf(carlos, husband, sarah).\ndescription: She always bought him snacks [Sarah], a female, took her husband who is a male, [Carlos], out for lunch.\nstatement: isRelationOf(jamie, aunt, lisa).\ndescription: [Lisa] and [Roger] did the Father daughter dance at the recital and his wife [Julie] was so happy she cried [Lisa] and her aunt, [Jamie], went to the bookstore.\nstatement: isRelationOf(roger, husband, julie).\ndescription: [Lisa] and [Roger] did the Father daughter dance at the recital and his wife [Julie] was so happy she cried [Lisa] and her aunt, [Jamie], went to the bookstore.\nstatement: isRelationOf(lisa, daughter, roger).\ndescription: [Lisa] and [Roger] did the Father daughter dance at the recital and his wife [Julie] was so happy she cried [Lisa] and her aunt, [Jamie], went to the bookstore.\nstatement: isRelationOf(sarah, wife, carlos).\ndescription: She always bought him snacks [Sarah], a female, took her husband who is a male, [Carlos], out for lunch.\nstatement: isRelationOf(julie, daughter, sarah).\ndescription: [Sarah] spent a great day shopping with her daughter, [Julie].\n",
+        "goal": "relation(richard, nephew, roger)",
+        "ground_truth": "True",
+        "current": "False",
+        "method": "io"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "body_text": "[Roger] loved going to the store with his mom [Sarah]. She always bought him snacks [Sarah], a female, took her husband who is a male, [Carlos], out for lunch. [Sarah] and [Carlos] have been married for 35 years. [Sarah] spent a great day shopping with her daughter, [Julie]. [Lisa] and [Roger] did the Father daughter dance at the recital and his wife [Julie] was so happy she cried [Lisa] and her aunt, [Jamie], went to the bookstore. [Lisa] bought some fantasy books, while [Jamie] picked up some mysteries. [Jamie] loves her son [Richard] very much. He loves her, too.",
+        "program": "statement: isRelationOf(richard, son, jamie).\ndescription: [Jamie] loves her son [Richard] very much.\nstatement: isRelationOf(sarah, mother, roger).\ndescription: [Roger] loved going to the store with his mom [Sarah].\nstatement: isRelationOf(carlos, husband, sarah).\ndescription: She always bought him snacks [Sarah], a female, took her husband who is a male, [Carlos], out for lunch.\nstatement: isRelationOf(jamie, aunt, lisa).\ndescription: [Lisa] and [Roger] did the Father daughter dance at the recital and his wife [Julie] was so happy she cried [Lisa] and her aunt, [Jamie], went to the bookstore.\nstatement: isRelationOf(roger, husband, julie).\ndescription: [Lisa] and [Roger] did the Father daughter dance at the recital and his wife [Julie] was so happy she cried [Lisa] and her aunt, [Jamie], went to the bookstore.\nstatement: isRelationOf(lisa, daughter, roger).\ndescription: [Lisa] and [Roger] did the Father daughter dance at the recital and his wife [Julie] was so happy she cried [Lisa] and her aunt, [Jamie], went to the bookstore.\nstatement: isRelationOf(sarah, wife, carlos).\ndescription: She always bought him snacks [Sarah], a female, took her husband who is a male, [Carlos], out for lunch.\nstatement: isRelationOf(julie, daughter, sarah).\ndescription: [Sarah] spent a great day shopping with her daughter, [Julie].\n",
+        "goal": "relation(richard, nephew, roger)",
+        "ground_truth": "True",
+        "current": "False",
+        "method": "io"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "body_text": "[Roger] loved going to the store with his mom [Sarah]. She always bought him snacks [Sarah], a female, took her husband who is a male, [Carlos], out for lunch. [Sarah] and [Carlos] have been married for 35 years. [Sarah] spent a great day shopping with her daughter, [Julie]. [Lisa] and [Roger] did the Father daughter dance at the recital and his wife [Julie] was so happy she cried [Lisa] and her aunt, [Jamie], went to the bookstore. [Lisa] bought some fantasy books, while [Jamie] picked up some mysteries. [Jamie] loves her son [Richard] very much. He loves her, too.",
+        "program": "statement: isRelationOf(richard, son, jamie).\ndescription: [Jamie] loves her son [Richard] very much.\nstatement: isRelationOf(sarah, mother, roger).\ndescription: [Roger] loved going to the store with his mom [Sarah].\nstatement: isRelationOf(carlos, husband, sarah).\ndescription: She always bought him snacks [Sarah], a female, took her husband who is a male, [Carlos], out for lunch.\nstatement: isRelationOf(jamie, aunt, lisa).\ndescription: [Lisa] and [Roger] did the Father daughter dance at the recital and his wife [Julie] was so happy she cried [Lisa] and her aunt, [Jamie], went to the bookstore.\nstatement: isRelationOf(roger, husband, julie).\ndescription: [Lisa] and [Roger] did the Father daughter dance at the recital and his wife [Julie] was so happy she cried [Lisa] and her aunt, [Jamie], went to the bookstore.\nstatement: isRelationOf(lisa, daughter, roger).\ndescription: [Lisa] and [Roger] did the Father daughter dance at the recital and his wife [Julie] was so happy she cried [Lisa] and her aunt, [Jamie], went to the bookstore.\nstatement: isRelationOf(sarah, wife, carlos).\ndescription: She always bought him snacks [Sarah], a female, took her husband who is a male, [Carlos], out for lunch.\nstatement: isRelationOf(julie, daughter, sarah).\ndescription: [Sarah] spent a great day shopping with her daughter, [Julie].\n",
+        "goal": "relation(richard, nephew, roger)",
+        "ground_truth": "True",
+        "current": "False",
+        "method": "io"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 1197,
+    "completion_tokens": 1,
+    "cost": 0.0017975000000000003
+  }
+]

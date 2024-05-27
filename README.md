@@ -28,7 +28,16 @@ The generated logic programs will be saved in `outputs/logic_programs`. You can 
 
 ## Graph of Thoughts Implementation
 
+### FOLIO Dataset
+
 ```bash
-cd ./logical_reasoning
-python logic_solver.py
+cd ./folio_solving
+python folio_solver.py
+```
+
+### CLUTTR Dataset
+
+```bash
+cd ./cluttr_solving
+python cluttr.py
 ```

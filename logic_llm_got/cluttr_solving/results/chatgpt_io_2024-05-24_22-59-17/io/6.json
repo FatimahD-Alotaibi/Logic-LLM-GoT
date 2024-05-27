@@ -1,0 +1,64 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "body_text": "[Gabrielle] and her husband [Jason] wanted a child badly [Jason] bought a new dress for his daughter [Lisa].",
+        "program": "statement: isRelationOf(jason, husband, gabrielle).\ndescription: [Gabrielle] and her husband [Jason] wanted a child badly [Jason] bought a new dress for his daughter [Lisa].\nstatement: isRelationOf(lisa, daughter, jason).\ndescription: [Gabrielle] and her husband [Jason] wanted a child badly [Jason] bought a new dress for his daughter [Lisa].\n",
+        "goal": "relation(lisa, daughter, gabrielle)",
+        "ground_truth": "True",
+        "current": "False",
+        "method": "io"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "body_text": "[Gabrielle] and her husband [Jason] wanted a child badly [Jason] bought a new dress for his daughter [Lisa].",
+        "program": "statement: isRelationOf(jason, husband, gabrielle).\ndescription: [Gabrielle] and her husband [Jason] wanted a child badly [Jason] bought a new dress for his daughter [Lisa].\nstatement: isRelationOf(lisa, daughter, jason).\ndescription: [Gabrielle] and her husband [Jason] wanted a child badly [Jason] bought a new dress for his daughter [Lisa].\n",
+        "goal": "relation(lisa, daughter, gabrielle)",
+        "ground_truth": "True",
+        "current": "False",
+        "method": "io"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "body_text": "[Gabrielle] and her husband [Jason] wanted a child badly [Jason] bought a new dress for his daughter [Lisa].",
+        "program": "statement: isRelationOf(jason, husband, gabrielle).\ndescription: [Gabrielle] and her husband [Jason] wanted a child badly [Jason] bought a new dress for his daughter [Lisa].\nstatement: isRelationOf(lisa, daughter, jason).\ndescription: [Gabrielle] and her husband [Jason] wanted a child badly [Jason] bought a new dress for his daughter [Lisa].\n",
+        "goal": "relation(lisa, daughter, gabrielle)",
+        "ground_truth": "True",
+        "current": "False",
+        "method": "io"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 817,
+    "completion_tokens": 1,
+    "cost": 0.0012275
+  }
+]

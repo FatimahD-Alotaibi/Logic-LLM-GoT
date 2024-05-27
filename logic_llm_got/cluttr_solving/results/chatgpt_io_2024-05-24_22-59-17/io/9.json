@@ -1,0 +1,64 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "body_text": "[Peter] and his brother [Michael] went shopping at an electronics store. [Peter] found the perfect pair of headphones for his brother [Mark]'s birthday. [Martha] made mixed drinks for her son [Michael]. [Martha]'s daughter [Brandi] was jealous because she was n't offered one. [Spencer] took his son [Michael] and daughter [Brandi] to the zoo on Saturday and they had a great time. [Carmelita] was excited because she got to go to the zoo with her grandson [Michael].",
+        "program": "statement: isRelationOf(spencer, father, brandi).\ndescription: [Spencer] took his son [Michael] and daughter [Brandi] to the zoo on Saturday and they had a great time.\nstatement: isRelationOf(peter, brother, mark).\ndescription: [Peter] found the perfect pair of headphones for his brother [Mark]'s birthday.\nstatement: isRelationOf(michael, brother, peter).\ndescription: [Peter] and his brother [Michael] went shopping at an electronics store.\nstatement: isRelationOf(martha, mother, michael).\ndescription: [Martha] made mixed drinks for her son [Michael].\nstatement: isRelationOf(brandi, daughter, martha).\ndescription: [Martha]'s daughter [Brandi] was jealous because she was n't offered one.\nstatement: isRelationOf(michael, son, spencer).\ndescription: [Spencer] took his son [Michael] and daughter [Brandi] to the zoo on Saturday and they had a great time.\nstatement: isRelationOf(carmelita, grandmother, michael).\ndescription: [Carmelita] was excited because she got to go to the zoo with her grandson [Michael].\n",
+        "goal": "relation(carmelita, son, mark)",
+        "ground_truth": "False",
+        "current": "False",
+        "method": "io"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "body_text": "[Peter] and his brother [Michael] went shopping at an electronics store. [Peter] found the perfect pair of headphones for his brother [Mark]'s birthday. [Martha] made mixed drinks for her son [Michael]. [Martha]'s daughter [Brandi] was jealous because she was n't offered one. [Spencer] took his son [Michael] and daughter [Brandi] to the zoo on Saturday and they had a great time. [Carmelita] was excited because she got to go to the zoo with her grandson [Michael].",
+        "program": "statement: isRelationOf(spencer, father, brandi).\ndescription: [Spencer] took his son [Michael] and daughter [Brandi] to the zoo on Saturday and they had a great time.\nstatement: isRelationOf(peter, brother, mark).\ndescription: [Peter] found the perfect pair of headphones for his brother [Mark]'s birthday.\nstatement: isRelationOf(michael, brother, peter).\ndescription: [Peter] and his brother [Michael] went shopping at an electronics store.\nstatement: isRelationOf(martha, mother, michael).\ndescription: [Martha] made mixed drinks for her son [Michael].\nstatement: isRelationOf(brandi, daughter, martha).\ndescription: [Martha]'s daughter [Brandi] was jealous because she was n't offered one.\nstatement: isRelationOf(michael, son, spencer).\ndescription: [Spencer] took his son [Michael] and daughter [Brandi] to the zoo on Saturday and they had a great time.\nstatement: isRelationOf(carmelita, grandmother, michael).\ndescription: [Carmelita] was excited because she got to go to the zoo with her grandson [Michael].\n",
+        "goal": "relation(carmelita, son, mark)",
+        "ground_truth": "False",
+        "current": "False",
+        "method": "io"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "body_text": "[Peter] and his brother [Michael] went shopping at an electronics store. [Peter] found the perfect pair of headphones for his brother [Mark]'s birthday. [Martha] made mixed drinks for her son [Michael]. [Martha]'s daughter [Brandi] was jealous because she was n't offered one. [Spencer] took his son [Michael] and daughter [Brandi] to the zoo on Saturday and they had a great time. [Carmelita] was excited because she got to go to the zoo with her grandson [Michael].",
+        "program": "statement: isRelationOf(spencer, father, brandi).\ndescription: [Spencer] took his son [Michael] and daughter [Brandi] to the zoo on Saturday and they had a great time.\nstatement: isRelationOf(peter, brother, mark).\ndescription: [Peter] found the perfect pair of headphones for his brother [Mark]'s birthday.\nstatement: isRelationOf(michael, brother, peter).\ndescription: [Peter] and his brother [Michael] went shopping at an electronics store.\nstatement: isRelationOf(martha, mother, michael).\ndescription: [Martha] made mixed drinks for her son [Michael].\nstatement: isRelationOf(brandi, daughter, martha).\ndescription: [Martha]'s daughter [Brandi] was jealous because she was n't offered one.\nstatement: isRelationOf(michael, son, spencer).\ndescription: [Spencer] took his son [Michael] and daughter [Brandi] to the zoo on Saturday and they had a great time.\nstatement: isRelationOf(carmelita, grandmother, michael).\ndescription: [Carmelita] was excited because she got to go to the zoo with her grandson [Michael].\n",
+        "goal": "relation(carmelita, son, mark)",
+        "ground_truth": "False",
+        "current": "False",
+        "method": "io"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1069,
+    "completion_tokens": 1,
+    "cost": 0.0016055
+  }
+]

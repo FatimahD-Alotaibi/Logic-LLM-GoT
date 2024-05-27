@@ -1,0 +1,64 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "body_text": "[Evelyn] 'daughter [Nichole] visited for Christmas. [Nichole]'s brother [Darren] was out of town for the holidays. [Darren] took his grandmother [Laura] a basket of strawberries. [Stephanie] went with her mother [Ruth] to pick out a gift for [Ruth]'s mother, [Laura].",
+        "program": "statement: isRelationOf(stephanie, daughter, ruth).\ndescription: [Stephanie] went with her mother [Ruth] to pick out a gift for [Ruth]'s mother, [Laura].\nstatement: isRelationOf(ruth, daughter, laura).\ndescription: [Stephanie] went with her mother [Ruth] to pick out a gift for [Ruth]'s mother, [Laura].\nstatement: isRelationOf(laura, grandmother, darren).\ndescription: [Darren] took his grandmother [Laura] a basket of strawberries.\nstatement: isRelationOf(nichole, daughter, evelyn).\ndescription: [Evelyn] 'daughter [Nichole] visited for Christmas.\nstatement: isRelationOf(darren, brother, nichole).\ndescription: [Nichole]'s brother [Darren] was out of town for the holidays.\n",
+        "goal": "relation(stephanie, niece, evelyn)",
+        "ground_truth": "True",
+        "current": "True",
+        "method": "io"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "body_text": "[Evelyn] 'daughter [Nichole] visited for Christmas. [Nichole]'s brother [Darren] was out of town for the holidays. [Darren] took his grandmother [Laura] a basket of strawberries. [Stephanie] went with her mother [Ruth] to pick out a gift for [Ruth]'s mother, [Laura].",
+        "program": "statement: isRelationOf(stephanie, daughter, ruth).\ndescription: [Stephanie] went with her mother [Ruth] to pick out a gift for [Ruth]'s mother, [Laura].\nstatement: isRelationOf(ruth, daughter, laura).\ndescription: [Stephanie] went with her mother [Ruth] to pick out a gift for [Ruth]'s mother, [Laura].\nstatement: isRelationOf(laura, grandmother, darren).\ndescription: [Darren] took his grandmother [Laura] a basket of strawberries.\nstatement: isRelationOf(nichole, daughter, evelyn).\ndescription: [Evelyn] 'daughter [Nichole] visited for Christmas.\nstatement: isRelationOf(darren, brother, nichole).\ndescription: [Nichole]'s brother [Darren] was out of town for the holidays.\n",
+        "goal": "relation(stephanie, niece, evelyn)",
+        "ground_truth": "True",
+        "current": "True",
+        "method": "io"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "body_text": "[Evelyn] 'daughter [Nichole] visited for Christmas. [Nichole]'s brother [Darren] was out of town for the holidays. [Darren] took his grandmother [Laura] a basket of strawberries. [Stephanie] went with her mother [Ruth] to pick out a gift for [Ruth]'s mother, [Laura].",
+        "program": "statement: isRelationOf(stephanie, daughter, ruth).\ndescription: [Stephanie] went with her mother [Ruth] to pick out a gift for [Ruth]'s mother, [Laura].\nstatement: isRelationOf(ruth, daughter, laura).\ndescription: [Stephanie] went with her mother [Ruth] to pick out a gift for [Ruth]'s mother, [Laura].\nstatement: isRelationOf(laura, grandmother, darren).\ndescription: [Darren] took his grandmother [Laura] a basket of strawberries.\nstatement: isRelationOf(nichole, daughter, evelyn).\ndescription: [Evelyn] 'daughter [Nichole] visited for Christmas.\nstatement: isRelationOf(darren, brother, nichole).\ndescription: [Nichole]'s brother [Darren] was out of town for the holidays.\n",
+        "goal": "relation(stephanie, niece, evelyn)",
+        "ground_truth": "True",
+        "current": "True",
+        "method": "io"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 963,
+    "completion_tokens": 1,
+    "cost": 0.0014465
+  }
+]

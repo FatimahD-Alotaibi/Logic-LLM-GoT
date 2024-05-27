@@ -1,0 +1,64 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "body_text": "[William] drove his daughter [Christina] to soccer practice. [Christine] and her sisters [Connie] went to the spa. [Christina], another sister of [Christine], had to babysit and could n't join them. [Timothy] and his sister, [Connie] love it when their grandmother visits because she spoils them. She is coming this week to watch them while their parents are out of town.",
+        "program": "statement: isRelationOf(christina, daughter, william).\ndescription: [William] drove his daughter [Christina] to soccer practice.\nstatement: isRelationOf(christine, sister, christina).\ndescription: [Christina], another sister of [Christine], had to babysit and could n't join them.\nstatement: isRelationOf(connie, sister, christine).\ndescription: [Christine] and her sisters [Connie] went to the spa.\nstatement: isRelationOf(timothy, brother, connie).\ndescription: [Timothy] and his sister, [Connie] love it when their grandmother visits because she spoils them.\n",
+        "goal": "relation(timothy, mother_in_law, william)",
+        "ground_truth": "False",
+        "current": "False",
+        "method": "io"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "body_text": "[William] drove his daughter [Christina] to soccer practice. [Christine] and her sisters [Connie] went to the spa. [Christina], another sister of [Christine], had to babysit and could n't join them. [Timothy] and his sister, [Connie] love it when their grandmother visits because she spoils them. She is coming this week to watch them while their parents are out of town.",
+        "program": "statement: isRelationOf(christina, daughter, william).\ndescription: [William] drove his daughter [Christina] to soccer practice.\nstatement: isRelationOf(christine, sister, christina).\ndescription: [Christina], another sister of [Christine], had to babysit and could n't join them.\nstatement: isRelationOf(connie, sister, christine).\ndescription: [Christine] and her sisters [Connie] went to the spa.\nstatement: isRelationOf(timothy, brother, connie).\ndescription: [Timothy] and his sister, [Connie] love it when their grandmother visits because she spoils them.\n",
+        "goal": "relation(timothy, mother_in_law, william)",
+        "ground_truth": "False",
+        "current": "False",
+        "method": "io"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "body_text": "[William] drove his daughter [Christina] to soccer practice. [Christine] and her sisters [Connie] went to the spa. [Christina], another sister of [Christine], had to babysit and could n't join them. [Timothy] and his sister, [Connie] love it when their grandmother visits because she spoils them. She is coming this week to watch them while their parents are out of town.",
+        "program": "statement: isRelationOf(christina, daughter, william).\ndescription: [William] drove his daughter [Christina] to soccer practice.\nstatement: isRelationOf(christine, sister, christina).\ndescription: [Christina], another sister of [Christine], had to babysit and could n't join them.\nstatement: isRelationOf(connie, sister, christine).\ndescription: [Christine] and her sisters [Connie] went to the spa.\nstatement: isRelationOf(timothy, brother, connie).\ndescription: [Timothy] and his sister, [Connie] love it when their grandmother visits because she spoils them.\n",
+        "goal": "relation(timothy, mother_in_law, william)",
+        "ground_truth": "False",
+        "current": "False",
+        "method": "io"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 935,
+    "completion_tokens": 1,
+    "cost": 0.0014045000000000001
+  }
+]

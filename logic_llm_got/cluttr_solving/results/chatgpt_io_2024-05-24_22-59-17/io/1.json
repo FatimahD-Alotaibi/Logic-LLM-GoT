@@ -1,0 +1,64 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "body_text": "[Ruth] wanted to play basketball with her brother [Stephen]. [Stephen] asked his mom, [Laura] if they could go outside. [Ruth] went to her father [Seth] Birthday party [Seth] and his daughter [Rosa] made a pizza. [Rosa]'s daughter [Margaret] really enjoyed the pizza.",
+        "program": "statement: isRelationOf(margaret, daughter, rosa).\ndescription: [Rosa]'s daughter [Margaret] really enjoyed the pizza.\nstatement: isRelationOf(stephen, son, laura).\ndescription: [Stephen] asked his mom, [Laura] if they could go outside.\nstatement: isRelationOf(ruth, sister, stephen).\ndescription: [Ruth] wanted to play basketball with her brother [Stephen].\nstatement: isRelationOf(seth, father, ruth).\ndescription: [Ruth] went to her father [Seth] Birthday party [Seth] and his daughter [Rosa] made a pizza.\nstatement: isRelationOf(rosa, daughter, seth).\ndescription: [Ruth] went to her father [Seth] Birthday party [Seth] and his daughter [Rosa] made a pizza.\n",
+        "goal": "relation(margaret, son_in_law, laura)",
+        "ground_truth": "False",
+        "current": "False",
+        "method": "io"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "body_text": "[Ruth] wanted to play basketball with her brother [Stephen]. [Stephen] asked his mom, [Laura] if they could go outside. [Ruth] went to her father [Seth] Birthday party [Seth] and his daughter [Rosa] made a pizza. [Rosa]'s daughter [Margaret] really enjoyed the pizza.",
+        "program": "statement: isRelationOf(margaret, daughter, rosa).\ndescription: [Rosa]'s daughter [Margaret] really enjoyed the pizza.\nstatement: isRelationOf(stephen, son, laura).\ndescription: [Stephen] asked his mom, [Laura] if they could go outside.\nstatement: isRelationOf(ruth, sister, stephen).\ndescription: [Ruth] wanted to play basketball with her brother [Stephen].\nstatement: isRelationOf(seth, father, ruth).\ndescription: [Ruth] went to her father [Seth] Birthday party [Seth] and his daughter [Rosa] made a pizza.\nstatement: isRelationOf(rosa, daughter, seth).\ndescription: [Ruth] went to her father [Seth] Birthday party [Seth] and his daughter [Rosa] made a pizza.\n",
+        "goal": "relation(margaret, son_in_law, laura)",
+        "ground_truth": "False",
+        "current": "False",
+        "method": "io"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "body_text": "[Ruth] wanted to play basketball with her brother [Stephen]. [Stephen] asked his mom, [Laura] if they could go outside. [Ruth] went to her father [Seth] Birthday party [Seth] and his daughter [Rosa] made a pizza. [Rosa]'s daughter [Margaret] really enjoyed the pizza.",
+        "program": "statement: isRelationOf(margaret, daughter, rosa).\ndescription: [Rosa]'s daughter [Margaret] really enjoyed the pizza.\nstatement: isRelationOf(stephen, son, laura).\ndescription: [Stephen] asked his mom, [Laura] if they could go outside.\nstatement: isRelationOf(ruth, sister, stephen).\ndescription: [Ruth] wanted to play basketball with her brother [Stephen].\nstatement: isRelationOf(seth, father, ruth).\ndescription: [Ruth] went to her father [Seth] Birthday party [Seth] and his daughter [Rosa] made a pizza.\nstatement: isRelationOf(rosa, daughter, seth).\ndescription: [Ruth] went to her father [Seth] Birthday party [Seth] and his daughter [Rosa] made a pizza.\n",
+        "goal": "relation(margaret, son_in_law, laura)",
+        "ground_truth": "False",
+        "current": "False",
+        "method": "io"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      1.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 956,
+    "completion_tokens": 1,
+    "cost": 0.001436
+  }
+]

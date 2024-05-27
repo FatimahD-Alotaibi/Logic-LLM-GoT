@@ -1,0 +1,64 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "False",
+        "method": "io"
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "False",
+        "method": "io"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "False",
+        "method": "io"
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.0
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      false
+    ]
+  },
+  {
+    "prompt_tokens": 903,
+    "completion_tokens": 1,
+    "cost": 0.0013565
+  }
+]
