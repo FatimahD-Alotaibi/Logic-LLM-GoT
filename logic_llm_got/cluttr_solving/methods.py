@@ -56,23 +56,22 @@ def got() -> operations.GraphOfOperations:
     """
 
     operations_graph = operations.GraphOfOperations()
+    sub_texts = operations.Generate(1, 1)
+    operations_graph.append_operation(sub_texts) # generate the sub problems
 
-    operations_graph.append_operation(operations.Generate(1, 5))
-    operations_graph.append_operation(operations.Score(1, False, utils.answer_score))
-    keep_best = operations.KeepBestN(1, True) # Keep true because high scores are better
-    operations_graph.append_operation(keep_best)
-    operations_graph.append_operation(operations.Score(1, False, utils.answer_score))
-    keep_best_2 = operations.KeepBestN(1, True)
-    keep_best_2.add_predecessor(keep_best)
-    operations_graph.append_operation(keep_best_2)
-    operations_graph.append_operation(operations.Generate(1, 10))
-    operations_graph.append_operation(operations.Score(1, False, utils.answer_score))
-    keep_best_3 = operations.KeepBestN(1, True)
-    keep_best_3.add_predecessor(keep_best_2)
-    operations_graph.append_operation(keep_best_3)
-
-
-    operations_graph.append_operation(operations.GroundTruth(utils.test_response))
+    sub_problems = []
+    for i in range(1, 9):
+        fact_id = f"Initial Fact {i}"
+        sub_text = operations.Selector(
+            lambda thoughts, list_id=fact_id: [
+                thought for thought in thoughts if thought.state["part"] == list_id
+            ]
+        )
+        sub_text.add_predecessor(sub_texts)
+        operations_graph.add_operation(sub_text)
+        rules_sub_text = operations.Generate(1, 10)
+        rules_sub_text.add_predecessor(sub_text)
+        operations_graph.add_operation(rules_sub_text)
 
     return operations_graph
 

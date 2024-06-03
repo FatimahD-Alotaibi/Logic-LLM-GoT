@@ -1,0 +1,652 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 1,
+        "method": "got",
+        "sub_text": "isRelationOf(melba, daughter, april) ::: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "part": "Initial Fact 1"
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 1,
+        "method": "got",
+        "sub_text": "isRelationOf(april, aunt, kelley) ::: [Kelley] watched a golf tournament with her aunt [April].",
+        "part": "Initial Fact 2"
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 1,
+        "method": "got",
+        "sub_text": "isRelationOf(mary, daughter, jenny) ::: [Jenny] spent a great day shopping with her daughter, [Mary].",
+        "part": "Initial Fact 3"
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 1,
+        "method": "got",
+        "sub_text": "isRelationOf(kelley, sister, mary) ::: [Kelley] took her sister, [Mary], out to dinner for her birthday.",
+        "part": "Initial Fact 4"
+      }
+    ]
+  },
+  {
+    "operation": "selector",
+    "thoughts": [
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 1,
+        "method": "got",
+        "sub_text": "isRelationOf(melba, daughter, april) ::: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "part": "Initial Fact 1"
+      }
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(melba, daughter, april) ::: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "part": "Initial Fact 1",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B.\nrelation(A, daughter, B) :- isRelationOf(A, daughter, C), relation(C, (husband;wife), B), B != A ::: If A is the daughter of C, and C can be inferred as the husband or the wife of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(melba, daughter, april) ::: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "part": "Initial Fact 1",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, daughter, C), relation(C, (husband;wife), B), B != A ::: If A is the daughter of C, and C can be inferred as the husband or the wife of B, then A can be inferred as the daughter of B.\nrelation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(melba, daughter, april) ::: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "part": "Initial Fact 1",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(melba, daughter, april) ::: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "part": "Initial Fact 1",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B.\nrelation(A, daughter, B) :- isRelationOf(A, daughter, C), relation(C, (husband;wife), B), B != A ::: If A is the daughter of C, and C can be inferred as the husband or the wife of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(melba, daughter, april) ::: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "part": "Initial Fact 1",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(melba, daughter, april) ::: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "part": "Initial Fact 1",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(melba, daughter, april) ::: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "part": "Initial Fact 1",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, daughter, C), relation(C, (husband;wife), B), B != A ::: If A is the daughter of C, and C can be inferred as the husband or the wife of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(melba, daughter, april) ::: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "part": "Initial Fact 1",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(melba, daughter, april) ::: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "part": "Initial Fact 1",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B.\nrelation(A, daughter, B) :- isRelationOf(A, daughter, C), relation(C, (husband;wife), B), B != A ::: If A is the daughter of C, and C can be inferred as the husband or the wife of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(melba, daughter, april) ::: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "part": "Initial Fact 1",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B."
+      }
+    ]
+  },
+  {
+    "operation": "selector",
+    "thoughts": [
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 1,
+        "method": "got",
+        "sub_text": "isRelationOf(april, aunt, kelley) ::: [Kelley] watched a golf tournament with her aunt [April].",
+        "part": "Initial Fact 2"
+      }
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(april, aunt, kelley) ::: [Kelley] watched a golf tournament with her aunt [April].",
+        "part": "Initial Fact 2",
+        "rule(s)": "relation(A, sister, B) :- isRelationOf(A, aunt, C), relation(C, (son;daughter), B), B != A ::: If A is the aunt of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the sister of B.\nrelation(A, sister, B) :- isRelationOf(A, daughter, C), relation(C, (father;mother), B), B != A ::: If A is the daughter of C, and C can be inferred as the father or the mother of B, then A can be inferred as the sister of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(april, aunt, kelley) ::: [Kelley] watched a golf tournament with her aunt [April].",
+        "part": "Initial Fact 2",
+        "rule(s)": "relation(A, aunt, B) :- isRelationOf(A, (sister;sister_in_law), C), relation(C, (father;mother), B), B != A ::: If A is the sister or the sister-in-law of C, and C can be inferred as the father or the mother of B, then A can be inferred as the aunt of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(april, aunt, kelley) ::: [Kelley] watched a golf tournament with her aunt [April].",
+        "part": "Initial Fact 2",
+        "rule(s)": "relation(A, sister, B) :- isRelationOf(A, sister, C), relation(C, (brother;sister), B), B != A ::: If A is the sister of C, and C can be inferred as the brother or the sister of B, then A can be inferred as the sister of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(april, aunt, kelley) ::: [Kelley] watched a golf tournament with her aunt [April].",
+        "part": "Initial Fact 2",
+        "rule(s)": "relation(A, aunt, B) :- isRelationOf(A, (sister;sister_in_law), C), relation(C, (father;mother), B), B != A ::: If A is the sister or the sister-in-law of C, and C can be inferred as the father or the mother of B, then A can be inferred as the aunt of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(april, aunt, kelley) ::: [Kelley] watched a golf tournament with her aunt [April].",
+        "part": "Initial Fact 2",
+        "rule(s)": "relation(A, aunt, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the aunt of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(april, aunt, kelley) ::: [Kelley] watched a golf tournament with her aunt [April].",
+        "part": "Initial Fact 2",
+        "rule(s)": "relation(A, aunt, B) :- isRelationOf(A, (sister;sister_in_law), C), relation(C, (father;mother), B), B != A ::: If A is the sister or the sister-in-law of C, and C can be inferred as the father or the mother of B, then A can be inferred as the aunt of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(april, aunt, kelley) ::: [Kelley] watched a golf tournament with her aunt [April].",
+        "part": "Initial Fact 2",
+        "rule(s)": "relation(A, sister, B) :- isRelationOf(A, sister, C), relation(C, (brother;sister), B), B != A ::: If A is the sister of C, and C can be inferred as the brother or the sister of B, then A can be inferred as the sister of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(april, aunt, kelley) ::: [Kelley] watched a golf tournament with her aunt [April].",
+        "part": "Initial Fact 2",
+        "rule(s)": "relation(A, aunt, B) :- isRelationOf(A, (sister;sister_in_law), C), relation(C, (father;mother), B), B != A ::: If A is the sister or the sister-in-law of C, and C can be inferred as the father or the mother of B, then A can be inferred as the aunt of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(april, aunt, kelley) ::: [Kelley] watched a golf tournament with her aunt [April].",
+        "part": "Initial Fact 2",
+        "rule(s)": "relation(A, aunt, B) :- isRelationOf(A, (sister;sister_in_law), C), relation(C, (father;mother), B), B != A ::: If A is the sister or the sister-in-law of C, and C can be inferred as the father or the mother of B, then A can be inferred as the aunt of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(april, aunt, kelley) ::: [Kelley] watched a golf tournament with her aunt [April].",
+        "part": "Initial Fact 2",
+        "rule(s)": "relation(A, aunt, B) :- isRelationOf(A, (sister;sister_in_law), C), relation(C, (father;mother), B), B != A ::: If A is the sister or the sister-in-law of C, and C can be inferred as the father or the mother of B, then A can be inferred as the aunt of B."
+      }
+    ]
+  },
+  {
+    "operation": "selector",
+    "thoughts": [
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 1,
+        "method": "got",
+        "sub_text": "isRelationOf(mary, daughter, jenny) ::: [Jenny] spent a great day shopping with her daughter, [Mary].",
+        "part": "Initial Fact 3"
+      }
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(mary, daughter, jenny) ::: [Jenny] spent a great day shopping with her daughter, [Mary].",
+        "part": "Initial Fact 3",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(mary, daughter, jenny) ::: [Jenny] spent a great day shopping with her daughter, [Mary].",
+        "part": "Initial Fact 3",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(mary, daughter, jenny) ::: [Jenny] spent a great day shopping with her daughter, [Mary].",
+        "part": "Initial Fact 3",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(mary, daughter, jenny) ::: [Jenny] spent a great day shopping with her daughter, [Mary].",
+        "part": "Initial Fact 3",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(mary, daughter, jenny) ::: [Jenny] spent a great day shopping with her daughter, [Mary].",
+        "part": "Initial Fact 3",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(mary, daughter, jenny) ::: [Jenny] spent a great day shopping with her daughter, [Mary].",
+        "part": "Initial Fact 3",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(mary, daughter, jenny) ::: [Jenny] spent a great day shopping with her daughter, [Mary].",
+        "part": "Initial Fact 3",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(mary, daughter, jenny) ::: [Jenny] spent a great day shopping with her daughter, [Mary].",
+        "part": "Initial Fact 3",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(mary, daughter, jenny) ::: [Jenny] spent a great day shopping with her daughter, [Mary].",
+        "part": "Initial Fact 3",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(mary, daughter, jenny) ::: [Jenny] spent a great day shopping with her daughter, [Mary].",
+        "part": "Initial Fact 3",
+        "rule(s)": "relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B."
+      }
+    ]
+  },
+  {
+    "operation": "selector",
+    "thoughts": [
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 1,
+        "method": "got",
+        "sub_text": "isRelationOf(kelley, sister, mary) ::: [Kelley] took her sister, [Mary], out to dinner for her birthday.",
+        "part": "Initial Fact 4"
+      }
+    ]
+  },
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(kelley, sister, mary) ::: [Kelley] took her sister, [Mary], out to dinner for her birthday.",
+        "part": "Initial Fact 4",
+        "rule(s)": "relation(A, sister, B) :- isRelationOf(A, sister, C), relation(C, (brother;sister), B), B != A ::: If A is the sister of C, and C can be inferred as the brother or the sister of B, then A can be inferred as the sister of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(kelley, sister, mary) ::: [Kelley] took her sister, [Mary], out to dinner for her birthday.",
+        "part": "Initial Fact 4",
+        "rule(s)": "relation(A, sister, B) :- isRelationOf(A, aunt, C), relation(C, (son;daughter), B), B != A ::: If A is the aunt of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the sister of B.\nrelation(A, sister, B) :- isRelationOf(A, daughter, C), relation(C, (father;mother), B), B != A ::: If A is the daughter of C, and C can be inferred as the father or the mother of B, then A can be inferred as the sister of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(kelley, sister, mary) ::: [Kelley] took her sister, [Mary], out to dinner for her birthday.",
+        "part": "Initial Fact 4",
+        "rule(s)": "relation(A, sister, B) :- isRelationOf(A, sister, C), relation(C, (brother;sister), B), B != A ::: If A is the sister of C, and C can be inferred as the brother or the sister of B, then A can be inferred as the sister of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(kelley, sister, mary) ::: [Kelley] took her sister, [Mary], out to dinner for her birthday.",
+        "part": "Initial Fact 4",
+        "rule(s)": "relation(A, sister, B) :- isRelationOf(A, aunt, C), relation(C, (son;daughter), B), B != A ::: If A is the aunt of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the sister of B.\nrelation(A, sister, B) :- isRelationOf(A, daughter, C), relation(C, (father;mother), B), B != A ::: If A is the daughter of C, and C can be inferred as the father or the mother of B, then A can be inferred as the sister of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(kelley, sister, mary) ::: [Kelley] took her sister, [Mary], out to dinner for her birthday.",
+        "part": "Initial Fact 4",
+        "rule(s)": "relation(A, sister, B) :- isRelationOf(A, sister, C), relation(C, (brother;sister), B), B != A ::: If A is the sister of C, and C can be inferred as the brother or the sister of B, then A can be inferred as the sister of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(kelley, sister, mary) ::: [Kelley] took her sister, [Mary], out to dinner for her birthday.",
+        "part": "Initial Fact 4",
+        "rule(s)": "relation(A, sister, B) :- isRelationOf(A, sister, C), relation(C, (brother;sister), B), B != A ::: If A is the sister of C, and C can be inferred as the brother or the sister of B, then A can be inferred as the sister of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(kelley, sister, mary) ::: [Kelley] took her sister, [Mary], out to dinner for her birthday.",
+        "part": "Initial Fact 4",
+        "rule(s)": "relation(A, sister, B) :- isRelationOf(A, daughter, C), relation(C, (father;mother), B), B != A ::: If A is the daughter of C, and C can be inferred as the father or the mother of B, then A can be inferred as the sister of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(kelley, sister, mary) ::: [Kelley] took her sister, [Mary], out to dinner for her birthday.",
+        "part": "Initial Fact 4",
+        "rule(s)": "relation(A, sister, B) :- isRelationOf(A, aunt, C), relation(C, (son;daughter), B), B != A ::: If A is the aunt of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the sister of B.\nrelation(A, sister, B) :- isRelationOf(A, daughter, C), relation(C, (father;mother), B), B != A ::: If A is the daughter of C, and C can be inferred as the father or the mother of B, then A can be inferred as the sister of B.\nrelation(A, sister, B) :- isRelationOf(A, sister, C), relation(C, (brother;sister), B), B != A ::: If A is the sister of C, and C can be inferred as the brother or the sister of B, then A can be inferred as the sister of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(kelley, sister, mary) ::: [Kelley] took her sister, [Mary], out to dinner for her birthday.",
+        "part": "Initial Fact 4",
+        "rule(s)": "relation(A, sister, B) :- isRelationOf(A, sister, C), relation(C, (brother;sister), B), B != A ::: If A is the sister of C, and C can be inferred as the brother or the sister of B, then A can be inferred as the sister of B."
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 2,
+        "method": "got",
+        "sub_text": "isRelationOf(kelley, sister, mary) ::: [Kelley] took her sister, [Mary], out to dinner for her birthday.",
+        "part": "Initial Fact 4",
+        "rule(s)": "relation(A, sister, B) :- isRelationOf(A, sister, C), relation(C, (brother;sister), B), B != A ::: If A is the sister of C, and C can be inferred as the brother or the sister of B, then A can be inferred as the sister of B."
+      }
+    ]
+  },
+  {
+    "operation": "selector",
+    "thoughts": []
+  },
+  {
+    "operation": "generate",
+    "thoughts": []
+  },
+  {
+    "operation": "selector",
+    "thoughts": []
+  },
+  {
+    "operation": "generate",
+    "thoughts": []
+  },
+  {
+    "operation": "selector",
+    "thoughts": []
+  },
+  {
+    "operation": "generate",
+    "thoughts": []
+  },
+  {
+    "operation": "selector",
+    "thoughts": []
+  },
+  {
+    "operation": "generate",
+    "thoughts": []
+  },
+  {
+    "prompt_tokens": 11717,
+    "completion_tokens": 3377,
+    "cost": 0.0243295
+  }
+]

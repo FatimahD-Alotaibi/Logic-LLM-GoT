@@ -1,0 +1,136 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 1,
+        "method": "got",
+        "sub_text": "isRelationOf(melba, daughter, april) ::: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "part": "Initial Fact 1"
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 1,
+        "method": "got",
+        "sub_text": "isRelationOf(april, aunt, kelley) ::: [Kelley] watched a golf tournament with her aunt [April].",
+        "part": "Initial Fact 2"
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 1,
+        "method": "got",
+        "sub_text": "isRelationOf(mary, daughter, jenny) ::: [Jenny] spent a great day shopping with her daughter, [Mary].",
+        "part": "Initial Fact 3"
+      },
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 1,
+        "method": "got",
+        "sub_text": "isRelationOf(kelley, sister, mary) ::: [Kelley] took her sister, [Mary], out to dinner for her birthday.",
+        "part": "Initial Fact 4"
+      }
+    ]
+  },
+  {
+    "operation": "selector",
+    "thoughts": [
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 1,
+        "method": "got",
+        "sub_text": "isRelationOf(melba, daughter, april) ::: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "part": "Initial Fact 1"
+      }
+    ]
+  },
+  {
+    "operation": "selector",
+    "thoughts": [
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 1,
+        "method": "got",
+        "sub_text": "isRelationOf(april, aunt, kelley) ::: [Kelley] watched a golf tournament with her aunt [April].",
+        "part": "Initial Fact 2"
+      }
+    ]
+  },
+  {
+    "operation": "selector",
+    "thoughts": [
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 1,
+        "method": "got",
+        "sub_text": "isRelationOf(mary, daughter, jenny) ::: [Jenny] spent a great day shopping with her daughter, [Mary].",
+        "part": "Initial Fact 3"
+      }
+    ]
+  },
+  {
+    "operation": "selector",
+    "thoughts": [
+      {
+        "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+        "program": "statement: isRelationOf(melba, daughter, april).\ndescription: [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.\nstatement: isRelationOf(april, aunt, kelley).\ndescription: [Kelley] watched a golf tournament with her aunt [April].\nstatement: isRelationOf(mary, daughter, jenny).\ndescription: [Jenny] spent a great day shopping with her daughter, [Mary].\nstatement: isRelationOf(kelley, sister, mary).\ndescription: [Kelley] took her sister, [Mary], out to dinner for her birthday.\n",
+        "goal": "relation(melba, niece, jenny)",
+        "ground_truth": "True",
+        "current": "",
+        "phase": 1,
+        "method": "got",
+        "sub_text": "isRelationOf(kelley, sister, mary) ::: [Kelley] took her sister, [Mary], out to dinner for her birthday.",
+        "part": "Initial Fact 4"
+      }
+    ]
+  },
+  {
+    "operation": "selector",
+    "thoughts": []
+  },
+  {
+    "operation": "selector",
+    "thoughts": []
+  },
+  {
+    "operation": "selector",
+    "thoughts": []
+  },
+  {
+    "operation": "selector",
+    "thoughts": []
+  },
+  {
+    "prompt_tokens": 462,
+    "completion_tokens": 155,
+    "cost": 0.001003
+  }
+]

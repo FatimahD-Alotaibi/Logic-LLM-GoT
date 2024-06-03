@@ -11,5 +11,4 @@ from .operations import (
     Selector,
     GroundTruth,
     Improve,
-    ForwardChaining,
 )

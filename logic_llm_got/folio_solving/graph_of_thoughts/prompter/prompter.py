@@ -31,19 +31,6 @@ class Prompter(ABC):
         pass
 
     @abstractmethod
-    def forward_chaining_prompt(self, state_dicts: List[Dict], **kwargs) -> str:
-        """
-        Generate a forward chaining prompt for the language model.
-
-        :param state_dicts: The thought states that should be forward chained.
-        :type state_dicts: List[Dict]
-        :param kwargs: Additional keyword arguments.
-        :return: The forward chain prompt.
-        :rtype: str
-        """
-        pass
-
-    @abstractmethod
     def improve_prompt(self, **kwargs) -> str:
         """
         Generate an improve prompt for the language model.

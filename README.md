@@ -41,3 +41,11 @@ python folio_solver.py
 cd ./cluttr_solving
 python cluttr.py
 ```
+
+# Graph of Logic
+
+<p align="center">
+  <img src="Example_GraphOfLogic.png">
+</p>
+
+This diagram gives a brief overview of the GoT implementation using Forward Chaining. The process starts out with assigning the known (initial) facts and passing them through a set of rules to derive new facts. The inferred facts are then evaluated using **Resolution Refutation**.

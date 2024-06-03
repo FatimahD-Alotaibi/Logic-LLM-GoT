@@ -1,6 +1,9 @@
 from typing import Dict, List, Union
 from graph_of_thoughts import parser
 import re
+import json
+import logging
+from statistics import fmean
 
 class LogicalReasoningParser(parser.Parser):
     """
@@ -16,6 +19,12 @@ class LogicalReasoningParser(parser.Parser):
         """
         self.cache = {}
 
+    def extract_premises_content(self, text: str) -> str:
+        match = re.search(r"Premises:\n(.*?)(?:\nConclusion:|\Z)", text, re.DOTALL)
+        if match:
+            return match.group(1).strip()
+        return ""
+
     def extract_only_letter_character(self, text: str) -> str:
         """
         Helper function designed to extract letter character from the LLM response.
@@ -30,6 +39,95 @@ class LogicalReasoningParser(parser.Parser):
             return match.group()
         else:
             return None
+
+    def strip_answer_helper(self, text: str, tag: str = "") -> str:
+        """
+        Helper function to remove tags from a text.
+
+        :param text: The input text.
+        :type text: str
+        :param tag: The tag to be stripped. Defaults to "".
+        :type tag: str
+        :return: The stripped text.
+        :rtype: str
+        """
+
+        text = text.strip()
+        if "Output:" in text:
+            text = text[text.index("Output:") + len("Output:") :].strip()
+        if tag != "":
+            start = text.rfind(f"<{tag}>")
+            end = text.rfind(f"</{tag}>")
+            if start != -1 and end != -1:
+                text = text[start + len(f"<{tag}>") : end].strip()
+            elif start != -1:
+                logging.warning(
+                    f"Only found the start tag <{tag}> in answer: {text}. Returning everything after the tag."
+                )
+                text = text[start + len(f"<{tag}>") :].strip()
+            elif end != -1:
+                logging.warning(
+                    f"Only found the end tag </{tag}> in answer: {text}. Returning everything before the tag."
+                )
+                text = text[:end].strip()
+            else:
+                logging.warning(
+                    f"Could not find any tag {tag} in answer: {text}. Returning the full answer."
+                )
+        return text
+        
+    def strip_answer_json(self, text: str) -> str:
+        """
+        Helper function to retrieve a text from a json string.
+
+        :param text: Input json string.
+        :type text: str
+        :return: Retrieved text.
+        :rtype: str
+        """
+        text = text.strip()
+        if "Output:" in text:
+            text = text[text.index("Output:") + len("Output:") :].strip()
+        # find the last "{" and "}" and only keep the text in between including the brackets
+        start = text.rfind("{")
+        end = text.rfind("}")
+        if start == -1 or end == -1:
+            return "{}"
+        text = text[start : end + 1]
+        try:
+            json.loads(text)
+            return text
+        except:
+            return "{}"
+        
+    def strip_inferred_facts(self, text: str) -> str:
+        """
+        Helper function to retrieve a text from an LLM response. Specific to retrieving inferred facts.
+
+        :param text: Input string
+        :type text: str
+        :return: Retrieved text.
+        :rtype: str
+        """
+        text = text.strip()
+        if "Output:" in text:
+            text = text[text.index("Output:") + len("Output:") :].strip()
+
+        return text
+    
+    def strip_aggregated_facts(self, text: str) -> str:
+        """
+        Helper function to retrieve a text from an LLM response. Specific to retrieving aggregated facts.
+
+        :param text: Input string
+        :type text: str
+        :return: Retrieved text.
+        :rtype: str
+        """
+        text = text.strip()
+        if "Combined Output:" in text:
+            text = text[text.index("Combined Output:") + len("Combined Output:") :].strip()
+        return text
     
     def parse_aggregation_answer(self, states: List[Dict], texts: List[str]) -> Union[Dict, List[Dict]]:
         """
@@ -41,24 +139,25 @@ class LogicalReasoningParser(parser.Parser):
         :type texts: List[str]
         :return: The new thought states after parsing the respones from the language model.
         :rtype: Union[Dict, List[Dict]]
-        :raise AssertionError: If more than two thought states are provided.
         """
+        assert len(states) <= 2, "Expected 2 states for aggregation answer."
+        if len(states) == 0:
+            states = [
+                {"inferred_facts": "", "sub_text": ""},
+                {"inferred_facts": "", "sub_text": ""},
+            ]
+        elif len(states) == 1:
+            states.append({"inferred_facts": "", "sub_text": ""})
         new_states = []
         for text in texts:
-            text = self.extract_only_letter_character(text)
+            answer = self.strip_aggregated_facts(text) # strip the response from the LLM
             new_state = states[0].copy()
-            new_state["current"] = text
-            new_states.append(new_state)
-        return new_states
-    
-    def parse_forward_chaining_answer(self, states: List[Dict], texts: List[str]) -> Union[Dict, List[Dict]]:
-        """
-        """
-        new_states = []
-        for text in texts:
-            text = self.extract_only_letter_character(text)
-            new_state = states[0].copy()
-            new_state["current"] = text
+            new_state["sub_text"] = (
+                states[0]["sub_text"] if "sub_text" in states[0] else ""
+            ) + (states[1]["sub_text"] if "sub_text" in states[1] else "")
+            new_state["aggregated_facts"] = answer
+            new_state["aggr1"] = states[0]["inferred_facts"]
+            new_state["aggr2"] = states[1]["inferred_facts"]
             new_states.append(new_state)
         return new_states
     
@@ -89,10 +188,56 @@ class LogicalReasoningParser(parser.Parser):
         """
         new_states = []
         for text in texts:
-            answer = self.extract_only_letter_character(text)
-            new_state = state.copy()
-            new_state["current"] = answer
-            new_states.append(new_state)
+            try:
+                if (
+                    state["method"].startswith("got")
+                    and state["current"] == ""
+                    and state["phase"] == 0
+                ):
+                    rules = self.extract_premises_content(state["raw_logic_programs"][0])
+                    answer = self.strip_answer_json(text)
+                    json_dict = json.loads(answer)
+                    for key, value in json_dict.items():
+                        if "Initial Fact" not in key:
+                            logging.warning(
+                                f"Expected key to contain 'Initial Fact', but found {key}."
+                            )
+                            continue
+                        new_state = state.copy()
+                        new_state["current"] = ""
+                        new_state["rules"] = rules
+                        new_state["sub_text"] = value
+                        new_state["phase"] = 1
+                        new_state["part"] = key
+                        new_states.append(new_state)
+                elif (
+                    state["method"].startswith("got")
+                    and state["current"] == ""
+                    and state["phase"] == 1
+                ):
+                    answer = self.strip_inferred_facts(text)
+                    new_state = state.copy()
+                    new_state["inferred_facts"] = answer
+                    new_state["phase"] = 2
+                    new_states.append(new_state)
+
+                elif (
+                    state["method"].startswith("got")
+                    and state["current"] == ""
+                    and state["phase"] == 2
+                ):
+                    answer = self.extract_only_letter_character(text)
+                    new_state = state.copy()
+                    new_state["current"] = answer
+                    new_states.append(new_state)
+                else:
+                    answer = self.strip_answer_json(text)
+                    new_state = state.copy()
+                    new_state["current"] = answer
+                    new_state["phase"] = 3
+                    new_states.append(new_state)
+            except Exception as e:
+                logging.error(f"Could not parse step answer: {text}. Error: {e}")
         return new_states
 
     def parse_validation_answer(self, state: Dict, texts: List[str]) -> bool:
@@ -120,4 +265,28 @@ class LogicalReasoningParser(parser.Parser):
         :rtype: List[float]
         :raise AsssertionError: If the number of thought states is not one.
         """
-        pass
+        assert len(states) == 1, "Only one state is allowed for scoring."
+        if len(states) == 1:
+            #individual scoring
+            consistency_scores = []
+            for text in texts:
+                answer = self.strip_answer_helper(text, "Consistency")
+                res = re.findall(r"\d+\.?\d*", answer)
+                if len(res) == 1:
+                    consistency_scores.append(float(res[0]))
+                elif len(res) > 1:
+                    logging.warning(
+                        f"Found multiple consistency scores in answer: {text}. Returning the last one."
+                    )
+                    consistency_scores.append(float(res[-1]))
+                else:
+                    logging.warning(
+                        f"Could not find any consistency score in answer: {text}. Ignore this answer."
+                    )
+            if len(consistency_scores) == 0:
+                logging.warning(
+                    f"Could not find any valid score in any answer. Returning 0.0"
+                )
+                return [0.0]
+            mean_consistancy = fmean(consistency_scores)
+            return [mean_consistancy]

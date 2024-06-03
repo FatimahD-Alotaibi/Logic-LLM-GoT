@@ -6,7 +6,7 @@ from typing import List, Callable
 from graph_of_thoughts import operations, language_models, controller
 from logic_prompter import LogicalReasoningPrompter
 from logic_parser import LogicalReasoningParser
-from methods import io, cot, tot, got # Import the methods
+from methods import io, cot, got, got_fg # Import the methods
 
 def run(
     data_ids: List[int],
@@ -31,7 +31,7 @@ def run(
     """
     # Store the original budget
     orig_budget = budget
-    data_path = "./logic_programs/FOLIO_dev_gpt-4.json"
+    data_path = "./cluttr/test_data.json"
 
     data = []
 
@@ -41,17 +41,30 @@ def run(
 
     # Iterate and process data into desired format
     for item in raw_data:
+
+        # Extract the program list
+        program_list = item['program']
+        formatted_string = ""
+
+        # Create a formated string
+        for program in program_list:
+            formatted_string += f"statement: {program['statement']}\ndescription: {program['description']}\n"
+        
+        if item['label'] is True:
+            item['label'] = 'True'
+        elif item['label'] is False:
+            item['label'] = 'False'
+
         # Construct the desired format
         data.append([
-            item['id'], 
-            f'Context: {item['context']}',
-            f'Question: {item['question']}',
-            f'Options: {item['options'][0]}, {item['options'][1]}, {item['options'][2]}',
-            item['raw_logic_programs'],
-            item['answer']
+            item['id'],
+            item['body_text'],
+            formatted_string,
+            item['goal'],
+            item['label'],
         ])
-
-    # If no data_ids provided or it's None, select all data
+    
+# If no data_ids provided or it's None, select all data
     if data_ids is None or len(data_ids) == 0:
         data_ids = list(range(len(data)))
     
@@ -130,11 +143,10 @@ def run(
                 LogicalReasoningPrompter(),
                 LogicalReasoningParser(),
                 {
-                    "context": data[1], # The logical reasoning problem
-                    "question": data[2],
-                    "options": data[3],
-                    "raw_logic_programs": data[4], # The logical conclusion using symbolic reasoning
-                    "ground_truth": data[5], # The correct answer
+                    "body_text": data[1], # The logical reasoning problem
+                    "program": data[2],
+                    "goal": data[3],
+                    "ground_truth": data[4], # The correct answer
                     "current": "", # The predicted response
                     "phase": 0,
                     "method": method.__name__
@@ -159,16 +171,15 @@ def run(
 
 if __name__ == "__main__":
     """
-    Context:        : The context narrative of a logical reasoning problem
-    Question:       : The question 
-    Options:        : The answer choices
-    Raw Logic Programs:     : The reasoning process addressing the question using symbolic logic.
-    Output (y):     : The answer choice
+    Narrative:      : The narrative context
+    Program:        : The relationship programs
+    Goal:           : The relationship that needs to be inferenced
+    Answer (y):     : The answer choice
     Correct         : y == ground_truth
     """
     
     budget = 30
-    samples = [item for item in range(0, 3)] # Because there are only 204 samples in the FOLIO dataset
+    samples = [item for item in range(0, 1)] # Because there are only 100 samples in the CLUTTR dataset
     approaches = [got]
 
     spent = run(samples, approaches, budget, "chatgpt")

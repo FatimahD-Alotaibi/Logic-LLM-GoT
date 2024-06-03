@@ -1,3 +1,4 @@
+import json
 import logging
 from typing import Dict, List, Union
 from graph_of_thoughts import parser
@@ -106,6 +107,12 @@ class LogicalReasoningParser(parser.Parser):
                 inference_process.append(stripped_line)
 
         return inference_process
+    
+    def extract_premises_content(self, text: str) -> str:
+        match = re.search(r"Premises:\n(.*?)(?:\nConclusion:|\Z)", text, re.DOTALL)
+        if match:
+            return match.group(1).strip()
+        return ""
 
     def extract_boolean(self, text: str) -> str:
         """
@@ -129,6 +136,46 @@ class LogicalReasoningParser(parser.Parser):
         else:
             # If no match is found, return "False" as a string
             return "False"
+        
+
+    def strip_answer_json(self, text: str) -> str:
+        """
+        Helper function to retrieve a text from a json string.
+
+        :param text: Input json string.
+        :type text: str
+        :return: Retrieved text.
+        :rtype: str
+        """
+        text = text.strip()
+        if "Output:" in text:
+            text = text[text.index("Output:") + len("Output:") :].strip()
+        # find the last "{" and "}" and only keep the text in between including the brackets
+        start = text.rfind("{")
+        end = text.rfind("}")
+        if start == -1 or end == -1:
+            return "{}"
+        text = text[start : end + 1]
+        try:
+            json.loads(text)
+            return text
+        except:
+            return "{}"
+        
+    def strip_applied_rules(self, text: str) -> str:
+        """
+        Helper function to retrieve a text an LLM response
+
+        :param text: Input string
+        :type text: str
+        :return: Retrieved text.
+        :rtype: str
+        """
+        text = text.strip()
+        if "Output:" in text:
+            text = text[text.index("Output:") + len("Output:") :].strip()
+
+        return text
     
     def parse_aggregation_answer(self, states: List[Dict], texts: List[str]) -> Union[Dict, List[Dict]]:
         """
@@ -186,13 +233,49 @@ class LogicalReasoningParser(parser.Parser):
         :return: The new thought states after parsing the respones from the language model.
         :rtype: List[Dict]
         """
+
         new_states = []
         for text in texts:
-            answer = self.extract_boolean(text)
-            new_state = state.copy()
-            new_state["inference"] = text
-            new_state["current"] = answer
-            new_states.append(new_state)
+            try:
+                if (
+                    state["method"].startswith("got")
+                    and state["current"] == ""
+                    and state["phase"] == 0
+                ):
+                    rules = self.extract_premises_content(state["raw_logic_programs"][0])
+                    answer = self.strip_answer_json(text)
+                    json_dict = json.loads(answer)
+                    for key, value in json_dict.items():
+                        if "Initial Fact" not in key:
+                            logging.warning(
+                                f"Expected key to contain 'Paragraph' or 'Sentence', but found {key}."
+                            )
+                            continue
+                        new_state = state.copy()
+                        new_state["current"] = ""
+                        new_state["sub_text"] = value
+                        new_state["rules"] = rules
+                        new_state["phase"] = 1
+                        new_state["part"] = key
+                        new_states.append(new_state)
+                elif (
+                    state["method"].startswith("got")
+                    and state["current"] == ""
+                    and state["phase"] == 1
+                ):
+                    answer = self.strip_applied_rules(text)
+                    new_state = state.copy()
+                    new_state["phase"] = 2
+                    new_state["rule(s)"] = answer
+                    new_states.append(new_state)
+                else:
+                    answer = self.strip_answer_json(text)
+                    new_state = state.copy()
+                    new_state["current"] = answer
+                    new_state["phase"] = 3
+                    new_states.append(new_state)
+            except Exception as e:
+                logging.error(f"Could not parse step answer: {text}. Error: {e}")
         return new_states
 
     def parse_validation_answer(self, state: Dict, texts: List[str]) -> bool:

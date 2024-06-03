@@ -64,9 +64,9 @@ Goal: {goal}
 Answer: 
 """
 
-cluttr_cot_prompt = """<Instruction>
+cluttr_cot_prompt = """<Instructions>
 Given the following narrative and goal statement, determine if the goal statement is True or False. Use the program to help you determine if the goal is True or False. Explain your inference.
-</Instruction>
+</Instructions>
 
 <Approach>
 When printing your response, you should follow the EXACT same format as the examples provided. DO NOT USE ANY OTHER FORMAT!!!
@@ -130,6 +130,98 @@ Program:
 Goal: {goal}
 
 Reasoning: 
+"""
+
+got_split_prompt = """<Instructions>
+Split the following input text into individual sentences. Output each sentence in the following format without additional text or thoughts.
+{{
+    "Initial Fact 1": "statement text... ::: description text...",
+    "Initial Fact 2": "statement text... ::: description text...",
+    "Initial Fact 3": "statement text... ::: description text...",
+    ...
+}}
+</Instructions>
+
+<Example>
+Input:
+statement: isRelationOf(ben, son, alice).
+description: [Alice] celebrated her birthday with her son [Ben].
+statement: isRelationOf(chris, brother, alice).
+description: [Chris] visited his sister [Alice] and her family.
+statement: isRelationOf(david, cousin, ben)
+description: [David] played soccer with his cousin [Ben].
+statement: isRelationOf(david, grandson, eve).
+description: [Eve] baked a cake for her grandson [David].
+Output:
+{{
+    "Initial Fact 1": "isRelationOf(ben, son, alice) ::: [Alice] celebrated her birthday with her son [Ben].",
+    "Initial Fact 2": "isRelationOf(chris, brother, alice) ::: [Chris] visited his sister [Alice] and her family.",
+    "Initial Fact 3": "isRelationOf(david, cousin, ben) ::: [David] played soccer with his cousin [Ben].",
+    "Initial Fact 4": "isRelationOf(david, grandson, eve) ::: [Eve] baked a cake for her grandson [David]."
+}}
+</Example>
+
+Input:
+{program}
+"""
+
+apply_rules_prompt = """<Instructions>
+Assign the appropriate rules to the input text. Output the rule(s) best suited for the input text provided.
+</Instructions>
+
+<Rules>
+relation(A, R, B) :- isRelationOf(A, R, B) ::: If A is the some_relation of B, then A can be inferred as the some_relation of B.
+relation(A, son, B) :- isRelationOf(A, brother, C), relation(C, (son;daughter), B), B != A ::: If A is the brother of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the son of B.
+relation(A, daughter, B) :- isRelationOf(A, sister, C), relation(C, (son;daughter), B), B != A ::: If A is the sister of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the daughter of B.
+relation(A, son, B) :- isRelationOf(A, son, C), relation(C, (husband;wife), B), B != A ::: If A is the son of C, and C can be inferred as the husband or the wife of B, then A can be inferred as the son of B.
+relation(A, daughter, B) :- isRelationOf(A, daughter, C), relation(C, (husband;wife), B), B != A ::: If A is the daughter of C, and C can be inferred as the husband or the wife of B, then A can be inferred as the daughter of B.
+relation(A, father, B) :- isRelationOf(A, grandfather, C), relation(C, (son;daughter), B), B != A ::: If A is the grandfather of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the father of B.
+relation(A, mother, B) :- isRelationOf(A, grandmother, C), relation(C, (son;daughter), B), B != A ::: If A is the grandmother of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the mother of B.
+relation(A, father, B) :- isRelationOf(A, father, C), relation(C, (brother;sister), B), B != A ::: If A is the father of C, and C can be inferred as the brother or the sister of B, then A can be inferred as the father of B.
+relation(A, mother, B) :- isRelationOf(A, mother, C), relation(C, (brother;sister), B), B != A ::: If A is the mother of C, and C can be inferred as the brother or the sister of B, then A can be inferred as the mother of B.
+relation(A, uncle, B) :- isRelationOf(A, (brother;brother_in_law), C), relation(C, (father;mother), B), B != A ::: If A is the brother or the brother-in-law of C, and C can be inferred as the father or the mother of B, then A can be inferred as the uncle of B.
+relation(A, aunt, B) :- isRelationOf(A, (sister;sister_in_law), C), relation(C, (father;mother), B), B != A ::: If A is the sister or the sister-in-law of C, and C can be inferred as the father or the mother of B, then A can be inferred as the aunt of B.
+relation(A, nephew, B) :- isRelationOf(A, son, C), relation(C, (brother;sister;brother_in_law;sister_in_law), B), B != A ::: If A is the son of C, and C can be inferred as the brother / sister / brother-in-law / sister-in-law of B, then A can be inferred as the aunt of B.
+relation(A, niece, B) :- isRelationOf(A, daughter, C), relation(C, (brother;sister;brother_in_law;sister_in_law), B), B != A ::: If A is the daughter of C, and C can be inferred as the brother / sister / brother-in-law / sister-in-law of B, then A can be inferred as the niece of B.
+relation(A, grandfather, B) :- isRelationOf(A, father, C), relation(C, (father;mother), B), B != A ::: If A is the father of C, and C can be inferred as the father or the mother of B, then A can be inferred as the grandfather of B.
+relation(A, grandmother, B) :- isRelationOf(A, mother, C), relation(C, (father;mother), B), B != A ::: If A is the mother of C, and C can be inferred as the father or the mother of B, then A can be inferred as the grandmother of B.
+relation(A, grandfather, B) :- isRelationOf(A, grandfather, C), relation(C, (brother;sister), B), B != A ::: If A is the grandfather of C, and C can be inferred as the brother or the sister of B, then A can be inferred as the grandfather of B.
+relation(A, grandmother, B) :- isRelationOf(A, grandmother, C), relation(C, (brother;sister), B), B != A ::: If A is the grandmother of C, and C can be inferred as the brother or the sister of B, then A can be inferred as the grandmother of B.
+relation(A, grandson, B) :- isRelationOf(A, son, C), relation(C, (son;daughter), B), B != A ::: If A is the son of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the grandson of B.
+relation(A, granddaughter, B) :- isRelationOf(A, daughter, C), relation(C, (son;daughter), B), B != A ::: If A is the daughter of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the granddaughter of B.
+relation(A, grandson, B) :- isRelationOf(A, grandson, C), relation(C, (husband;wife), B), B != A ::: If A is the grandson of C, and C can be inferred as the husband or the wife of B, then A can be inferred as the grandson of B.
+relation(A, granddaughter, B) :- isRelationOf(A, granddaughter, C), relation(C, (husband;wife), B), B != A ::: If A is the granddaughter of C, and C can be inferred as the husband or the wife of B, then A can be inferred as the granddaughter of B.
+relation(A, grandson, B) :- isRelationOf(A, brother, C), relation(C, (grandson;granddaughter), B), B != A ::: If A is the brother of C, and C can be inferred as the grandson or the granddaughter of B, then A can be inferred as the grandson of B.
+relation(A, granddaughter, B) :- isRelationOf(A, sister, C), relation(C, (grandson;granddaughter), B), B != A ::: If A is the sister of C, and C can be inferred as the grandson or the granddaughter of B, then A can be inferred as the granddaughter of B.
+relation(A, father_in_law, B) :- isRelationOf(A, father, C), relation(C, (husband;wife), B), B != A ::: If A is the father of C, and C can be inferred as the husband or the wife of B, then A can be inferred as the father-in-law of B.
+relation(A, mother_in_law, B) :- isRelationOf(A, mother, C), relation(C, (husband;wife), B), B != A ::: If A is the mother of C, and C can be inferred as the husband or the wife of B, then A can be inferred as the mother-in-law of B.
+relation(A, son_in_law, B) :- isRelationOf(A, husband, C), relation(C, daughter, B), B != A ::: If A is the husband of C, and C can be inferred as the daughter of B, then A can be inferred as the son-in-law of B.
+relation(A, daughter_in_law, B) :- isRelationOf(A, wife, C), relation(C, son, B), B != A ::: If A is the wife of C, and C can be inferred as the son of B, then A can be inferred as the daughter-in-law of B.
+relation(A, brother_in_law, B) :- isRelationOf(A, husband, C), relation(C, sister, B), B != A ::: If A is the husband of C, and C can be inferred as the sister of B, then A can be inferred as the brother-in-law of B.
+relation(A, sister_in_law, B) :- isRelationOf(A, wife, C), relation(C, brother, B), B != A ::: If A is the wife of C, and C can be inferred as the brother of B, then A can be inferred as the sister-in-law of B.
+relation(A, husband, B) :- isRelationOf(B, wife, A), B != A ::: If A is the wife of B, then A can be inferred as the husband of B.
+relation(A, wife, B) :- isRelationOf(B, husband, A), B != A ::: If A is the husband of B, then A can be inferred as the wife of B.
+relation(A, husband, B) :- isRelationOf(A, father, C), relation(C, (daughter;son), B), B != A ::: If A is the father of C, and C can be inferred as the daughter or the son of B, then A can be inferred as the husband of B.
+relation(A, wife, B) :- isRelationOf(A, mother, C), relation(C, (daughter;son), B), B != A ::: If A is the mother of C, and C can be inferred as the daughter or the son of B, then A can be inferred as the wife of B.
+relation(A, brother, B) :- isRelationOf(A, uncle, C), relation(C, (son;daughter), B), B != A ::: If A is the uncle of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the brother of B.
+relation(A, sister, B) :- isRelationOf(A, aunt, C), relation(C, (son;daughter), B), B != A ::: If A is the aunt of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the sister of B.
+relation(A, brother, B) :- isRelationOf(A, son, C), relation(C, (father;mother), B), B != A ::: If A is the son of C, and C can be inferred as the father or the mother of B, then A can be inferred as the brother of B.
+relation(A, sister, B) :- isRelationOf(A, daughter, C), relation(C, (father;mother), B), B != A ::: If A is the daughter of C, and C can be inferred as the father or the mother of B, then A can be inferred as the sister of B.
+relation(A, brother, B) :- isRelationOf(A, brother, C), relation(C, (brother;sister), B), B != A ::: If A is the brother of C, and C can be inferred as the brother or the sister of B, then A can be inferred as the brother of B.
+relation(A, sister, B) :- isRelationOf(A, sister, C), relation(C, (brother;sister), B), B != A ::: If A is the sister of C, and C can be inferred as the brother or the sister of B, then A can be inferred as the sister of B.
+</Rules>
+
+<Example>
+Input:
+isRelationOf(megan, sister, amy) ::: [megan] took her sister, [amy], out shopping for her birthday.
+
+Output: relation(A, sister, B) :- isRelationOf(A, aunt, C), relation(C, (son;daughter), B), B != A ::: If A is the aunt of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the sister of B.\nrelation(A, sister, B) :- isRelationOf(A, daughter, C), relation(C, (father;mother), B), B != A ::: If A is the daughter of C, and C can be inferred as the father or the mother of B, then A can be inferred as the sister of B.\nrelation(A, sister, B) :- isRelationOf(A, sister, C), relation(C, (brother;sister), B), B != A ::: If A is the sister of C, and C can be inferred as the brother or the sister of B, then A can be inferred as the sister of B.
+</Example>
+
+Input:
+{input}
+
+Output:
 """
 
 cluttr_fg_prompt = """<Instruction>

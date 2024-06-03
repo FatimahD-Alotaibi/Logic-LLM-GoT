@@ -34,22 +34,6 @@ class Parser(ABC):
         pass
 
     @abstractmethod
-    def parse_forward_chaining_answer(
-        self, states: List[Dict], texts: List[str]
-    ) -> Union[Dict, List[Dict]]:
-        """
-        Parse the response from the language model for a forward chaining prompt.
-
-        :param states: The thought states used to generate the prompt.
-        :type states: List[Dict]
-        :param texts: The responses to the prompt from the language model.
-        :type texts: List[str]
-        :return: The new thought states after parsing the response from the langauge model.
-        :rtype: Union[Dict, List[Dict]]
-        """
-        pass
-
-    @abstractmethod
     def parse_improve_answer(self, state: Dict, texts: List[str]) -> Dict:
         """
         Parse the response from the language model for an improve prompt.

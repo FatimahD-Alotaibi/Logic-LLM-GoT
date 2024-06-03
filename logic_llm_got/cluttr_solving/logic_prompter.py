@@ -1,5 +1,5 @@
 from typing import Dict, List
-from prompts import cluttr_io_prompt, cluttr_cot_prompt, cluttr_fg_prompt
+from prompts import cluttr_io_prompt, cluttr_cot_prompt, cluttr_fg_prompt, got_split_prompt, apply_rules_prompt
 from graph_of_thoughts import prompter
 
 class LogicalReasoningPrompter(prompter.Prompter):
@@ -13,6 +13,8 @@ class LogicalReasoningPrompter(prompter.Prompter):
     cluttr_io_prompt=cluttr_io_prompt
     cluttr_cot_prompt=cluttr_cot_prompt
     cluttr_fg_prompt=cluttr_fg_prompt
+    got_split_prompt=got_split_prompt
+    apply_rules_prompt=apply_rules_prompt
 
     def aggregation_prompt(self, state_dicts: List[Dict], **kwargs) -> str:
         """
@@ -65,7 +67,11 @@ class LogicalReasoningPrompter(prompter.Prompter):
         elif method.startswith("cot"):
             return self.cluttr_cot_prompt.format(body_text=body_text, program=program, goal=goal)
         elif method.startswith("got"):
-            return self.cluttr_cot_prompt.format(body_text=body_text, program=program, goal=goal)
+            if (current is None or current == "") and kwargs["phase"] == 0:
+                return self.got_split_prompt.format(program=program)
+            
+            if kwargs["phase"] == 1:
+                return self.apply_rules_prompt.format(input=kwargs["sub_text"])
         
         
         
