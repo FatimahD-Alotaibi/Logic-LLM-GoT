@@ -124,10 +124,10 @@ def got() -> operations.GraphOfOperations:
             aggregate.add_predecessor(sub_problems[i])
             aggregate.add_predecessor(sub_problems[i + 1])
             operations_graph.add_operation(aggregate)
-            score_aggregate = operations.Score(1, False)
+            score_aggregate = operations.Score(1, False) # Score the inferred facts using resolution refutation
             score_aggregate.add_predecessor(aggregate)
             operations_graph.add_operation(score_aggregate)
-            keep_best_aggregate = operations.KeepBestN(1, True)
+            keep_best_aggregate = operations.KeepBestN(1, True) # Keep the thought with the highest score
             keep_best_aggregate.add_predecessor(score_aggregate)
             operations_graph.add_operation(keep_best_aggregate)
             new_sub_problems.append(keep_best_aggregate)
@@ -137,13 +137,15 @@ def got() -> operations.GraphOfOperations:
             generate_answer = operations.Generate(1, 5)
             generate_answer.add_predecessor(new_sub_problems[i])
             operations_graph.add_operation(generate_answer)
-            score_answer = operations.Score(1, False, utils.answer_score)
+            score_answer = operations.Score(1, False, utils.answer_score) # Score the answer response 
             score_answer.add_predecessor(generate_answer)
             operations_graph.add_operation(score_answer)
-            keep_best_answer = operations.KeepBestN(1, True)
+            keep_best_answer = operations.KeepBestN(1, True) # Keep the thought with the highest score
             keep_best_answer.add_predecessor(score_answer)
             operations_graph.add_operation(keep_best_answer)
 
-    operations_graph.append_operation(operations.GroundTruth(utils.test_response))
+            ground_truth_evaluator = operations.GroundTruth(utils.test_response)
+            ground_truth_evaluator.add_predecessor(keep_best_answer)
+            operations_graph.add_operation(ground_truth_evaluator)
 
     return operations_graph
