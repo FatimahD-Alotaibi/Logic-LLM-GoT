@@ -273,6 +273,59 @@ To accurately answer the question, follow these steps:
 3. Use the inferred facts to help draw out your conclusion. The inferred facts should give you clues about the subject's relationship.
 </Approach>
 
+<Example>
+Context: All people who regularly drink coffee are dependent on caffeine. People either regularly drink coffee or joke about being addicted to caffeine. No one who jokes about being addicted to caffeine is unaware that caffeine is a drug. Rina is either a student and unaware that caffeine is a drug, or neither a student nor unaware that caffeine is a drug. If Rina is not a person dependent on caffeine and a student, then Rina is either a person dependent on caffeine and a student, or neither a person dependent on caffeine nor a student.
+
+Question: Based on the above information, is the following statement true, false, or uncertain? Rina is either a person who jokes about being addicted to caffeine or is unaware that caffeine is a drug.
+
+Options: A) True, B) False, C) Uncertain
+
+Predicates:
+Dependent(x) ::: x is a person dependent on caffeine.
+Drinks(x) ::: x regularly drinks coffee.
+Jokes(x) ::: x jokes about being addicted to caffeine.
+Unaware(x) ::: x is unaware that caffeine is a drug.
+Student(x) ::: x is a student.
+Premises:
+∀x (Drinks(x) → Dependent(x)) ::: All people who regularly drink coffee are dependent on caffeine.
+∀x (Drinks(x) ⊕ Jokes(x)) ::: People either regularly drink coffee or joke about being addicted to caffeine.
+∀x (Jokes(x) → ¬Unaware(x)) ::: No one who jokes about being addicted to caffeine is unaware that caffeine is a drug. 
+(Student(rina) ∧ Unaware(rina)) ⊕ ¬(Student(rina) ∨ Unaware(rina)) ::: Rina is either a student and unaware that caffeine is a drug, or neither a student nor unaware that caffeine is a drug. 
+¬(Dependent(rina) ∧ Student(rina)) → (Dependent(rina) ∧ Student(rina)) ⊕ ¬(Dependent(rina) ∨ Student(rina)) ::: If Rina is not a person dependent on caffeine and a student, then Rina is either a person dependent on caffeine and a student, or neither a person dependent on caffeine nor a student.
+Conclusion:
+Jokes(rina) ⊕ Unaware(rina) ::: Rina is either a person who jokes about being addicted to caffeine or is unaware that caffeine is a drug.
+
+Inferred Facts:
+(Student(rina) ∧ Unaware(rina)) ⊕ ¬(Student(rina) ∨ Unaware(rina)) ::: Rina is either a student and unaware that caffeine is a drug, or neither a student nor unaware that caffeine is a drug.
+¬(Dependent(rina) ∧ Student(rina)) → (Dependent(rina) ∧ Student(rina)) ⊕ ¬(Dependent(rina) ∨ Student(rina)) ::: If Rina is not both dependent on caffeine and a student, then she is either both dependent on caffeine and a student, or neither dependent on caffeine nor a student.
+Student(rina) ∧ Unaware(rina) ::: Rina is a student and unaware that caffeine is a drug.
+¬Student(rina) ∧ ¬Unaware(rina) ::: Rina is neither a student nor unaware that caffeine is a drug.
+Dependent(rina) → ¬Student(rina) ::: If Rina is dependent on caffeine, she is likely not a student.
+
+Analysis:
+1. From (Student(rina) ∧ Unaware(rina)) ⊕ ¬(Student(rina) ∨ Unaware(rina)), Rina can be in one of two states:
+   - (Student(rina) ∧ Unaware(rina))
+   - ¬(Student(rina)) ∧ ¬(Unaware(rina))
+2. Considering ∀x (Jokes(x) → ¬Unaware(x)), if Jokes(rina) is true, then ¬Unaware(rina) must be true.
+
+Possible states of Rina:
+- If ¬(Student(rina)) ∧ ¬(Unaware(rina)), then Unaware(rina) is false.
+  - Since Unaware(rina) is false, Jokes(rina) can be either true or false.
+  - This means Jokes(rina) ⊕ Unaware(rina) simplifies to Jokes(rina) ⊕ false, which is Jokes(rina).
+
+- If (Student(rina) ∧ Unaware(rina)), then Unaware(rina) is true.
+  - Since Unaware(rina) is true, Jokes(rina) must be false (from ∀x (Jokes(x) → ¬Unaware(x))).
+  - This means Jokes(rina) ⊕ Unaware(rina) simplifies to false ⊕ true, which is true.
+
+Conclusion:
+- When ¬(Student(rina)) ∧ ¬(Unaware(rina)), Jokes(rina) ⊕ Unaware(rina) depends on Jokes(rina).
+- When (Student(rina) ∧ Unaware(rina)), Jokes(rina) ⊕ Unaware(rina) is true.
+
+Since in all possible states derived from the premises, Jokes(rina) ⊕ Unaware(rina) evaluates to either Jokes(rina) or true, the statement "Jokes(rina) ⊕ Unaware(rina)" is Uncertain because it can be true or false depending on Jokes(rina) when ¬(Student(rina)) ∧ ¬(Unaware(rina)). Option C is correct.
+
+Output: C
+</Example>
+
 {context}
 
 {question}

@@ -143,9 +143,8 @@ def got() -> operations.GraphOfOperations:
             keep_best_answer = operations.KeepBestN(1, True) # Keep the thought with the highest score
             keep_best_answer.add_predecessor(score_answer)
             operations_graph.add_operation(keep_best_answer)
+        new_sub_problems=new_sub_problems
 
-            ground_truth_evaluator = operations.GroundTruth(utils.test_response)
-            ground_truth_evaluator.add_predecessor(keep_best_answer)
-            operations_graph.add_operation(ground_truth_evaluator)
+    operations_graph.append_operation(operations.GroundTruth(utils.test_response))
 
     return operations_graph
