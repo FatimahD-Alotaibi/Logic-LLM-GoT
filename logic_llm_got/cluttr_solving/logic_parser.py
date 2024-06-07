@@ -3,6 +3,7 @@ import logging
 from typing import Dict, List, Union
 from graph_of_thoughts import parser
 import re
+from statistics import fmean
 
 class LogicalReasoningParser(parser.Parser):
     """
@@ -17,125 +18,42 @@ class LogicalReasoningParser(parser.Parser):
         Inits the response cache.
         """
         self.cache = {}
-
-    def parse_initial_facts(self, text: str) -> List[str]:
+        
+    def strip_answer_helper(self, text: str, tag: str = "") -> str:
         """
-        Parses the "Initial Facts" section from a given text.
+        Helper function to remove tags from a text.
 
-        Args:
-            text (str): The input text containing sections like "Initial Facts", "Rules", etc.
-
-        Returns:
-            List[str]: A list of initial facts extracted from the "Initial Facts" section.
-        """
-        initial_facts_section = False # Flag to indicate if we are in the "Initial Facts" section
-        initial_facts = [] # List to store the parsed initial facts
-
-        # Split the input text by lines and iterate through each line
-        for line in text.split('\n'):
-            stripped_line = line.strip() # Remove leading and trailing whitespace
-            if stripped_line.startswith("Initial Facts:"):
-                # Mark the start of the "Initial Facts" section
-                initial_facts_section = True
-                continue
-            if initial_facts_section:
-                # If we are in the "Initial Facts" section, check for termination conditions"
-                if not stripped_line or stripped_line.startswith("Rules:"):
-                    # Stop if an empty line or the start of the next section is encountered
-                    break
-                # Extract the fact after the numbering and store it in the list
-                initial_facts.append(stripped_line.split(". ", 1)[1])
-
-        return initial_facts
-    
-    def parse_rules(self, text: str) -> List[str]:
-        """
-        Parses the "Rules" section from a given text.
-
-        Args:
-            text (str): The input text containing sections like "Initial Facts", "Rules", etc.
-
-        Returns:
-            List[str]: A list of rules extracted from the "Rules" section.
-        """
-        rules_section = False # Flag to indicate if we are in the "Rules" section
-        rules = [] # List to store the parsed rules
-
-        # Split the input text by lines and iterate through each line
-        for line in text.split('\n'):
-            stripped_line = line.strip() # Remove leading and trailing whitespace
-            if stripped_line.startswith("Rules:"):
-                # Mark the start of the "Rules" section
-                rules_section = True
-                continue
-            if rules_section:
-                # If we are in the "Rules" section, check for termination conditions"
-                if not stripped_line or stripped_line.startswith("Inference Process:"):
-                    # Stop if an empty line or the start of the next section is encountered
-                    break
-                # Extract the fact after the numbering and store it in the list
-                rules.append(stripped_line.split(". ", 1)[1])
-
-        return rules
-
-    def parse_inference_process(self, text: str) -> List[str]:
-        """
-        Parses the "Inference Process" section from a given text.
-
-        Args:
-            text (str): The input text containing sections like "Initial Facts", "Rules", "Inference Process", etc.
-
-        Returns:
-            List[str]: A list of steps extracted from the "Inference Process" section.
-        """
-        inference_process_section = False  # Flag to indicate if we are in the "Inference Process" section
-        inference_process = []  # List to store the parsed inference process steps
-
-        # Split the input text by lines and iterate through each line
-        for line in text.split('\n'):
-            stripped_line = line.strip()  # Remove leading and trailing whitespace
-            if stripped_line.startswith("Inference Process:"):
-                # Mark the start of the "Inference Process" section
-                inference_process_section = True
-                continue
-            if inference_process_section:
-                # If we are in the "Inference Process" section, check for termination conditions
-                if stripped_line.startswith("Answer:"):
-                    # Stop if an empty line or the start of the next section is encountered
-                    break
-                # Extract the step and store it in the list
-                inference_process.append(stripped_line)
-
-        return inference_process
-    
-    def extract_premises_content(self, text: str) -> str:
-        match = re.search(r"Premises:\n(.*?)(?:\nConclusion:|\Z)", text, re.DOTALL)
-        if match:
-            return match.group(1).strip()
-        return ""
-
-    def extract_boolean(self, text: str) -> str:
-        """
-        Helper function designed to extract letter a boolean from the LLM response.
-
-        :param text: The LLM response
+        :param text: The input text.
         :type text: str
-        :return: The letter character
+        :param tag: The tag to be stripped. Defaults to "".
+        :type tag: str
+        :return: The stripped text.
         :rtype: str
         """
 
-        # Define the regular expression pattern to find the boolean value
-        pattern = r'Answer:\s*(True|False)'
-
-        # Search for the pattern in the prompt
-        match = re.search(pattern, text)
-
-        # If a match is found, return the boolean value as a string
-        if match:
-            return match.group(1)
-        else:
-            # If no match is found, return "False" as a string
-            return "False"
+        text = text.strip()
+        if "Output:" in text:
+            text = text[text.index("Output:") + len("Output:") :].strip()
+        if tag != "":
+            start = text.rfind(f"<{tag}>")
+            end = text.rfind(f"</{tag}>")
+            if start != -1 and end != -1:
+                text = text[start + len(f"<{tag}>") : end].strip()
+            elif start != -1:
+                logging.warning(
+                    f"Only found the start tag <{tag}> in answer: {text}. Returning everything after the tag."
+                )
+                text = text[start + len(f"<{tag}>") :].strip()
+            elif end != -1:
+                logging.warning(
+                    f"Only found the end tag </{tag}> in answer: {text}. Returning everything before the tag."
+                )
+                text = text[:end].strip()
+            else:
+                logging.warning(
+                    f"Could not find any tag {tag} in answer: {text}. Returning the full answer."
+                )
+        return text
         
 
     def strip_answer_json(self, text: str) -> str:
@@ -162,7 +80,7 @@ class LogicalReasoningParser(parser.Parser):
         except:
             return "{}"
         
-    def strip_applied_rules(self, text: str) -> str:
+    def strip_answer_string(self, text: str) -> str:
         """
         Helper function to retrieve a text an LLM response
 
@@ -177,6 +95,20 @@ class LogicalReasoningParser(parser.Parser):
 
         return text
     
+    def strip_aggregated_facts(self, text: str) -> str:
+        """
+        Helper function to retrieve a text from an LLM response. Specific to retrieving aggregated facts.
+
+        :param text: Input string
+        :type text: str
+        :return: Retrieved text.
+        :rtype: str
+        """
+        text = text.strip()
+        if "New set:" in text:
+            text = text[text.index("New set:") + len("New set:") :].strip()
+        return text
+    
     def parse_aggregation_answer(self, states: List[Dict], texts: List[str]) -> Union[Dict, List[Dict]]:
         """
         Parse the response from the language model for an aggregation prompt.
@@ -189,22 +121,24 @@ class LogicalReasoningParser(parser.Parser):
         :rtype: Union[Dict, List[Dict]]
         :raise AssertionError: If more than two thought states are provided.
         """
-        pass
-    
-    def parse_forward_chaining_answer(self, states: List[Dict], texts: List[str]) -> Union[Dict, List[Dict]]:
-        """
-        """
+        assert len(states) <= 2, "Expected 2 states for aggregation answer."
+        if len(states) == 0:
+            states = [
+                {"inferred_facts": "", "sub_text": ""},
+                {"inferred_facts": "", "sub_text": ""},
+            ]
+        elif len(states) == 1:
+            states.append({"inferred_facts": "", "sub_text": ""})
         new_states = []
         for text in texts:
-            facts = self.parse_initial_facts(text)
-            rules = self.parse_rules(text)
-            inference = self.parse_inference_process(text)
-            answer = self.extract_boolean(text)
+            answer = self.strip_aggregated_facts(text) # strip the response from the LLM
             new_state = states[0].copy()
-            new_state["facts"] = facts
-            new_state["rules"] = rules
-            new_state["inference"] = inference
-            new_state["current"] = answer
+            new_state["sub_text"] = (
+                states[0]["sub_text"] if "sub_text" in states[0] else ""
+            ) + (states[1]["sub_text"] if "sub_text" in states[1] else "")
+            new_state["aggregated_facts"] = answer
+            new_state["aggr1"] = states[0]["inferred_facts"]
+            new_state["aggr2"] = states[1]["inferred_facts"]
             new_states.append(new_state)
         return new_states
     
@@ -242,19 +176,17 @@ class LogicalReasoningParser(parser.Parser):
                     and state["current"] == ""
                     and state["phase"] == 0
                 ):
-                    rules = self.extract_premises_content(state["raw_logic_programs"][0])
                     answer = self.strip_answer_json(text)
                     json_dict = json.loads(answer)
                     for key, value in json_dict.items():
                         if "Initial Fact" not in key:
                             logging.warning(
-                                f"Expected key to contain 'Paragraph' or 'Sentence', but found {key}."
+                                f"Expected key to contain 'Initial Fact', but found {key}."
                             )
                             continue
                         new_state = state.copy()
                         new_state["current"] = ""
                         new_state["sub_text"] = value
-                        new_state["rules"] = rules
                         new_state["phase"] = 1
                         new_state["part"] = key
                         new_states.append(new_state)
@@ -263,10 +195,19 @@ class LogicalReasoningParser(parser.Parser):
                     and state["current"] == ""
                     and state["phase"] == 1
                 ):
-                    answer = self.strip_applied_rules(text)
+                    answer = self.strip_answer_string(text)
                     new_state = state.copy()
+                    new_state["inferred_facts"] = answer
                     new_state["phase"] = 2
-                    new_state["rule(s)"] = answer
+                    new_states.append(new_state)
+                elif (
+                    state["method"].startswith("got")
+                    and state["current"] == ""
+                    and state["phase"] == 2
+                ):
+                    answer = self.strip_answer_string(text)
+                    new_state = state.copy()
+                    new_state["current"] = answer
                     new_states.append(new_state)
                 else:
                     answer = self.strip_answer_json(text)
@@ -303,4 +244,28 @@ class LogicalReasoningParser(parser.Parser):
         :rtype: List[float]
         :raise AsssertionError: If the number of thought states is not one.
         """
-        pass
+        assert len(states) == 1, "Only one state is allowed for scoring."
+        if len(states) == 1:
+            #individual scoring
+            consistency_scores = []
+            for text in texts:
+                answer = self.strip_answer_helper(text, "Consistency")
+                res = re.findall(r"\d+\.?\d*", answer)
+                if len(res) == 1:
+                    consistency_scores.append(float(res[0]))
+                elif len(res) > 1:
+                    logging.warning(
+                        f"Found multiple consistency scores in answer: {text}. Returning the last one."
+                    )
+                    consistency_scores.append(float(res[-1]))
+                else:
+                    logging.warning(
+                        f"Could not find any consistency score in answer: {text}. Ignore this answer."
+                    )
+            if len(consistency_scores) == 0:
+                logging.warning(
+                    f"Could not find any valid score in any answer. Returning 0.0"
+                )
+                return [0.0]
+            mean_consistancy = fmean(consistency_scores)
+            return [mean_consistancy]

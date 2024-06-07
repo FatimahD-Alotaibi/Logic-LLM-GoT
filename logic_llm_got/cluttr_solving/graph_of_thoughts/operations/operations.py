@@ -33,7 +33,6 @@ class OperationType(Enum):
     keep_valid: int = 6
     ground_truth_evaluator: int = 7
     selector: int = 8
-    forward_chaining: int = 9
 
 
 class Operation(ABC):
@@ -899,78 +898,3 @@ class Selector(Operation):
         self.logger.info(
             "Selector operation %d selected %d thoughts", self.id, len(self.thoughts)
         )
-
-class ForwardChaining(Operation):
-    """
-    Operation to aggregate thoughts.
-    """
-
-    operation_type: OperationType = OperationType.forward_chaining
-
-    def __init__(self, num_responses: int = 1) -> None:
-        """
-        Initializes a new Aggregate operation.
-
-        :param num_responses: Number of responses to use for aggregation. Defaults to 1.
-        :type num_responses: int
-        """
-        super().__init__()
-        self.thoughts: List[Thought] = []
-        self.num_responses: int = num_responses
-
-    def get_thoughts(self) -> List[Thought]:
-        """
-        Returns the thoughts associated with the operation after aggregation.
-
-        :return: List of aggregated thoughts.
-        :rtype: List[Thought]
-        """
-        return self.thoughts
-
-    def _execute(
-        self, lm: AbstractLanguageModel, prompter: Prompter, parser: Parser, **kwargs
-    ) -> None:
-        """
-        Executes the Aggregate operation by aggregating the predecessors' thoughts.
-        The thoughts are aggregated by prompting the LM with the predecessors' thought states.
-
-        :param lm: The language model to be used.
-        :type lm: AbstractLanguageModel
-        :param prompter: The prompter for crafting prompts.
-        :type prompter: Prompter
-        :param parser: The parser for parsing responses.
-        :type parser: Parser
-        :param kwargs: Additional parameters for execution.
-        :raises AssertionError: If operation has no predecessors.
-        """
-        assert (
-            len(self.predecessors) >= 1
-        ), "Forward chaining operation must have at least one predecessor"
-
-        previous_thoughts: List[Thought] = self.get_previous_thoughts()
-
-        if len(previous_thoughts) == 0:
-            return
-
-        # applied in order of score
-        base_state: Dict = {}
-        for thought in sorted(previous_thoughts, key=lambda thought: thought.score):
-            base_state = {**base_state, **thought.state}
-
-        previous_thought_states = [thought.state for thought in previous_thoughts]
-        prompt = prompter.forward_chaining_prompt(previous_thought_states)
-
-        self.logger.debug("Prompt for LM: %s", prompt)
-
-        responses = lm.get_response_texts(
-            lm.query(prompt, num_responses=self.num_responses)
-        )
-
-        self.logger.debug("Responses from LM: %s", responses)
-
-        parsed = parser.parse_forward_chaining_answer(previous_thought_states, responses)
-
-        if isinstance(parsed, dict):
-            parsed = [parsed]
-        for new_state in parsed:
-            self.thoughts.append(Thought({**base_state, **new_state}))

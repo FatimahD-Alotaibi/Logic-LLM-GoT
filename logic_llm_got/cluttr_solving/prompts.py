@@ -1,4 +1,4 @@
-cluttr_io_prompt = """<Instructions>
+cluttr_prompt_io = """<Instructions>
 Given the following narrative and goal statement, determine if the goal statement is True or False. Use the program to help you determine if the goal is True or False.
 </Instructions>
 
@@ -64,7 +64,7 @@ Goal: {goal}
 Answer: 
 """
 
-cluttr_cot_prompt = """<Instructions>
+cluttr_prompt_cot = """<Instructions>
 Given the following narrative and goal statement, determine if the goal statement is True or False. Use the program to help you determine if the goal is True or False. Explain your inference.
 </Instructions>
 
@@ -166,8 +166,16 @@ Input:
 """
 
 apply_rules_prompt = """<Instructions>
-Assign the appropriate rules to the input text. Output the rule(s) best suited for the input text provided.
+Given a narrative, an initial fact and a set of logical rules, derive all possible inferred facts. Apply each rule iteratively until no more new conclusions can be drawn. Provide the inferred facts in logical format, along with their descriptions.
 </Instructions>
+
+<Approach>
+1. Start with the initial fact and the narrative.
+2. Apply each rule to the current set of facts.
+3. If a new fact is derived, add it to the set of known facts.
+4. Repeat the process until no new facts can be derived.
+5. Present the final set of inferred facts in logical format with descriptions.
+<Approach>
 
 <Rules>
 relation(A, R, B) :- isRelationOf(A, R, B) ::: If A is the some_relation of B, then A can be inferred as the some_relation of B.
@@ -212,106 +220,298 @@ relation(A, sister, B) :- isRelationOf(A, sister, C), relation(C, (brother;siste
 </Rules>
 
 <Example>
-Input:
-isRelationOf(megan, sister, amy) ::: [megan] took her sister, [amy], out shopping for her birthday.
+Narrative: [Alice] celebrated her birthday with her son [Ben]. [Chris] visited his sister [Alice] and her family. [David] played soccer with his cousin [Ben]. [Eve] baked a cake for her grandson [David].
 
-Output: relation(A, sister, B) :- isRelationOf(A, aunt, C), relation(C, (son;daughter), B), B != A ::: If A is the aunt of C, and C can be inferred as the son or the daughter of B, then A can be inferred as the sister of B.\nrelation(A, sister, B) :- isRelationOf(A, daughter, C), relation(C, (father;mother), B), B != A ::: If A is the daughter of C, and C can be inferred as the father or the mother of B, then A can be inferred as the sister of B.\nrelation(A, sister, B) :- isRelationOf(A, sister, C), relation(C, (brother;sister), B), B != A ::: If A is the sister of C, and C can be inferred as the brother or the sister of B, then A can be inferred as the sister of B.
+Initila Fact:
+isRelationOf(ben, son, alice) ::: [Alice] celebrated her birthday with her son [Ben].
+
+Applying Rules Iteratively
+Iteration 1
+    Rule: relation(A, son, B) :- isRelationOf(A, son, C), relation(C, (husband;wife), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, daughter, B) :- isRelationOf(A, daughter, C), relation(C, (husband;wife), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, father, B) :- isRelationOf(A, grandfather, C), relation(C, (son;daughter), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, mother, B) :- isRelationOf(A, grandmother, C), relation(C, (son;daughter), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, father, B) :- isRelationOf(A, father, C), relation(C, (brother;sister), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, mother, B) :- isRelationOf(A, mother, C), relation(C, (brother;sister), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, uncle, B) :- isRelationOf(A, (brother;brother_in_law), C), relation(C, (father;mother), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, aunt, B) :- isRelationOf(A, (sister;sister_in_law), C), relation(C, (father;mother), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, nephew, B) :- isRelationOf(A, son, C), relation(C, (brother;sister;brother_in_law;sister_in_law), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, niece, B) :- isRelationOf(A, daughter, C), relation(C, (brother;sister;brother_in_law;sister_in_law), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, grandfather, B) :- isRelationOf(A, father, C), relation(C, (father;mother), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, grandmother, B) :- isRelationOf(A, mother, C), relation(C, (father;mother), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, grandson, B) :- isRelationOf(A, son, C), relation(C, (son;daughter), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, granddaughter, B) :- isRelationOf(A, daughter, C), relation(C, (son;daughter), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, father_in_law, B) :- isRelationOf(A, father, C), relation(C, (husband;wife), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, mother_in_law, B) :- isRelationOf(A, mother, C), relation(C, (husband;wife), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, son_in_law, B) :- isRelationOf(A, husband, C), relation(C, daughter, B), B != A
+    No applicable facts.
+
+    Rule: relation(A, daughter_in_law, B) :- isRelationOf(A, wife, C), relation(C, son, B), B != A
+    No applicable facts.
+
+    Rule: relation(A, brother_in_law, B) :- isRelationOf(A, husband, C), relation(C, sister, B), B != A
+    No applicable facts.
+
+    Rule: relation(A, sister_in_law, B) :- isRelationOf(A, wife, C), relation(C, brother, B), B != A
+    No applicable facts.
+
+    Rule: relation(A, husband, B) :- isRelationOf(B, wife, A), B != A
+    No applicable facts.
+
+    Rule: relation(A, wife, B) :- isRelationOf(B, husband, A), B != A
+    No applicable facts.
+
+    Rule: relation(A, husband, B) :- isRelationOf(A, father, C), relation(C, (daughter;son), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, wife, B) :- isRelationOf(A, mother, C), relation(C, (daughter;son), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, brother, B) :- isRelationOf(A, uncle, C), relation(C, (son;daughter), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, sister, B) :- isRelationOf(A, aunt, C), relation(C, (son;daughter), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, brother, B) :- isRelationOf(A, son, C), relation(C, (father;mother), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, sister, B) :- isRelationOf(A, daughter, C), relation(C, (father;mother), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, brother, B) :- isRelationOf(A, brother, C), relation(C, (brother;sister), B), B != A
+    No applicable facts.
+
+    Rule: relation(A, sister, B) :- isRelationOf(A, sister, C), relation(C, (brother;sister), B), B != A
+    No applicable facts.
+
+New Fact Derived
+    isRelationOf(chris, brother, alice): Chris is the brother of Alice.
+
+Iteration 2
+    Rule: relation(A, son, B) :- isRelationOf(A, brother, C), relation(C, (son;daughter), B), B != A
+        relation(chris, son, alice): Chris is the son of Alice.
+
+New Fact Derived
+    isRelationOf(chris, son, alice): Chris is the son of Alice.
+
+Iteration 3
+    Rule: relation(A, son, B) :- isRelationOf(A, brother, C), relation(C, (son;daughter), B), B != A
+        relation(david, grandson, alice): David is the grandson of Alice.
+        relation(eve, grandmother, ben): Eve is the grandmother of Ben.
+
+New Facts Derived
+    isRelationOf(david, grandson, alice): David is the grandson of Alice.
+    isRelationOf(eve, grandmother, ben): Eve is the grandmother of Ben.
+
+Iteration 4
+    Rule: relation(A, mother, B) :- isRelationOf(A, grandmother, C), relation(C, (son;daughter), B), B != A
+        relation(eve, mother, alice): Eve is the mother of Alice.
+
+New Fact Derived
+    isRelationOf(eve, mother, alice): Eve is the mother of Alice.
+
+Iteration 5
+    Rule: relation(A, grandmother, B) :- isRelationOf(A, mother, C), relation(C, (father;mother), B), B != A
+        relation(eve, grandmother, chris): Eve is the grandmother of Chris.
+
+New Fact Derived
+    isRelationOf(eve, grandmother, chris): Eve is the grandmother of Chris.
+
+Iteration 6
+    Rule: relation(A, uncle, B) :- isRelationOf(A, brother, C), relation(C, (father;mother), B), B != A
+        relation(david, uncle, ben): David is the uncle of Ben.
+
+New Fact Derived
+    isRelationOf(david, uncle, ben): David is the uncle of Ben.
+
+Final Set of Inferred Facts
+1. isRelationOf(ben, son, alice): Ben is the son of Alice.
+2. isRelationOf(chris, brother, alice): Chris is the brother of Alice.
+3. isRelationOf(chris, son, alice): Chris is the son of Alice.
+4. isRelationOf(david, grandson, alice): David is the grandson of Alice.
+5. isRelationOf(eve, grandmother, ben): Eve is the grandmother of Ben.
+6. isRelationOf(eve, mother, alice): Eve is the mother of Alice.
+7. isRelationOf(eve, grandmother, chris): Eve is the grandmother of Chris.
+8. isRelationOf(david, uncle, ben): David is the uncle of Ben.
+
+Output:
+isRelationOf(ben, son, alice): Ben is the son of Alice.
+isRelationOf(chris, brother, alice): Chris is the brother of Alice.
+isRelationOf(chris, son, alice): Chris is the son of Alice.
+isRelationOf(david, grandson, alice): David is the grandson of Alice.
+isRelationOf(eve, grandmother, ben): Eve is the grandmother of Ben.
+isRelationOf(eve, mother, alice): Eve is the mother of Alice.
+isRelationOf(eve, grandmother, chris): Eve is the grandmother of Chris.
+isRelationOf(david, uncle, ben): David is the uncle of Ben.
 </Example>
 
 Input:
-{input}
+Narrative: {narrative}
+
+Initial Fact:
+{initial_fact}
 
 Output:
 """
 
-cluttr_fg_prompt = """<Instruction>
-Given the following narrative and goal statement, determine if the goal statement is True or False. Your task is to perform forward chaining to determine if the conclusion is true or false. Print the entire Step-by-Step Foward Chaining Process exactly like the examples provided. DO NOT SKIP A SINGLE STEP!!!
-</Instruction>
+resolution_refutation_score_prompt="""<Instructions>
+Conduct resolution refutation on the followoing set of inferred facts and narrative.
+Please score the resolution refutation in terms of how consistent the inferred facts are with the given narrative. 
+A score of 10 implies that each inferred fact is consistent with the given rules, while a score of 0 implies that at least half of the inferred facts are consistent with the given narrative. 
+You may provide reasoning for your scoring, but the final score for consistency should be between the tags <Consistency> and </Consitency>, without any additional text within the tag.
+</Instructions>
 
 <Approach>
-Print your response using this format only. Use the examples to help you with your formatting. Your response should look exactly like the examples. Do not add any changes to the formatting or writing style.
-Initial Facts:
-1. "Fact number 1"
-2. "Fact number 2"
-3. "Fact number 3"
+Step 1: Negate the Inferred Facts
+Step 2: Convert All Statements into CNF
+Step 3: Apply Resolution
+Step 4: Derive Contradiction
+</Appraoch>
+
+<Example>
+Facts:
+isRelationOf(ben, son, alice): Ben is the son of Alice.
+isRelationOf(chris, brother, alice): Chris is the brother of Alice.
+isRelationOf(chris, son, alice): Chris is the son of Alice.
+isRelationOf(david, grandson, alice): David is the grandson of Alice.
+isRelationOf(eve, grandmother, ben): Eve is the grandmother of Ben.
+isRelationOf(eve, mother, alice): Eve is the mother of Alice.
+isRelationOf(eve, grandmother, chris): Eve is the grandmother of Chris.
+isRelationOf(david, uncle, ben): David is the uncle of Ben.
+
+Narrative: [Alice] celebrated her birthday with her son [Ben]. [Chris] visited his sister [Alice] and her family. [David] played soccer with his cousin [Ben]. [Eve] baked a cake for her grandson [David].
+
+Step 1: Negate the Inferred Facts
+1. ¬isRelationOf(ben, son, alice): Ben is not the son of Alice.
+2. ¬isRelationOf(chris, brother, alice): Chris is not the brother of Alice.
+3. ¬isRelationOf(chris, son, alice): Chris is not the son of Alice.
+4. ¬isRelationOf(david, grandson, alice): David is not the grandson of Alice.
+5. ¬isRelationOf(eve, grandmother, ben): Eve is not the grandmother of Ben.
+6. ¬isRelationOf(eve, mother, alice): Eve is not the mother of Alice.
+7. ¬isRelationOf(eve, grandmother, chris): Eve is not the grandmother of Chris.
+8. ¬isRelationOf(david, uncle, ben): David is not the uncle of Ben.
+
+Step 2: Convert All Statements into CNF (Conjunctive Normal Form)
+All Statements are in CNF
+
+Step 3: Apply Resolution
+We will check for consistency by seeing if the inferred facts can coexist without contradiction:
+
+1. Ben and Alice:
+    - Narrative: "Alice celebrated her birthday with her son Ben."
+    - Inferred: isRelationOf(ben, son, alice)
+    - Consistent.
+
+2. Chris and Alice:
+    - Narrative: "Chris visited his sister Alice."
+    - Inferred: isRelationOf(chris, brother, alice)
+    - Consistent.
+
+3. Chris and Alice (conflicting role):
+    - Inferred: isRelationOf(chris, son, alice)
+    - Contradicts isRelationOf(chris, brother, alice)
+    - Inconsistent.
+
+4. David and Alice:
+    - Inferred: isRelationOf(david, grandson, alice)
+    - Narrative does not directly state this but doesn't contradict it either.
+    - Consistent.
+
+5. Eve and Ben:
+    - Narrative: "Eve baked a cake for her grandson David."
+    - Inferred: isRelationOf(eve, grandmother, ben) and isRelationOf(eve, grandmother, chris)
+    - Consistent if David is Alice's son (implying Eve is Alice's mother)
+    - Consistent.
+
+6. Eve and Alice:
+    - Narrative consistency with inferred: isRelationOf(eve, mother, alice)
+    - Consistent.
+
+7. David and Ben:
+    - Narrative: "David played soccer with his cousin Ben."
+    - Inferred: isRelationOf(david, uncle, ben)
+    - Contradictory roles if David is Ben's cousin
+    - Inconsistent.
+
+Step 4: Derive Contradiction
+By identifying inconsistent relationships:
+    - Chris as both brother and son of Alice: Contradiction.
+    - David as both uncle and cousin to Ben: Contradiction.
+
+Final Consistency Score
+Output: Given the contradictions identified, we observe that the inferred facts are not fully consistent with the narrative. At least two inferred relationships directly contradict each other or the narrative. <Consistency>4</Consistency>
+</Example>
+
+Facts: {facts}
+
+Narrative: {narrative}
+"""
+
+aggregate_prompt = """<Instructions>
+Perform aggregation on the two sets of facts to generate a new set of facts.
+
+The format of the string should be: 
+Some logic program: Some description text.
+Some logic program: Some description text.
+Some logic program: Some description text.
 ...
+<Instructions>
 
-Rules:
-1. "Rule number 1"
-2. "Rule number 2"
-3. "Rule number 3"
-...
+Combine the following strings into a single string:
+Set 1:
+{input1}
 
-Inference Process:
-Applying Rules:
-Rule 1: "Apply rule 1".
-Rule 2: "Apply rule 2".
-Rule 3: "Apply rule 3".
-...
+Set 2:
+{input2}
 
-Deriving Relationships:
-From the rules applied:
-"The implied realtions using the applied rules."
+New set:
+"""
 
-Checking Goal:
-"Your inference to check the goal based on derived realtionships."
+reasoning_prompt_got = """<Instructions>
+Given the following narrative and goal statement, determine if the goal statement is True or False. Use the program to help you determine if the goal is True or False.
+</Instructions.
 
-Conclusion: "Your concluding statement."
-
-Answer: "Your answer choice."
+<Approach>
+To accurately answer the question, follow these steps:
+1. Carefully read and understand the given narrative. Identify key relationships with the subjects mentioned.
+2. Pay attention to any terms that are defined or explained within the narrative itself.
+3. Use the inferred facts to help draw out your conclusion. The inferred facts should give you clues about the subjects's relationships.
 </Approach>
 
 <Example>
-Narrative: [Olivia] spent the weekend with her daughter [Emma]. [Noah] played chess with his niece [Sophia]. [Emma] went to a concert with her cousin [Liam]. [Sophia] received a birthday card from her grandmother [Isabella].
-
-Program:
-statement: isRelationOf(emma, daughter, olivia).
-description: [Olivia] spent the weekend with her daughter [Emma].
-statement: isRelationOf(sophia, niece, noah).
-description: [Noah] played chess with his niece [Sophia].
-statement: isRelationOf(liam, cousin, emma).
-description: [Emma] went to a concert with her cousin [Liam].
-statement: isRelationOf(sophia, granddaughter, isabella).
-description: [Sophia] received a birthday card from her grandmother [Isabella].
-
-Goal: relation(noah, brother, emma)
-
-Step-by-Step Foward Chaining:
-Initial Facts:
-1. isRelationOf(emma, daughter, olivia)
-2. isRelationOf(sophia, niece, noah)
-3. isRelationOf(liam, cousin, emma)
-4. isRelationOf(sophia, granddaughter, isabella)
-
-Rules:
-1. If isRelationOf(X, daughter, Y) and isRelationOf(Z, niece, X), then relation(Z, brother, Y).
-2. If isRelationOf(X, niece, Y) and isRelationOf(X, granddaughter, Z), then relation(Y, son, Z).
-3. If isRelationOf(X, cousin, Y) and isRelationOf(Y, daughter, Z), then relation(X, sibling, Z).
-
-Inference Process:
-Applying Rules: 
-Rule 1: We don't have a fact matching `isRelationOf(Z, niece, X)` where X is a daughter of Y. 
-Rule 2: We don't have a direct fact for `isRelationOf(X, granddaughter, Z)` leading to a `relation(Y, son, Z)` involving Noah. 
-Rule 3: Given `isRelationOf(liam, cousin, emma)` and `isRelation(emma, daughter, olivia)`, we can't derive `relation(liam, sibling, olivia)` directly.
-
-Deriving Relationships:
-From `isRelationOf(sophia, niece, noah)`:
-If Sophia is Noah's nieve, Noah coulbe be a sibling to Sophia's parent.
-`isRelationOf(sophia, granddaughter, isabella)` implies Sophia's parent is Isabella's child.
-However, this does not directly connect Noah and Emma as siblings.
-From `isRelationOf(liam, cousin, emma):
-Cousin relationship implies Emma's parent and Liam's parent are siblings.
-We know Emma's mother is Olivia.
-
-Checkig Goal: 
-We need to establish a direct relationship between Noah and Emma:
-`isReltionOf(sophia, niece, noah)` indicates that Noah could be a sibling to Sophia's parent.
-`isRelationOf(sophia, granddaughter, isabella)` shows Sophia's parents mother is Isabella.
-
-Conclusion: We do not have sufficient information to establish that Noah and Emma are siblings. There is no rule application or derived fact directly linking Noah as the brother of Emma. Therefore, the goal statement "relation(noah, brother, emma)" is False. 
-
-Answer: False
-.....
 Narrative: [Alice] celebrated her birthday with her son [Ben]. [Chris] visited his sister [Alice] and her family. [David] played soccer with his cousin [Ben]. [Eve] baked a cake for her grandson [David].
 
 Program:
@@ -324,98 +524,34 @@ description: [David] played soccer with his cousin [Ben].
 statement: isRelationOf(david, grandson, eve).
 description: [Eve] baked a cake for her grandson [David].
 
+Inferred Facts:
+isRelationOf(alice, daughter, eve): Alice is the daughter of Eve.
+isRelationOf(ben, son, alice): Ben is the son of Alice.
+isRelationOf(chris, son, alice): Chris is the son of Alice.
+isRelationOf(eve, grandmother, ben): Eve is the grandmother of Ben.
+isRelationOf(eve, grandmother, chris): Eve is the grandmother of Chris.
+isRelationOf(david, grandson, eve): David is the grandson of Eve.
+isRelationOf(david, uncle, ben): David is the uncle of Ben.
+isRelationOf(david, uncle, chris): David is the uncle of Chris.
+isRelationOf(chris, brother, ben): Chris is the brother of Ben.
+isRelationOf(david, brother, alice): David is the brother of Alice.
+
 Goal: relation(chris, uncle, david)
 
-Step-by-Step Foward Chaining:
-Initial Facts:
-1. isRelationOf(ben, son, alice)
-2. isRelationOf(chris, brother, alice)
-3. isRelationOf(david, cousin, ben)
-4. isRelationOf(david, grandson, eve)
+Inference: From the program, we know that Ben is Alice's son. Chris is Alice's brother, which makes Chris Ben's uncle. David is Ben's cousin. This implies that David's parent is a sibling of Ben's parent (Alice). Since Chris is Alice's brother, Chris is also the uncle of David because the uncle relationship extends to the children of siblings. Therefore, the goal statement relation(chris, uncle, david) is True. 
+Output: True
 
-Rules:
-1. If isRelationOf(X, son, Y) and isRelationOf(Z, brother, Y), then relation(Z, uncle, X).
-2. If isRelationOf(X, grandson, Y) and isRelationOf(Y, mother, Z), then isRelationOf(X, son, Z).
-3. If isRelationOf(X, cousin, Y) and isRelationOf(Y, son, Z), then relation(X, nephew, Z).
-
-Inference Process:
-Applying Rules:
-Rule 1: Given `isRelationOf(ben, son, alice)` and `isRelationOf(chris, brother, alice)`, we can derive: `relation(chris, uncle, ben)`.
-Rule 2: We don't have a direct fact for `isRelationOf(david, grandson, eve)` leading to a `isRelationOf(david, son, Z)` involving another family memeber.
-Rule 3: We don't have a direct fact for `isRelationOf(david, cousin, ben)` leading to a `relation(david, nephew, Z)` involving another family member.
-
-Deriving Relationships:
-From `isRelationOf(david, cousin, ben)`:
-If David is Ben's cousin, it implies that David's parent is a sibling of Ben's parent.
-Given `isRelationOf(ben, son, alice)`, Ben is the son of Alice.
-`relation(chris, uncle, ben)` indicates Chris is Alice's brother.
-
-Checking Goal: 
-We need to establish a direct relationship between Chris and David:
-`relation(chris, uncle, ben)` and `isRelationOf(david, cousin, ben)`:
-If Ben is Alice's son and David is Ben's cousin, then David's parent must be Alice's sibling.
-Since Chris is Alice's brother, Chris is David's uncle.
-
-Conclusion: Based on the derived facts and inference, we can conclude that `realation(chris, uncle, david) is true. Therefore, the goal statement "relation(chris, uncle, david)" is True.
-
-Answer: True
-.....
-Narrative: [Ava] went on a picnic with her son [Ethan]. [Lucas] took his sister [Mia] to the movies. [Ethan] played video games with his cousin [Lucas]. [Sophia] enjoyed a dinner prepared by her granddaughter [Mia].
-
-Program:
-statement: isRelationOf(ethan, son, ava).
-description: [Ava] went on a picnic with her son [Ethan].
-statement: isRelationOf(lucas, brother, mia).
-description: [Lucas] took his sister [Mia] to the movies.
-statement: isRelationOf(lucas, cousin, ethan).
-description: [Ethan] played video games with his cousin [Lucas].
-statement: isRelationOf(mia, granddaughter, sophia).
-description: [Sophia] enjoyed a dinner prepared by her granddaughter [Mia].
-
-Goal: relation(ethan, brother, sophia)
-
-Step-by-Step Foward Chaining:
-Initial Facts:
-1. isRelationOf(ethan, son, ava)
-2. isRelationOf(lucas, brother, mia)
-3. isRelationOf(lucas, cousin, ethan)
-4. isRelationOf(mia, granddaughter, sophia)
-
-Rules:
-1. If isRelationOf(X, son, Y) and isRelationOf(Z, brother, Y), then relation(Z, uncle, X).
-2. If isRelationOf(X, brother, Y) and isRelationOf(Y, granddaughter, Z), then relation(X, grandson, Z).
-3. If isRelationOf(X, cousin, Y) and isRelationOf(Y, son, Z), then relation(X, nephew, Z).
-
-Inference Process
-Applying Rules:
-Rule 1: We don't have a fact matching `isRelationOf(Z, brother, Y)` where Y is a son of someone.
-Rule 2: Give `isRelationOf(lucas, brother, mia)` and `isRelationOf(mia, granddaughter, sophia)`, we can derive: `relation(lucas, grandson, sophia)`.
-Rule 3: We don't have a direct fact for `isRelationOf(lucas, cousin, ethan)` leading to a `relation(X, nephew, Z)` involving another family member.
-
-Deriving Relationships:
-From `isRelationOf(lucas, cousin, ethan)`:
-If Lucas is Ethan's cousin, it implies that Lucas's parent is a sibling of Ethan's parent.
-Given `isRelationOf(ethan, son, ava)`, Ethan is the son of Ava.
-However, this does not directly connect Ethan and Sophia as siblings.
-
-Checking Goal: 
-We need to establish a direct relationship between Ethan and Sophia:
-`isRelationOf(mia, ganddaughter, sophia)` indicates that Mia is Sophia's granddaughter.
-`isRelationOf(lucas, brother, mia)` shows that Lucas is Mia's brother.
-Therefore, Lucas is also Sophia's grandson through Mia.
-Given `relation(lucas, grandson, sophia)`, it further confirms Lucas's relationship with Sophia but does not establish Ethan's direct relationship with Sophia.
-
-Conclusion: We do not have sufficient information to establish that Ethan and Sophia are siblings. There is no rule application or derived fact directly linking Ethan as the brother of Sophia. Therefore, the goal statement "relation(ethan, brother, sophia)" is False.
-
-Answer: False
 </Example>
 
-Narrative: {body_text}
+Narrative: {narrative}
 
 Program:
 {program}
 
+Inferred Facts:
+{aggregated_facts}
+
 Goal: {goal}
 
-Step-by-Step Forward Chaining:
+Output:
 """

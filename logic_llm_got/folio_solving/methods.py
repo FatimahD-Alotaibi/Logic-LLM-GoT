@@ -131,6 +131,7 @@ def got() -> operations.GraphOfOperations:
             keep_best_aggregate.add_predecessor(score_aggregate)
             operations_graph.add_operation(keep_best_aggregate)
             new_sub_problems.append(keep_best_aggregate)
+            
         sub_problems = new_sub_problems
 
         for i in range(0, len(new_sub_problems)):

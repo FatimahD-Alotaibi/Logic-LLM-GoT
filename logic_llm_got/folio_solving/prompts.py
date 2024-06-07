@@ -127,7 +127,7 @@ Given an initial fact and a set of logical rules, derive all possible inferred f
 2. Apply each rule to the current set of facts.
 3. If a new fact is derived, add it to the set of known facts.
 4. Repeat the process until no new facts can be derived.
-5 Present the final set of inferred facts in logical format with descriptions.
+5. Present the final set of inferred facts in logical format with descriptions.
 <Approach>
 
 <Example>
@@ -154,7 +154,7 @@ Output:
 """
 
 resolution_refutation_score_prompt="""<Instructions>
-Conduct resolution refutation on the follwoing set of inferred facts and rules.
+Conduct resolution refutation on the followoing set of inferred facts and rules.
 Please score the resolution refutation in terms of how consistent the inferred facts are with the given rules. 
 A score of 10 implies that each inferred fact is consistent with the given rules, while a score of 0 implies that at least half of the inferred facts are consistent with the given rules. 
 You may provide reasoning for your scoring, but the final score for consistency should be between the tags <Consistency> and </Consitency>, without any additional text within the tag.
@@ -336,71 +336,6 @@ Output: C
 
 Inferred Facts:
 {aggregated_facts}
-
-Output:
-"""
-
-symbolic_logic_prompt = """<Instructions>
-Given a problem statement as contexts, the task is to answer a logical reasoning question. Output only the letter corresponding to the chosen option.
-</Instructions>
-
-<Approach>
-1. Read the question carefully. Iterate through the context and look for key words that may address the question being asked. 
-2. Split the raw logic programs into the Symbolic logic context. Place the prompt into the following format without any additional text or thoughts.
-<Example>
-Symbolic logic context:
-Predicates:
-Predicate_1 ::: predicate_1 statement.
-Predicate_2 ::: predicate_2 statement.
-...
-Premises:
-Premise_1 ::: premise_1 statement.
-Premise_2 ::: premise_2 statement.
-...
-Conclusion:
-Conclusion ::: conslution_1 statement.
-</Example>
-3. Utilize the symbolic logic context to derive possible conclusions based on the provided context and question.
-4. Use the conlusions drawn out from the Symbolic logic context to choose the option that answers the question.
-</Apprach>
-
-<Example>
-Context: All people who regularly drink coffee are dependent on caffeine. People either regularly drink coffee or joke about being addicted to caffeine. No one who jokes about being addicted to caffeine is unaware that caffeine is a drug. Rina is either a student and unaware that caffeine is a drug, or neither a student nor unaware that caffeine is a drug. If Rina is not a person dependent on caffeine and a student, then Rina is either a person dependent on caffeine and a student, or neither a person dependent on caffeine nor a student.
-
-Question: Based on the above information, is the following statement true, false, or uncertain? Rina is either a person who jokes about being addicted to caffeine or is unaware that caffeine is a drug.
-
-Options: A) True, B) False, C) Uncertain
-
-Raw logic programs: Predicates:Dependent(x) ::: x is a person dependent on caffeine.\nDrinks(x) ::: x regularly drinks coffee.\nJokes(x) ::: x jokes about being addicted to caffeine.\nUnaware(x) ::: x is unaware that caffeine is a drug.\nStudent(x) ::: x is a student.\nPremises:∀x (Drinks(x) → Dependent(x)) ::: All people who regularly drink coffee are dependent on caffeine.\n∀x (Drinks(x) ⊕ Jokes(x)) ::: People either regularly drink coffee or joke about being addicted to caffeine.\n∀x (Jokes(x) → ¬Unaware(x)) ::: No one who jokes about being addicted to caffeine is unaware that caffeine is a drug.\n(Student(rina) ∧ Unaware(rina)) ⊕ ¬(Student(rina) ∨ Unaware(rina)) ::: Rina is either a student and unaware that caffeine is a drug, or neither a student nor unaware that caffeine is a drug.\n¬(Dependent(rina) ∧ Student(rina)) → (Dependent(rina) ∧ Student(rina)) ⊕ ¬(Dependent(rina) ∨ Student(rina)) ::: If Rina is not a person dependent on caffeine and a student, then Rina is either a person dependent on caffeine and a student, or neither a person dependent on caffeine nor a student.\nConclusion:Jokes(rina) ⊕ Unaware(rina) ::: Rina is either a person who jokes about being addicted to caffeine or is unaware that caffeine is a drug.
-
-Symbolic logic context:
-Predicates:
-Dependent(x) ::: x is a person dependent on caffeine.
-Drinks(x) ::: x regularly drinks coffee.
-Jokes(x) ::: x jokes about being addicted to caffeine.
-Unaware(x) ::: x is unaware that caffeine is a drug.
-Student(x) ::: x is a student.
-Premises:
-∀x (Drinks(x) → Dependent(x)) ::: All people who regularly drink coffee are dependent on caffeine.
-∀x (Drinks(x) ⊕ Jokes(x)) ::: People either regularly drink coffee or joke about being addicted to caffeine.
-∀x (Jokes(x) → ¬Unaware(x)) ::: No one who jokes about being addicted to caffeine is unaware that caffeine is a drug. 
-(Student(rina) ∧ Unaware(rina)) ⊕ ¬(Student(rina) ∨ Unaware(rina)) ::: Rina is either a student and unaware that caffeine is a drug, or neither a student nor unaware that caffeine is a drug. 
-¬(Dependent(rina) ∧ Student(rina)) → (Dependent(rina) ∧ Student(rina)) ⊕ ¬(Dependent(rina) ∨ Student(rina)) ::: If Rina is not a person dependent on caffeine and a student, then Rina is either a person dependent on caffeine and a student, or neither a person dependent on caffeine nor a student.
-Conclusion:
-Jokes(rina) ⊕ Unaware(rina) ::: Rina is either a person who jokes about being addicted to caffeine or is unaware that caffeine is a drug.
-
-Conclusion analysis: Option C is correct because the statement "Rina is either a person who jokes about being addicted to caffeine or is unaware that caffeine is a drug" cannot be definitively confirmed or refuted based solely on the information provided. The given information outlines several possibilities regarding Rina's characteristics, such as her coffee consumption habits, student status, and awareness of caffeine as a drug. While we can analyze these possibilities and infer potential scenarios, the lack of specific details about Rina's characteristics prevents us from arriving at a conclusive determination. Option A (True) and Option B (False) are incorrect because they assert certainty without adequate evidence. Without additional information about Rina, uncertainty remains the appropriate conclusion, as the statement cannot be decisively affirmed or denied based solely on the provided information. 
-
-Output: C
-</Example>
-
-{input}
-
-{question}
-
-{options}
-
-{raw_logic_programs}
 
 Output:
 """

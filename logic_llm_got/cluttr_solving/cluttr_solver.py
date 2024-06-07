@@ -6,7 +6,7 @@ from typing import List, Callable
 from graph_of_thoughts import operations, language_models, controller
 from logic_prompter import LogicalReasoningPrompter
 from logic_parser import LogicalReasoningParser
-from methods import io, cot, got, got_fg # Import the methods
+from methods import io, cot, got  # Import the methods
 
 def run(
     data_ids: List[int],

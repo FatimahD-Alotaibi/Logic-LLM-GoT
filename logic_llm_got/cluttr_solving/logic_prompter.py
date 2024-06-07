@@ -1,5 +1,5 @@
 from typing import Dict, List
-from prompts import cluttr_io_prompt, cluttr_cot_prompt, cluttr_fg_prompt, got_split_prompt, apply_rules_prompt
+from prompts import cluttr_prompt_io, cluttr_prompt_cot, got_split_prompt, apply_rules_prompt, resolution_refutation_score_prompt, aggregate_prompt, reasoning_prompt_got
 from graph_of_thoughts import prompter
 
 class LogicalReasoningPrompter(prompter.Prompter):
@@ -10,11 +10,13 @@ class LogicalReasoningPrompter(prompter.Prompter):
     Inherits from the Prompter class and implements its abstract methods.
     """
 
-    cluttr_io_prompt=cluttr_io_prompt
-    cluttr_cot_prompt=cluttr_cot_prompt
-    cluttr_fg_prompt=cluttr_fg_prompt
+    cluttr_prompt_io=cluttr_prompt_io
+    cluttr_prompt_cot=cluttr_prompt_cot
     got_split_prompt=got_split_prompt
     apply_rules_prompt=apply_rules_prompt
+    resolution_refutation_score_prompt=resolution_refutation_score_prompt
+    aggregate_prompt=aggregate_prompt
+    reasoning_prompt_got=reasoning_prompt_got
 
     def aggregation_prompt(self, state_dicts: List[Dict], **kwargs) -> str:
         """
@@ -27,21 +29,14 @@ class LogicalReasoningPrompter(prompter.Prompter):
         :rtype: str
         :raise AssertionError: If more than two thought states are provided.
         """        
-        pass
-    
-    def forward_chaining_prompt(self, state_dicts: List[Dict], **kwargs) -> str:
-        """
-        Generate a forward chaining prompt for the language model.
-
-        :param state_dicts: The thought states.
-        :type state_dicts: List[Dict]
-        :param kwargs: Additional keyword arguments.
-        :return: The forward chaining prompt.
-        :rtype: str
-        """
-        prompt = self.cluttr_fg_prompt.format(body_text=state_dicts[0]["body_text"], program=state_dicts[0]["program"], goal=state_dicts[0]["goal"])
-        
-        return prompt
+        assert len(state_dicts) <= 2, "Expected 2 states for aggregationn prompt."
+        if len(state_dicts) == 0:
+            state_dicts = [{"inferred_facts": ""}, {"inferred_facts": ""}]
+        elif len(state_dicts) == 1:
+            state_dicts.append({"inferred_facts": ""})
+        return self.aggregate_prompt.format(
+            input1=state_dicts[0]["inferred_facts"], input2=state_dicts[1]["inferred_facts"]
+        )
 
     def generate_prompt(self, num_branches: int, body_text: str, program: str, goal: str, current: str, method: str, **kwargs) -> str:
         """
@@ -63,15 +58,17 @@ class LogicalReasoningPrompter(prompter.Prompter):
         assert num_branches == 1, "Branchig should be done via multiple requests."
 
         if method.startswith("io"):
-            return self.cluttr_io_prompt.format(body_text=body_text, program=program, goal=goal)
+            return self.cluttr_prompt_io.format(body_text=body_text, program=program, goal=goal)
         elif method.startswith("cot"):
-            return self.cluttr_cot_prompt.format(body_text=body_text, program=program, goal=goal)
+            return self.cluttr_prompt_cot.format(body_text=body_text, program=program, goal=goal)
         elif method.startswith("got"):
             if (current is None or current == "") and kwargs["phase"] == 0:
                 return self.got_split_prompt.format(program=program)
             
-            if kwargs["phase"] == 1:
-                return self.apply_rules_prompt.format(input=kwargs["sub_text"])
+            elif (current is None or current == "") and kwargs["phase"] == 1:
+                return self.apply_rules_prompt.format(narrative=body_text, initial_fact=kwargs["sub_text"])
+            elif (current is None or current == "") and kwargs["phase"] == 2:
+                return self.reasoning_prompt_got.format(narrative=body_text, program=program, aggregated_facts=kwargs["aggregated_facts"], goal=goal)
         
         
         
@@ -113,4 +110,15 @@ class LogicalReasoningPrompter(prompter.Prompter):
         :rtype: str
         :raise AssertionError: If more than one thought state is supplied.
         """
-        pass
+        key_to_check = "aggregated_facts"
+
+        if len(state_dicts) > 1:
+            assert False, "Not implemented yet."
+        else:
+            # perform individual scoring
+            if key_to_check not in state_dicts[0]:
+                prompt = self.resolution_refutation_score_prompt.format(facts=state_dicts[0]["inferred_facts"], narrative=state_dicts[0]["body_text"])
+                return prompt
+            else:
+                prompt = self.resolution_refutation_score_prompt.format(facts=state_dicts[0]["aggregated_facts"], narrative=state_dicts[0]["body_text"])
+                return prompt
