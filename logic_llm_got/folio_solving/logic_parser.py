@@ -194,7 +194,8 @@ class LogicalReasoningParser(parser.Parser):
                     and state["current"] == ""
                     and state["phase"] == 0
                 ):
-                    rules = self.extract_premises_content(state["raw_logic_programs"][0])
+                    # Phase 0: Parse the response assuming it's a JSON string containing initial facts.
+                    rules = self.extract_premises_content(state["raw_logic_programs"][0]) # Parse the rules from the 'raw_logic_programs'
                     answer = self.strip_answer_json(text)
                     json_dict = json.loads(answer)
                     for key, value in json_dict.items():
@@ -215,6 +216,7 @@ class LogicalReasoningParser(parser.Parser):
                     and state["current"] == ""
                     and state["phase"] == 1
                 ):
+                    # Phase 1: Parse the response assuming it's a plain string containing inferred facts.
                     answer = self.strip_inferred_facts(text)
                     new_state = state.copy()
                     new_state["inferred_facts"] = answer
@@ -226,6 +228,7 @@ class LogicalReasoningParser(parser.Parser):
                     and state["current"] == ""
                     and state["phase"] == 2
                 ):
+                    # Phase 2: Parse the response assuming it's a plain string containing the reasoning response.
                     answer = self.extract_only_letter_character(text)
                     new_state = state.copy()
                     new_state["current"] = answer

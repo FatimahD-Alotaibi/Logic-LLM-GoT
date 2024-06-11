@@ -153,6 +153,35 @@ Rules:
 Output:
 """
 
+rr_s_score_prompt="""<Instructions>
+Conduct resolution refutation on the followoing set of inferred facts and rules.
+Please score the resolution refutation in terms of how consistent the inferred facts are with the given rules. 
+A score of 10 implies that each inferred fact is consistent with the given rules, while a score of 0 implies that at least half of the inferred facts are consistent with the given rules. 
+You may provide reasoning for your scoring, but the final score for consistency should be between the tags <Consistency> and </Consitency>, without any additional text within the tag.
+</Instructions>
+
+<Approach>
+Step 1: Negate the Inferred Facts
+Step 2: Convert All Statements into CNF
+Step 3: Apply Resolution
+Step 4: Derive Contradiction
+</Appraoch>
+
+<Example>
+Inferred Facts:
+Dependent(rina) ::: Rina is a person dependent on caffeine.
+Drinks(rina) ⊕ Jokes(rina) ::: Rina either regularly drinks coffee or jokes about being addicted to caffeine.
+Jokes(rina) → ¬Unaware(rina) ::: If Rina jokes about being addicted to caffeine, then she is not unaware that caffeine is a drug.
+
+Rules:
+∀x (Drinks(x) → Dependent(x)) ::: All people who regularly drink coffee are dependent on caffeine.
+∀x (Drinks(x) ⊕ Jokes(x)) ::: People either regularly drink coffee or joke about being addicted to caffeine.
+∀x (Jokes(x) → ¬Unaware(x)) ::: No one who jokes about being addicted to caffeine is unaware that caffeine is a drug. 
+(Student(rina) ∧ Unaware(rina)) ⊕ ¬(Student(rina) ∨ Unaware(rina)) ::: Rina is either a student and unaware that caffeine is a drug, or neither a student nor unaware that caffeine is a drug. 
+¬(Dependent(rina) ∧ Student(rina)) → (Dependent(rina) ∧ Student(rina)) ⊕ ¬(Dependent(rina) ∨ Student(rina)) ::: If Rina is not a person dependent on caffeine and a student, then Rina is either a person dependent on caffeine and a student, or neither a person dependent on caffeine nor a student.
+</Example>
+"""
+
 resolution_refutation_score_prompt="""<Instructions>
 Conduct resolution refutation on the followoing set of inferred facts and rules.
 Please score the resolution refutation in terms of how consistent the inferred facts are with the given rules. 
@@ -232,7 +261,7 @@ Resolving these, we get both Unaware(rina) and ¬Unaware(rina), which is a contr
 Conslusion (Step 4):
 We have derived a contradiction from the negation of the inferred facts along with the given rules. This means the original inferred facts are consistent with the given rules. Thus, the original inferred facts Dependent(rina), Drinks(rina) ⊕ Jokes(rina), and Jokes(rina) → ¬Unaware(rina) are true given the rules and the initial fact Dependent(x). 
 
-Output: Since each inferred fact is consistent with the given rules, the inferred facts get the highest score. <Consistency>10</Consistency>
+Output: <Consistency>10</Consistency>
 </Example>
 
 Facts:

@@ -179,7 +179,7 @@ if __name__ == "__main__":
     """
     
     budget = 30
-    samples = [item for item in range(0, 1)] # Because there are only 100 samples in the CLUTTR dataset
+    samples = [item for item in range(0, 10)]
     approaches = [got]
 
     spent = run(samples, approaches, budget, "chatgpt")

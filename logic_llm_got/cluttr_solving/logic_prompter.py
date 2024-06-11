@@ -1,5 +1,5 @@
 from typing import Dict, List
-from prompts import cluttr_prompt_io, cluttr_prompt_cot, got_split_prompt, apply_rules_prompt, resolution_refutation_score_prompt, aggregate_prompt, reasoning_prompt_got
+from prompts import cluttr_prompt_io, cluttr_prompt_cot, got_split_prompt, apply_rules_prompt, infer_facts_prompt, resolution_refutation_score_prompt, aggregate_prompt, reasoning_prompt_got
 from graph_of_thoughts import prompter
 
 class LogicalReasoningPrompter(prompter.Prompter):
@@ -14,6 +14,7 @@ class LogicalReasoningPrompter(prompter.Prompter):
     cluttr_prompt_cot=cluttr_prompt_cot
     got_split_prompt=got_split_prompt
     apply_rules_prompt=apply_rules_prompt
+    infer_facts_prompt=infer_facts_prompt
     resolution_refutation_score_prompt=resolution_refutation_score_prompt
     aggregate_prompt=aggregate_prompt
     reasoning_prompt_got=reasoning_prompt_got
@@ -66,7 +67,8 @@ class LogicalReasoningPrompter(prompter.Prompter):
                 return self.got_split_prompt.format(program=program)
             
             elif (current is None or current == "") and kwargs["phase"] == 1:
-                return self.apply_rules_prompt.format(narrative=body_text, initial_fact=kwargs["sub_text"])
+                return self.infer_facts_prompt.format(narrative=body_text, initial_fact=kwargs["sub_text"])
+            
             elif (current is None or current == "") and kwargs["phase"] == 2:
                 return self.reasoning_prompt_got.format(narrative=body_text, program=program, aggregated_facts=kwargs["aggregated_facts"], goal=goal)
         

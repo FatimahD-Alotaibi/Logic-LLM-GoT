@@ -168,7 +168,7 @@ if __name__ == "__main__":
     """
     
     budget = 30
-    samples = [item for item in range(0, 1)] # Because there are only 204 samples in the FOLIO dataset
+    samples = [item for item in range(0, 10)] # Because there are only 204 samples in the FOLIO dataset
     approaches = [got]
 
     spent = run(samples, approaches, budget, "chatgpt")

@@ -89,11 +89,18 @@ class LogicalReasoningParser(parser.Parser):
         :return: Retrieved text.
         :rtype: str
         """
+
+        # Strip leading and trailing whitespace
         text = text.strip()
+
+        # Check if "Output:" is in the text and extract the text following it
         if "Output:" in text:
             text = text[text.index("Output:") + len("Output:") :].strip()
 
-        return text
+        try:
+            return text
+        except:
+            return ""
     
     def strip_aggregated_facts(self, text: str) -> str:
         """
@@ -176,6 +183,7 @@ class LogicalReasoningParser(parser.Parser):
                     and state["current"] == ""
                     and state["phase"] == 0
                 ):
+                    # Phase 0: Parse the response assuming it's a JSON string containing initial facts.
                     answer = self.strip_answer_json(text)
                     json_dict = json.loads(answer)
                     for key, value in json_dict.items():
@@ -184,33 +192,36 @@ class LogicalReasoningParser(parser.Parser):
                                 f"Expected key to contain 'Initial Fact', but found {key}."
                             )
                             continue
-                        new_state = state.copy()
-                        new_state["current"] = ""
-                        new_state["sub_text"] = value
-                        new_state["phase"] = 1
-                        new_state["part"] = key
-                        new_states.append(new_state)
+                        new_state = state.copy() # copy the state dictionary
+                        new_state["current"] = "" 
+                        new_state["sub_text"] = value # initialize the initial fact
+                        new_state["phase"] = 1 # change phase
+                        new_state["part"] = key 
+                        new_states.append(new_state) # append the state dictionary to the list
                 elif (
                     state["method"].startswith("got")
                     and state["current"] == ""
                     and state["phase"] == 1
                 ):
+                    # Phase 1: Parse the response assuming it's a plain string containing inferred facts.
                     answer = self.strip_answer_string(text)
                     new_state = state.copy()
-                    new_state["inferred_facts"] = answer
-                    new_state["phase"] = 2
-                    new_states.append(new_state)
+                    new_state["inferred_facts"] = answer # initialize the inferred facts
+                    new_state["phase"] = 2 # change phase
+                    new_states.append(new_state) # append the state dictionary to the list
                 elif (
                     state["method"].startswith("got")
                     and state["current"] == ""
                     and state["phase"] == 2
                 ):
+                    # Phase 2: Parse the response assuming it's a plain string containing the reasoning response
                     answer = self.strip_answer_string(text)
                     new_state = state.copy()
-                    new_state["current"] = answer
-                    new_states.append(new_state)
+                    new_state["current"] = answer # initialize the answer response
+                    new_states.append(new_state) # append the state dictionary to the list
                 else:
-                    answer = self.strip_answer_json(text)
+                    # Default case: Parse the response as a plain string and move to phase 3.
+                    answer = self.strip_answer_string(text)
                     new_state = state.copy()
                     new_state["current"] = answer
                     new_state["phase"] = 3
