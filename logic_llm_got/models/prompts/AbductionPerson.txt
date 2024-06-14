@@ -1,0 +1,63 @@
+Task Description: You are given a problem context and text description.
+The task is to:
+1) define all the predicates in the problem
+2) parse the problem into logic rules based on the defined predicates
+3) write all the facts mentioned in the problem
+4) parse the question into logic form
+
+Context: Bob is kind. Harry is thin. All people that are huge, are bad, and are poor, are also dull. All people that are nice, are smart, and are kind, are quiet. Fiona is huge. Harry is tiny. Fiona is strong. People that are nice, are small, and are little, are short. If a person is small, is nice, and is bad, that person is also heavy. Harry is small. Charlie is imperfect. Charlie is sad. If a person is little, is tiny, and is small, that person is also short. Fiona is big. If something is high, is tiny, and is strong, it is heavy. If a person is tiny, is smart, and is strong, that person is dull. If a person is high, is sad, and is kind, that person is also short. Bob is nice. If something is poor, is bad, and is sad, then it is also dull. Charlie is poor. All things that are huge, are strong, and are high, are heavy. If a person is kind, is sad, and is smart, that person is also quiet. If something is little, is huge, and is poor, it is quiet.
+Text: Fiona is heavy.
+###
+Predicates:
+Kind(x): x is kind
+Thin(x): x is thin
+Huge(x): x is huge
+Bad(x): x is bad
+Poor(x): x is poor
+Dull(x): x is dull
+Nice(x): x is nice
+Smart(x): x is smart
+Quiet(x): x is quiet
+Strong(x): x is strong
+Small(x): x is small
+Little(x): x is little
+Short(x): x is short
+Heavy(x): x is heavy
+Tiny(x): x is tiny
+Imperfect(x): x is imperfect
+Sad(x): x is sad
+High(x): x is high
+Big(x): x is big
+Facts:
+Kind(Bob)
+Thin(Harry)
+Huge(Fiona)
+Tiny(Harry)
+Strong(Fiona)
+Small(Harry)
+Imperfect(Charlie)
+Sad(Charlie)
+Big(Fiona)
+Nice(Bob)
+Poor(Charlie)
+Rules:
+∀x(Huge(x) ∧ Bad(x) ∧ Poor(x) → Dull(x))
+∀x(Nice(x) ∧ Smart(x) ∧ Kind(x) → Quiet(x))
+∀x(Nice(x) ∧ Small(x) ∧ Little(x) → Short(x))
+∀x(Small(x) ∧ Nice(x) ∧ Bad(x) → Heavy(x))
+∀x(Little(x) ∧ Tiny(x) ∧ Small(x) → Short(x))
+∀x(High(x) ∧ Tiny(x) ∧ Strong(x) → Heavy(x))
+∀x(Tiny(x) ∧ Smart(x) ∧ Strong(x) → Dull(x))
+∀x(High(x) ∧ Sad(x) ∧ Kind(x) → Short(x))
+∀x(Poor(x) ∧ Bad(x) ∧ Sad(x) → Dull(x))
+∀x(Huge(x) ∧ Strong(x) ∧ High(x) → Heavy(x))
+∀x(Kind(x) ∧ Sad(x) ∧ Smart(x) → Quiet(x))
+∀x(Little(x) ∧ Huge(x) ∧ Poor(x) → Quiet(x))
+Query:
+Heavy(Fiona)
+------
+Context:
+[[CONTEXT]]
+TEXT:
+[[TEXT]]
+###

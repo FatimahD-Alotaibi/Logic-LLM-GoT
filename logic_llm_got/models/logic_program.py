@@ -22,7 +22,8 @@ class LogicProgramGenerator:
                                'ProntoQA': self.prompt_prontoqa,
                                'ProofWriter': self.prompt_proofwriter,
                                'LogicalDeduction': self.prompt_logicaldeduction, 
-                               'AR-LSAT': self.prompt_arlsat}
+                               'AR-LSAT': self.prompt_arlsat,
+                               'AbductionPerson': self.prompt_abductionPerson}
         self.load_prompt_templates()
     
     def load_prompt_templates(self):
@@ -31,6 +32,12 @@ class LogicProgramGenerator:
             prompt_file = f'./models/prompts/{self.dataset_name}-long.txt'
         with open(prompt_file, 'r') as f:
             self.prompt_template = f.read()
+    
+    def prompt_abductionPerson(self, test_data):
+        context = test_data['context']
+        text = test_data['text'].strip()
+        full_prompt = self.prompt_template.replace('[[CONTEXT]]', context).replace('[[TEXT]]', text)
+        return full_prompt
 
     def prompt_folio(self, test_data):
         problem = test_data['context']
@@ -91,13 +98,13 @@ class LogicProgramGenerator:
                         'question': example['question'], 
                         'answer': example['answer'],
                         'options': example['options'],
-                        'raw_logic_programs': programs}
+                        'raw_logic_programs': programs,}
                 outputs.append(output)
             except:
                 print('Error in generating logic programs for example: ', example['id'])
 
         # save outputs        
-        with open(os.path.join(self.save_path, f'{self.dataset_name}_{self.split}_{self.model_name}.json'), 'w') as f:
+        with open(os.path.join(self.save_path, f'{self.dataset_name}_{self.split}_{self.model_name}.json'), 'w', encoding="utf-8") as f:
             json.dump(outputs, f, indent=2, ensure_ascii=False)
 
     '''
@@ -121,10 +128,10 @@ class LogicProgramGenerator:
                     programs = [output]
                     output = {'id': sample['id'], 
                             'context': sample['context'],
-                            'question': sample['question'], 
-                            'answer': sample['answer'],
-                            'options': sample['options'],
-                            'raw_logic_programs': programs}
+                            'question': sample['text'], 
+                            'answer': sample['label'],
+                            'raw_logic_programs': programs,
+                            'QCat': sample['QCat']}
                     outputs.append(output)
             except:
                 # generate one by one if batch generation fails
@@ -134,10 +141,10 @@ class LogicProgramGenerator:
                         programs = [output]
                         output = {'id': sample['id'], 
                                 'context': sample['context'],
-                                'question': sample['question'], 
-                                'answer': sample['answer'],
-                                'options': sample['options'],
-                                'raw_logic_programs': programs}
+                                'question': sample['text'], 
+                                'answer': sample['label'],
+                                'raw_logic_programs': programs,
+                                'QCat': sample['QCat']}
                         outputs.append(output)
                     except:
                         print('Error in generating logic programs for example: ', sample['id'])
@@ -150,7 +157,7 @@ class LogicProgramGenerator:
         if not os.path.exists(self.save_path):
             os.makedirs(self.save_path)
         
-        with open(os.path.join(self.save_path, f'{self.dataset_name}_{self.split}_{self.model_name}.json'), 'w') as f:
+        with open(os.path.join(self.save_path, f'{self.dataset_name}_{self.split}_{self.model_name}.json'), 'w', encoding="utf-8") as f:
             json.dump(outputs, f, indent=2, ensure_ascii=False)
 
 def parse_args():
