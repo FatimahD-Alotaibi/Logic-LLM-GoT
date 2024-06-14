@@ -63,3 +63,20 @@
     ]
 },
 ```
+
+## abductivePerson
+
+**Sample:**
+
+```
+{
+    "id": "Abduction-Person-1332-Q1",
+    "context": "All people that are short, are thin, and are wealthy, are also little. Charlie is small. All people that are thin, are short, and are small, are little. People that are poor, are dull, and are sad, are also rough. Gary is imperfect. If something is heavy, is huge, and is high, it is also big. Gary is dull. Charlie is tiny. Erin is strong. All things that are smart, are sad, and are high, are also little. Fiona is smart. Gary is sad. All things that are kind, are wealthy, and are smart, are also clever. If a person is heavy, is thin, and is dull, that person is clever. If something is kind, is small, and is huge, then it is also rough. Fiona is wealthy. Things that are sad, are kind, and are smart, are also clever. Charlie is short. Things that are short, are wealthy, and are poor, are big. If a person is high, is small, and is huge, then that person is also big. Erin is heavy. Erin is huge. All people that are poor, are dull, and are heavy, are rough.",
+    "question": "Erin is big.",
+    "label": "Erin is high.",
+    "raw_logic_programs": [
+        "Predicates:\nShort(x): x is short\nThin(x): x is thin\nWealthy(x): x is wealthy\nLittle(x): x is little\nSmall(x): x is small\nPoor(x): x is poor\nDull(x): x is dull\nRough(x): x is rough\nImperfect(x): x is imperfect\nHeavy(x): x is heavy\nHuge(x): x is huge\nHigh(x): x is high\nBig(x): x is big\nTiny(x): x is tiny\nStrong(x): x is strong\nSmart(x): x is smart\nKind(x): x is kind\nClever(x): x is clever\n\nFacts:\nSmall(Charlie)\nImperfect(Gary)\nDull(Gary)\nTiny(Charlie)\nStrong(Erin)\nSmart(Fiona)\nSad(Gary)\nWealthy(Fiona)\nShort(Charlie)\nHeavy(Erin)\nHuge(Erin)\n\nRules:\n∀x(Short(x) ∧ Thin(x) ∧ Wealthy(x) → Little(x))\n∀x(Thin(x) ∧ Short(x) ∧ Small(x) → Little(x))\n∀x(Poor(x) ∧ Dull(x) ∧ Sad(x) → Rough(x))\n∀x(Heavy(x) ∧ Huge(x) ∧ High(x) → Big(x))\n∀x(Smart(x) ∧ Sad(x) ∧ High(x) → Little(x))\n∀x(Kind(x) ∧ Wealthy(x) ∧ Smart(x) → Clever(x))\n∀x(Heavy(x) ∧ Thin(x) ∧ Dull(x) → Clever(x))\n∀x(Kind(x) ∧ Small(x) ∧ Huge(x) → Rough(x))\n∀x(Sad(x) ∧ Kind(x) ∧ Smart(x) → Clever(x))\n∀x(Short(x) ∧ Wealthy(x) ∧ Poor(x) → Big(x))\n∀x(High(x) ∧ Small(x) ∧ Huge(x) → Big(x))\n∀x(Poor(x) ∧ Dull(x) ∧ Heavy(x) → Rough(x))\n\nQuery:\nBig(Erin)"
+    ],
+    "QCat": "0"
+},
+```
