@@ -66,7 +66,7 @@ class LogicalReasoningPrompter(prompter.Prompter):
                 return self.got_split_prompt.format(raw_logic_programs=raw_logic_programs)
             
             elif (current is None or current == "") and kwargs["phase"] == 1:
-                return self.infer_facts_prompt.format(context=context, initial_fact=kwargs["sub_text"])
+                return self.infer_facts_prompt.format(context=context, initial_fact=kwargs["sub_text"], rules=kwargs["rules"])
             
             elif (current is None or current == "") and kwargs["phase"] == 2:
                 return self.abductive_prompt_got.format(context=context, raw_logic_programs=raw_logic_programs, aggregated_facts=kwargs["aggregated_facts"], goal=goal)

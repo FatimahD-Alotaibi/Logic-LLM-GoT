@@ -1,0 +1,59 @@
+Task Description: You are given a problem description and a goal. The task is to: 
+1) define all the predicates in the problem
+2) parse the problem into logic rules based on the defined predicates
+3) write all the facts mentioned in the problem
+4) parse the goal into the logic form
+
+Narrative: [Alice] celebrated her birthday with her son [Ben]. [Chris] visited his sister [Alice] and her family. [David] played soccer with his cousin [Ben]. [Eve] baked a cake for her grandson [David].
+
+Goal: relation(chris, uncle, david)
+###
+Predicates:
+parent(X, Y) ::: X is a parent of Y.
+sibling(X, Y) ::: X is a sibling of Y.
+cousin(X, Y) ::: X is a cousin of Y.
+grandparent(X, Y) ::: X is a grandparent of Y.
+uncle(X, Y) ::: X is an uncle of Y.
+Facts:
+parent(alice, ben) ::: alice is a parent of ben.
+sibling(alice, chris) ::: alice is a sibling of chris.
+cousin(david, ben) ::: david is a cousin of ben.
+grandparent(eve, david) ::: even is a grandparent of david.
+Rules:
+∀X, Y(celebrated_with(X, Y) ⇒ parent(X, Y)) ::: If X celebrated their birthday with Y, then X is a parent of Y.
+∀X, Y(visited(X, Y) ⇒ sibling(X, Y)) ::: If X visited Y, then X and Y are siblings. 
+∀X, Y(played_with(X, Y) ⇒ cousin(X, Y)) ::: If X played soccer with Y, then X and Y are cousins.
+∀X, Y(baked_for(X, Y) ⇒ grandparent(X, Y)) ::: If X baked a cake for Y, then X is a grandparent of Y.
+Query:
+uncle(chris, david) ::: chris is an uncle of david.
+-----
+Narrative: [Olivia] went to a concert with her son [Liam]. [Emma] had lunch with her brother [Liam] and their cousin [Noah]. [Mason] played chess with his uncle [Noah]. [Sophia] received a gift from her granddaughter [Emma].
+
+Goal: relation(mason, nephew, emma)
+###
+Predicates:
+parent(X, Y) ::: X is a parent of Y.
+sibling(X, Y) ::: X is a sibling of Y.
+cousin(X, Y) ::: X is a cousin of Y.
+uncle(X, Y) ::: X is an uncle of Y.
+grandparent(X, Y) ::: X is a grandparent of Y.
+nephew(X, Y) ::: X is a nephew of Y.
+Facts: 
+parent(olivia, liam) ::: olivia is a parent of liam.
+sibling(liam, emma) ::: liam is a sibling of emma.
+cousin(noah, emma) ::: noah is a cousin of emma.
+uncle(mason, noah) ::: mason is a cousin of noah.
+grandparent(sophia, emma) ::: sophia is a grandparent of emma.
+Rules:
+∀X, Y(went_to_concert(X,Y) ⇒ parent(X,Y)) ::: If X went to a concert with Y, then X is a parent of Y.
+∀X, Y, Z((had_lunch_with(X, Y, Z) ∧ brother(Y, X) ∧ cousin(Z, X)) ⇒ sibling(X, Y) ∧ cousin(Y, Z)) ::: If X had lunch with Y and Z, where Y is a brother of X and Z is their cousin, then X and Y are siblings, and Y and Z are cousins.
+∀X, Y(played_chess_with(X, Y) ⇒ uncle(X, Y)) ::: If X played chess with Y, then X is an uncle of Y.
+∀X, Y(received_from(X, Y) ⇒ grandparent(X, Y)) ::: If X received a gift from Y, then X is a grandparent of Y.
+Query:
+nephew(mason, emma) ::: mason is a nephew of emma.
+------
+Narrative:
+[[NARRATIVE]]
+GOAL:
+[[GOAL]]
+###

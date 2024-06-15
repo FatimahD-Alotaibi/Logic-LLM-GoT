@@ -265,6 +265,9 @@ Dull(Charlie) ::: Charlie is dull.
 </Example>
 
 Input:
+Rules:
+{rules}
+
 Context: {context}
 
 Initial Fact:

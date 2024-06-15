@@ -1,5 +1,5 @@
 from typing import Dict, List
-from prompts import cluttr_prompt_io, cluttr_prompt_cot, got_split_prompt, apply_rules_prompt, infer_facts_prompt, resolution_refutation_score_prompt, aggregate_prompt, reasoning_prompt_got
+from prompts import cluttr_prompt_io, cluttr_prompt_cot, got_split_prompt, infer_facts_prompt, resolution_refutation_score_prompt, aggregate_prompt, reasoning_prompt_got
 from graph_of_thoughts import prompter
 
 class LogicalReasoningPrompter(prompter.Prompter):
@@ -13,7 +13,6 @@ class LogicalReasoningPrompter(prompter.Prompter):
     cluttr_prompt_io=cluttr_prompt_io
     cluttr_prompt_cot=cluttr_prompt_cot
     got_split_prompt=got_split_prompt
-    apply_rules_prompt=apply_rules_prompt
     infer_facts_prompt=infer_facts_prompt
     resolution_refutation_score_prompt=resolution_refutation_score_prompt
     aggregate_prompt=aggregate_prompt
@@ -39,7 +38,7 @@ class LogicalReasoningPrompter(prompter.Prompter):
             input1=state_dicts[0]["inferred_facts"], input2=state_dicts[1]["inferred_facts"]
         )
 
-    def generate_prompt(self, num_branches: int, body_text: str, program: str, goal: str, current: str, method: str, **kwargs) -> str:
+    def generate_prompt(self, num_branches: int, context: str, goal: str, raw_logic_programs: str, current: str, method: str, **kwargs) -> str:
         """
         Generate a generate prompt for the language model.
 
@@ -59,18 +58,18 @@ class LogicalReasoningPrompter(prompter.Prompter):
         assert num_branches == 1, "Branchig should be done via multiple requests."
 
         if method.startswith("io"):
-            return self.cluttr_prompt_io.format(body_text=body_text, program=program, goal=goal)
+            return self.cluttr_prompt_io.format(body_text=context, program=raw_logic_programs, goal=goal)
         elif method.startswith("cot"):
-            return self.cluttr_prompt_cot.format(body_text=body_text, program=program, goal=goal)
+            return self.cluttr_prompt_cot.format(body_text=context, program=raw_logic_programs, goal=goal)
         elif method.startswith("got"):
             if (current is None or current == "") and kwargs["phase"] == 0:
-                return self.got_split_prompt.format(program=program)
+                return self.got_split_prompt.format(raw_logic_programs=raw_logic_programs)
             
             elif (current is None or current == "") and kwargs["phase"] == 1:
-                return self.infer_facts_prompt.format(narrative=body_text, initial_fact=kwargs["sub_text"])
+                return self.infer_facts_prompt.format(narrative=context, initial_fact=kwargs["sub_text"], rules=kwargs["rules"])
             
             elif (current is None or current == "") and kwargs["phase"] == 2:
-                return self.reasoning_prompt_got.format(narrative=body_text, program=program, aggregated_facts=kwargs["aggregated_facts"], goal=goal)
+                return self.reasoning_prompt_got.format(narrative=context, raw_logic_programs=raw_logic_programs, aggregated_facts=kwargs["aggregated_facts"], goal=goal)
         
         
         
@@ -119,8 +118,8 @@ class LogicalReasoningPrompter(prompter.Prompter):
         else:
             # perform individual scoring
             if key_to_check not in state_dicts[0]:
-                prompt = self.resolution_refutation_score_prompt.format(facts=state_dicts[0]["inferred_facts"], narrative=state_dicts[0]["body_text"])
+                prompt = self.resolution_refutation_score_prompt.format(facts=state_dicts[0]["inferred_facts"], narrative=state_dicts[0]["context"])
                 return prompt
             else:
-                prompt = self.resolution_refutation_score_prompt.format(facts=state_dicts[0]["aggregated_facts"], narrative=state_dicts[0]["body_text"])
+                prompt = self.resolution_refutation_score_prompt.format(facts=state_dicts[0]["aggregated_facts"], narrative=state_dicts[0]["context"])
                 return prompt

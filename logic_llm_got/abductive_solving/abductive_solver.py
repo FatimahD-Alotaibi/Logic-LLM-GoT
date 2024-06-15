@@ -167,7 +167,7 @@ if __name__ == "__main__":
     """
     
     budget = 30
-    samples = [item for item in range(0, 1)]
+    samples = [item for item in range(0, 10)]
     approaches = [got]
 
     spent = run(samples, approaches, budget, "chatgpt")

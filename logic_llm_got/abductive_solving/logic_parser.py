@@ -18,6 +18,12 @@ class LogicalReasoningParser(parser.Parser):
         Inits the response cache.
         """
         self.cache = {}
+
+    def extract_rules(self, text: str) -> str:
+        match = re.search(r"Rules:\n(.*?)(?:\nQuery:|\Z)", text, re.DOTALL)
+        if match:
+            return match.group(1).strip()
+        return ""
         
     def strip_answer_helper(self, text: str, tag: str = "") -> str:
         """
@@ -184,6 +190,7 @@ class LogicalReasoningParser(parser.Parser):
                     and state["phase"] == 0
                 ):
                     # Phase 0: Parse the response assuming it's a JSON string containing initial facts.
+                    rules = self.extract_rules(state["raw_logic_programs"][0]) # Parse the rules from the 'raw_logic_programs'
                     answer = self.strip_answer_json(text)
                     json_dict = json.loads(answer)
                     for key, value in json_dict.items():
@@ -193,7 +200,8 @@ class LogicalReasoningParser(parser.Parser):
                             )
                             continue
                         new_state = state.copy() # copy the state dictionary
-                        new_state["current"] = "" 
+                        new_state["current"] = ""
+                        new_state["rules"] = rules
                         new_state["sub_text"] = value # initialize the initial fact
                         new_state["phase"] = 1 # change phase
                         new_state["part"] = key 

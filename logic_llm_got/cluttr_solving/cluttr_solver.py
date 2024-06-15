@@ -31,7 +31,7 @@ def run(
     """
     # Store the original budget
     orig_budget = budget
-    data_path = "./cluttr/test_data.json"
+    data_path = "./cluttr/CLUTTR_dev_gpt-4.json"
 
     data = []
 
@@ -41,27 +41,20 @@ def run(
 
     # Iterate and process data into desired format
     for item in raw_data:
-
-        # Extract the program list
-        program_list = item['program']
-        formatted_string = ""
-
-        # Create a formated string
-        for program in program_list:
-            formatted_string += f"statement: {program['statement']}\ndescription: {program['description']}\n"
+                # Create a formated string
         
         if item['label'] is True:
             item['label'] = 'True'
         elif item['label'] is False:
             item['label'] = 'False'
-
+            
         # Construct the desired format
         data.append([
-            item['id'],
-            item['body_text'],
-            formatted_string,
-            item['goal'],
-            item['label'],
+            item['id'], # 0
+            item['context'], # 1
+            item['goal'], # 2
+            item['raw_logic_programs'], # 3
+            item['label'] # 4
         ])
     
 # If no data_ids provided or it's None, select all data
@@ -143,9 +136,9 @@ def run(
                 LogicalReasoningPrompter(),
                 LogicalReasoningParser(),
                 {
-                    "body_text": data[1], # The logical reasoning problem
-                    "program": data[2],
-                    "goal": data[3],
+                    "context": data[1], # The logical reasoning problem
+                    "goal": data[2],
+                    "raw_logic_programs": data[3],
                     "ground_truth": data[4], # The correct answer
                     "current": "", # The predicted response
                     "phase": 0,

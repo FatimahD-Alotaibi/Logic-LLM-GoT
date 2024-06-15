@@ -23,7 +23,8 @@ class LogicProgramGenerator:
                                'ProofWriter': self.prompt_proofwriter,
                                'LogicalDeduction': self.prompt_logicaldeduction, 
                                'AR-LSAT': self.prompt_arlsat,
-                               'AbductionPerson': self.prompt_abductionPerson}
+                               'AbductionPerson': self.prompt_abductionPerson,
+                               'CLUTTR': self.prompt_cluttr,}
         self.load_prompt_templates()
     
     def load_prompt_templates(self):
@@ -32,6 +33,12 @@ class LogicProgramGenerator:
             prompt_file = f'./models/prompts/{self.dataset_name}-long.txt'
         with open(prompt_file, 'r') as f:
             self.prompt_template = f.read()
+    
+    def prompt_cluttr(self, test_data):
+        context = test_data['body_text']
+        goal = test_data['goal'].strip()
+        full_prompt = self.prompt_template.replace('[[NARRATIVE]]', context).replace('[[GOAL]]', goal)
+        return full_prompt
     
     def prompt_abductionPerson(self, test_data):
         context = test_data['context']
@@ -94,10 +101,9 @@ class LogicProgramGenerator:
 
                 # create output
                 output = {'id': example['id'], 
-                        'context': example['context'],
-                        'question': example['question'], 
-                        'answer': example['answer'],
-                        'options': example['options'],
+                        'context': example['body_text'],
+                        'goal': example['goal'], 
+                        'label': example['label'],
                         'raw_logic_programs': programs,}
                 outputs.append(output)
             except:
@@ -127,11 +133,10 @@ class LogicProgramGenerator:
                 for sample, output in zip(chunk, batch_outputs):
                     programs = [output]
                     output = {'id': sample['id'], 
-                            'context': sample['context'],
-                            'question': sample['text'], 
-                            'answer': sample['label'],
-                            'raw_logic_programs': programs,
-                            'QCat': sample['QCat']}
+                            'context': sample['body_text'],
+                            'goal': sample['goal'], 
+                            'label': sample['label'],
+                            'raw_logic_programs': programs}
                     outputs.append(output)
             except:
                 # generate one by one if batch generation fails
@@ -140,11 +145,10 @@ class LogicProgramGenerator:
                         output = self.openai_api.generate(full_prompt)
                         programs = [output]
                         output = {'id': sample['id'], 
-                                'context': sample['context'],
-                                'question': sample['text'], 
-                                'answer': sample['label'],
-                                'raw_logic_programs': programs,
-                                'QCat': sample['QCat']}
+                                'context': sample['body_text'],
+                                'goal': sample['goal'], 
+                                'label': sample['label'],
+                                'raw_logic_programs': programs}
                         outputs.append(output)
                     except:
                         print('Error in generating logic programs for example: ', sample['id'])

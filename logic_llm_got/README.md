@@ -37,29 +37,11 @@
 ```
 {
     "id": 0,
-    "body_text": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
-    "world_model": [
-        "family_relation_rules"
-    ],
+    "context": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
     "goal": "relation(melba, niece, jenny)",
     "label": true,
-    "program": [
-        {
-            "statement": "isRelationOf(melba, daughter, april).",
-            "description": "[April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday."
-        },
-        {
-            "statement": "isRelationOf(april, aunt, kelley).",
-            "description": "[Kelley] watched a golf tournament with her aunt [April]."
-        },
-        {
-            "statement": "isRelationOf(mary, daughter, jenny).",
-            "description": "[Jenny] spent a great day shopping with her daughter, [Mary]."
-        },
-        {
-            "statement": "isRelationOf(kelley, sister, mary).",
-            "description": "[Kelley] took her sister, [Mary], out to dinner for her birthday."
-        }
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\naunt(X, Y) ::: X is an aunt of Y.\nniece(X, Y) ::: X is a niece of Y.\n\nFacts: \nparent(jenny, mary) ::: jenny is a parent of mary.\nsibling(mary, kelley) ::: mary is a sibling of kelley.\naunt(april, kelley) ::: april is an aunt of kelley.\nparent(april, melba) ::: april is a parent of melba.\n\nRules:\n∀X,Y (spent_day_shopping(X,Y) ⇒ parent(X,Y)) ::: If X spent a day shopping with Y, then X is a parent of Y.\n∀X,Y (took_out_to_dinner(X,Y) ⇒ sibling(X,Y)) ::: If X took Y out to dinner, then X and Y are siblings.\n∀X,Y (watched_golf_with(X,Y) ⇒ aunt(X,Y)) ::: If X watched a golf tournament with Y, then X is an aunt of Y.\n∀X,Y (picked_out_dress_for(X,Y) ⇒ parent(X,Y)) ::: If X picked out a dress for Y, then X is a parent of Y.\n\nQuery:\nniece(melba, jenny) ::: melba is a niece of jenny."
     ]
 },
 ```

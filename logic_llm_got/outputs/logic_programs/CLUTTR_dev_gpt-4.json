@@ -1,0 +1,902 @@
+[
+  {
+    "id": 0,
+    "context": "[Jenny] spent a great day shopping with her daughter, [Mary]. [Kelley] took her sister, [Mary], out to dinner for her birthday. [Kelley] watched a golf tournament with her aunt [April]. [April] had picked her daughter [Melba] out the cutest new dress to wear on her birthday.",
+    "goal": "relation(melba, niece, jenny)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\naunt(X, Y) ::: X is an aunt of Y.\nniece(X, Y) ::: X is a niece of Y.\n\nFacts: \nparent(jenny, mary) ::: jenny is a parent of mary.\nsibling(mary, kelley) ::: mary is a sibling of kelley.\naunt(april, kelley) ::: april is an aunt of kelley.\nparent(april, melba) ::: april is a parent of melba.\n\nRules:\n∀X,Y (spent_day_shopping(X,Y) ⇒ parent(X,Y)) ::: If X spent a day shopping with Y, then X is a parent of Y.\n∀X,Y (took_out_to_dinner(X,Y) ⇒ sibling(X,Y)) ::: If X took Y out to dinner, then X and Y are siblings.\n∀X,Y (watched_golf_with(X,Y) ⇒ aunt(X,Y)) ::: If X watched a golf tournament with Y, then X is an aunt of Y.\n∀X,Y (picked_out_dress_for(X,Y) ⇒ parent(X,Y)) ::: If X picked out a dress for Y, then X is a parent of Y.\n\nQuery:\nniece(melba, jenny) ::: melba is a niece of jenny."
+    ]
+  },
+  {
+    "id": 1,
+    "context": "[Ruth] wanted to play basketball with her brother [Stephen]. [Stephen] asked his mom, [Laura] if they could go outside. [Ruth] went to her father [Seth] Birthday party [Seth] and his daughter [Rosa] made a pizza. [Rosa]'s daughter [Margaret] really enjoyed the pizza.",
+    "goal": "relation(margaret, son_in_law, laura)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\nson_in_law(X, Y) ::: X is a son-in-law of Y.\n\nFacts:\nsibling(ruth, stephen) ::: ruth is a sibling of stephen.\nparent(laura, stephen) ::: laura is a parent of stephen.\nparent(seth, rosa) ::: seth is a parent of rosa.\nparent(rosa, margaret) ::: rosa is a parent of margaret.\n\nRules:\n∀X,Y (wanted_to_play(X, Y) ⇒ sibling(X, Y)) ::: If X wanted to play basketball with Y, then X is a sibling of Y.\n∀X,Y (asked(X, Y) ⇒ parent(Y, X)) ::: If X asked Y, then Y is a parent of X.\n∀X,Y (went_to_party(X, Y) ⇒ parent(Y, X)) ::: If X went to Y's birthday party, then Y is a parent of X.\n∀X,Y (made_with(X, Y) ⇒ daughter(X, Y)) ::: If X made a pizza with Y, then X is a daughter of Y.\n∀X,Y (enjoyed(X, Y) ⇒ parent(Y, X)) ::: If X enjoyed Y's pizza, then Y is a parent of X.\n\nQuery:\nson_in_law(margaret, laura) ::: margaret is a son-in-law of laura."
+    ]
+  },
+  {
+    "id": 2,
+    "context": "[Michael] and [Michelle] were lucky to marry each other. [Michelle] already had a kid named [Jeremy]. [Molly] loved to take care of her new grandson, [Jeremy].",
+    "goal": "relation(molly, grandfather, michael)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nmarried(X, Y) ::: X is married to Y.\nparent(X, Y) ::: X is a parent of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\ngrandfather(X, Y) ::: X is a grandfather of Y.\n\nFacts:\nmarried(michael, michelle) ::: michael is married to michelle.\nparent(michelle, jeremy) ::: michelle is a parent of jeremy.\ngrandparent(molly, jeremy) ::: molly is a grandparent of jeremy.\n\nRules:\n∀X, Y (married(X, Y) ⇒ married(Y, X)) ::: If X is married to Y, then Y is married to X.\n∀X, Y (parent(X, Y) ⇒ ∃Z (married(Z, X) ∧ grandparent(Z, Y))) ::: If X is a parent of Y, then there exists a Z such that Z is married to X and Z is a grandparent of Y.\n\nQuery:\ngrandfather(michael, jeremy) ::: michael is a grandfather of jeremy."
+    ]
+  },
+  {
+    "id": 3,
+    "context": "[Evelyn] wanted to meet with her brother, [Jonathan], but she had to cancel when her sister, [Rosa], had an emergency that she needed to attend to. [Ruth] went to the store with her sister [Rosa] [Rosa], who is the sister of [Ruth], is a lovely girl. [Rosa] 'father [Seth] became enraged when she failed to complete her homework. [Rosa] was grounded for a month and unable to spend time with friends.",
+    "goal": "relation(seth, grandson, jonathan)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\ngrandson(X, Y) ::: X is a grandson of Y.\n\nFacts:\nsibling(evelyn, jonathan) ::: evelyn is a sibling of jonathan.\nsibling(evelyn, rosa) ::: evelyn is a sibling of rosa.\nsibling(rosa, ruth) ::: rosa is a sibling of ruth.\nparent(seth, rosa) ::: seth is a parent of rosa.\n\nRules:\n∀X,Y (wanted_to_meet(X, Y) ⇒ sibling(X, Y)) ::: If X wanted to meet with Y, then X is a sibling of Y.\n∀X,Y (had_emergency(X, Y) ⇒ sibling(X, Y)) ::: If X had an emergency that Y needed to attend to, then X and Y are siblings.\n∀X,Y (went_to_store(X, Y) ⇒ sibling(X, Y)) ::: If X went to the store with Y, then X and Y are siblings.\n∀X,Y (father(X, Y) ⇒ parent(X, Y)) ::: If X is the father of Y, then X is a parent of Y.\n∀X,Y (grounded(X, Y) ⇒ parent(Y, X)) ::: If X was grounded by Y, then Y is a parent of X.\n\nQuery:\ngrandson(seth, jonathan) ::: seth is a grandson of jonathan."
+    ]
+  },
+  {
+    "id": 4,
+    "context": "[William] drove his daughter [Christina] to soccer practice. [Christine] and her sisters [Connie] went to the spa. [Christina], another sister of [Christine], had to babysit and could n't join them. [Timothy] and his sister, [Connie] love it when their grandmother visits because she spoils them. She is coming this week to watch them while their parents are out of town.",
+    "goal": "relation(timothy, mother_in_law, william)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nmother_in_law(X, Y) ::: X is a mother in law of Y.\n\nFacts: \nparent(william, christina) ::: william is a parent of christina.\nsibling(christine, connie) ::: christine is a sibling of connie.\nsibling(christina, christine) ::: christina is a sibling of christine.\nsibling(timothy, connie) ::: timothy is a sibling of connie.\n\nRules:\nâˆ€X,YÂ (drove_to_practice(X,Y) â‡’ parent(X,Y)) ::: If X drove Y to soccer practice, then X is a parent of Y.\nâˆ€X,YÂ (went_to_spa(X,Y) â‡’ sibling(X,Y)) ::: If X went to the spa with Y, then X and Y are siblings.\nâˆ€X,YÂ (babysit(X,Y) â‡’ sibling(X,Y)) ::: If X had to babysit Y, then X and Y are siblings.\nâˆ€X,YÂ (love_visits(X,Y) â‡’ grandparent(Y,X)) ::: If X loves it when Y visits, then Y is a grandparent of X.\n\nQuery:\nmother_in_law(timothy, william) ::: timothy is a mother in law of william."
+    ]
+  },
+  {
+    "id": 5,
+    "context": "[Roger] loved going to the store with his mom [Sarah]. She always bought him snacks [Sarah], a female, took her husband who is a male, [Carlos], out for lunch. [Sarah] and [Carlos] have been married for 35 years. [Sarah] spent a great day shopping with her daughter, [Julie]. [Lisa] and [Roger] did the Father daughter dance at the recital and his wife [Julie] was so happy she cried [Lisa] and her aunt, [Jamie], went to the bookstore. [Lisa] bought some fantasy books, while [Jamie] picked up some mysteries. [Jamie] loves her son [Richard] very much. He loves her, too.",
+    "goal": "relation(richard, nephew, roger)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nhusband(X, Y) ::: X is a husband of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\naunt(X, Y) ::: X is an aunt of Y.\nson(X, Y) ::: X is a son of Y.\nnephew(X, Y) ::: X is a nephew of Y.\n\nFacts:\nparent(sarah, roger) ::: sarah is a parent of roger.\nhusband(carlos, sarah) ::: carlos is a husband of sarah.\ndaughter(julie, sarah) ::: julie is a daughter of sarah.\naunt(jamie, lisa) ::: jamie is an aunt of lisa.\nson(richard, jamie) ::: richard is a son of jamie.\n\nRules:\n∀X,Y (went_to_store_with(X,Y) ⇒ parent(Y,X)) ::: If X went to the store with Y, then Y is a parent of X.\n∀X,Y (took_out_for_lunch(X,Y) ⇒ husband(Y,X)) ::: If X took Y out for lunch, then Y is a husband of X.\n∀X,Y (spent_day_shopping_with(X,Y) ⇒ daughter(Y,X)) ::: If X spent a day shopping with Y, then Y is a daughter of X.\n∀X,Y (went_to_bookstore_with(X,Y) ⇒ aunt(Y,X)) ::: If X went to the bookstore with Y, then Y is an aunt of X.\n∀X,Y (loves(X,Y) ⇒ son(Y,X)) ::: If X loves Y, then Y is a son of X.\n\nQuery:\nnephew(richard, roger) ::: richard is a nephew of roger."
+    ]
+  },
+  {
+    "id": 6,
+    "context": "[Gabrielle] and her husband [Jason] wanted a child badly [Jason] bought a new dress for his daughter [Lisa].",
+    "goal": "relation(lisa, daughter, gabrielle)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nhusband(X, Y) ::: X is a husband of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\n\nFacts:\nhusband(jason, gabrielle) ::: jason is a husband of gabrielle.\nparent(jason, lisa) ::: jason is a parent of lisa.\n\nRules:\n∀X,Y (wanted_child(X, Y) ⇒ husband(X, Y)) ::: If X and Y wanted a child, then X is a husband of Y.\n∀X,Y (bought_for(X, Y) ⇒ parent(X, Y)) ::: If X bought something for Y, then X is a parent of Y.\n\nQuery:\ndaughter(lisa, gabrielle) ::: lisa is a daughter of gabrielle."
+    ]
+  },
+  {
+    "id": 7,
+    "context": "[Dorothy] and her daughter [Kecia] went to see a movie yesterday and then got ice cream afterwards. [Dorothy] and her son, [Kent], went to the park, and had a wonderful time. [Thomas] was thrilled his brother, [Kent], was able to make it to the party. [James] watched the football game with his son [Thomas]. [James]'s daughter [Florence] was bored and played with her phone instead. [Florence] went to the mall, because she wanted to look for a present for her daughter, [Janet].",
+    "goal": "relation(janet, nephew, kecia)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nnephew(X, Y) ::: X is a nephew of Y.\n\nFacts:\nparent(dorothy, kecia) ::: dorothy is a parent of kecia.\nparent(dorothy, kent) ::: dorothy is a parent of kent.\nsibling(kent, thomas) ::: kent is a sibling of thomas.\nparent(james, thomas) ::: james is a parent of thomas.\nparent(james, florence) ::: james is a parent of florence.\nparent(florence, janet) ::: florence is a parent of janet.\n\nRules:\n∀X,Y (went_to_movie(X,Y) ⇒ parent(X,Y)) ::: If X went to see a movie with Y, then X is a parent of Y.\n∀X,Y (went_to_park(X,Y) ⇒ parent(X,Y)) ::: If X went to the park with Y, then X is a parent of Y.\n∀X,Y (brother(X,Y) ⇒ sibling(X,Y)) ::: If X is a brother of Y, then X and Y are siblings.\n∀X,Y (watched_game(X,Y) ⇒ parent(X,Y)) ::: If X watched a football game with Y, then X is a parent of Y.\n∀X,Y (went_to_mall(X,Y) ⇒ parent(X,Y)) ::: If X went to the mall for Y, then X is a parent of Y.\n\nQuery:\nnephew(janet, kecia) ::: janet is a nephew of kecia."
+    ]
+  },
+  {
+    "id": 8,
+    "context": "[Evelyn] 'daughter [Nichole] visited for Christmas. [Nichole]'s brother [Darren] was out of town for the holidays. [Darren] took his grandmother [Laura] a basket of strawberries. [Stephanie] went with her mother [Ruth] to pick out a gift for [Ruth]'s mother, [Laura].",
+    "goal": "relation(stephanie, niece, evelyn)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nniece(X, Y) ::: X is a niece of Y.\n\nFacts: \nparent(evelyn, nichole) ::: evelyn is a parent of nichole.\nsibling(nichole, darren) ::: nichole is a sibling of darren.\ngrandparent(laura, darren) ::: laura is a grandparent of darren.\nparent(ruth, stephanie) ::: ruth is a parent of stephanie.\nparent(ruth, laura) ::: ruth is a parent of laura.\n\nRules:\nâˆ€X,YÂ (visited_for_christmas(X,Y) â‡’ parent(Y,X)) ::: If X visited Y for Christmas, then Y is a parent of X.\nâˆ€X,YÂ (out_of_town(X) â‡’ sibling(X,Y)) ::: If X was out of town, then X is a sibling of Y.\nâˆ€X,YÂ (took_basket(X,Y) â‡’ grandparent(Y,X)) ::: If X took a basket to Y, then Y is a grandparent of X.\nâˆ€X,Y,ZÂ ((went_with(X, Y) âˆ§ pick_gift_for(Y, Z)) â‡’ parent(Y,X) âˆ§ parent(Y,Z)) ::: If X went with Y to pick out a gift for Z, then Y is a parent of X and Z.\n\nQuery:\nniece(stephanie, evelyn) ::: stephanie is a niece of evelyn."
+    ]
+  },
+  {
+    "id": 9,
+    "context": "[Peter] and his brother [Michael] went shopping at an electronics store. [Peter] found the perfect pair of headphones for his brother [Mark]'s birthday. [Martha] made mixed drinks for her son [Michael]. [Martha]'s daughter [Brandi] was jealous because she was n't offered one. [Spencer] took his son [Michael] and daughter [Brandi] to the zoo on Saturday and they had a great time. [Carmelita] was excited because she got to go to the zoo with her grandson [Michael].",
+    "goal": "relation(carmelita, son, mark)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nson(X, Y) ::: X is a son of Y.\n\nFacts:\nsibling(peter, michael) ::: peter is a sibling of michael.\nsibling(peter, mark) ::: peter is a sibling of mark.\nparent(martha, michael) ::: martha is a parent of michael.\nparent(spencer, michael) ::: spencer is a parent of michael.\nparent(spencer, brandi) ::: spencer is a parent of brandi.\ngrandparent(carmelita, michael) ::: carmelita is a grandparent of michael.\n\nRules:\n∀X,Y (went_shopping(X, Y) ⇒ sibling(X, Y)) ::: If X went shopping with Y, then X is a sibling of Y.\n∀X,Y (found_gift(X, Y) ⇒ sibling(X, Y)) ::: If X found a gift for Y, then X is a sibling of Y.\n∀X,Y (made_drinks(X, Y) ⇒ parent(X, Y)) ::: If X made drinks for Y, then X is a parent of Y.\n∀X,Y,Z (went_to_zoo(X, Y, Z) ⇒ parent(X, Y) ∧ parent(X, Z)) ::: If X went to the zoo with Y and Z, then X is a parent of Y and Z.\n∀X,Y (went_to_zoo(X, Y) ⇒ grandparent(X, Y)) ::: If X went to the zoo with Y, then X is a grandparent of Y.\n\nQuery:\nson(carmelita, mark) ::: carmelita is a son of mark."
+    ]
+  },
+  {
+    "id": 10,
+    "context": "[Sharon] and her sister, [Melba], frequently bicker. However, they always make up quickly. [Sharon] 'father [Benjamin] became enraged when she failed to complete her homework. [Sharon] was grounded for a month and unable to spend time with friends. [Benjamin] has a daughter called [Lucille]. [Benjamin] sat with his daughter, [Lucille], for ice cream at a local shop.",
+    "goal": "relation(benjamin, granddaughter, melba)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\ngranddaughter(X, Y) ::: X is a granddaughter of Y.\n\nFacts:\nsibling(sharon, melba) ::: sharon is a sibling of melba.\nparent(benjamin, sharon) ::: benjamin is a parent of sharon.\nparent(benjamin, lucille) ::: benjamin is a parent of lucille.\n\nRules:\n∀X,Y (bicker(X, Y) ⇒ sibling(X, Y)) ::: If X bickers with Y, then X and Y are siblings.\n∀X,Y (enraged_at(X, Y) ⇒ parent(X, Y)) ::: If X became enraged at Y, then X is a parent of Y.\n∀X,Y (sat_with(X, Y) ⇒ parent(X, Y)) ::: If X sat with Y, then X is a parent of Y.\n∀X,Y (grandparent(X, Y) ⇔ ∃Z (parent(X, Z) ∧ parent(Z, Y))) ::: X is a grandparent of Y if and only if there exists a Z such that X is a parent of Z and Z is a parent of Y.\n\nQuery:\ngranddaughter(melba, benjamin) ::: melba is a granddaughter of benjamin."
+    ]
+  },
+  {
+    "id": 11,
+    "context": "[Richard] took his sister, [Patricia], to a baseball game. [Patricia] and her father, [Cornelius], went to the marina. [Cornelius]'s daughter, [April], had purchased a boat, and they were eager to see it. [Lucille] went to dinner with her daughter [April]. They then went to the park afterwards.",
+    "goal": "relation(lucille, father, richard)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\nfather(X, Y) ::: X is a father of Y.\n\nFacts:\nsibling(richard, patricia) ::: richard is a sibling of patricia.\nparent(cornelius, patricia) ::: cornelius is a parent of patricia.\ndaughter(april, cornelius) ::: april is a daughter of cornelius.\nparent(lucille, april) ::: lucille is a parent of april.\n\nRules:\n∀X,Y (took_to_game(X, Y) ⇒ sibling(X, Y)) ::: If X took Y to a baseball game, then X and Y are siblings.\n∀X,Y (went_to_marina(X, Y) ⇒ parent(Y, X)) ::: If X and Y went to the marina, then Y is a parent of X.\n∀X,Y (purchased_boat(X) ⇒ daughter(X, Y)) ::: If X purchased a boat, then X is a daughter of Y.\n∀X,Y (went_to_dinner(X, Y) ⇒ parent(X, Y)) ::: If X went to dinner with Y, then X is a parent of Y.\n\nQuery:\nfather(lucille, richard) ::: lucille is a father of richard."
+    ]
+  },
+  {
+    "id": 12,
+    "context": "[Martha] gave birth to a son named [Mark]. [Martha] loves cooking for her son. His name is [Michael] [Martha] is proud that her son graduated college. His name is [Michael]. [Martha] had picked her daughter [Brandi] out the cutest new dress to wear on her birthday. [Brandi] went to her brother [Peter]'s birthday party [Spencer] took his son [Peter] out for ice cream. [Spencer] played basketball with his brother [Chuck].",
+    "goal": "relation(chuck, father, mark)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nfather(X, Y) ::: X is a father of Y.\n\nFacts:\nparent(martha, mark) ::: martha is a parent of mark.\nparent(martha, michael) ::: martha is a parent of michael.\nparent(martha, brandi) ::: martha is a parent of brandi.\nparent(spencer, peter) ::: spencer is a parent of peter.\nsibling(spencer, chuck) ::: spencer is a sibling of chuck.\nsibling(brandi, peter) ::: brandi is a sibling of peter.\n\nRules:\n∀X,Y (gave_birth_to(X, Y) ⇒ parent(X, Y)) ::: If X gave birth to Y, then X is a parent of Y.\n∀X,Y (loves_cooking_for(X, Y) ⇒ parent(X, Y)) ::: If X loves cooking for Y, then X is a parent of Y.\n∀X,Y (proud_of(X, Y) ⇒ parent(X, Y)) ::: If X is proud that Y graduated college, then X is a parent of Y.\n∀X,Y (picked_out_dress_for(X, Y) ⇒ parent(X, Y)) ::: If X picked out a dress for Y, then X is a parent of Y.\n∀X,Y (went_to_birthday_party(X, Y) ⇒ sibling(X, Y)) ::: If X went to Y's birthday party, then X and Y are siblings.\n∀X,Y (took_out_for_ice_cream(X, Y) ⇒ parent(X, Y)) ::: If X took Y out for ice cream, then X is a parent of Y.\n∀X,Y (played_basketball_with(X, Y) ⇒ sibling(X, Y)) ::: If X played basketball with Y, then X and Y are siblings.\n\nQuery:\nfather(chuck, mark) ::: chuck is a father of mark."
+    ]
+  },
+  {
+    "id": 13,
+    "context": "[Judy] went to her brother [William]'s birthday party [Joseph] and his brother [William] went to the mall. [Joseph]'s son, [Lawrence], went with them. [Lawrence]'s brother, [Freddie], could n't come because he was busy with his homework. [Michele] attended the graduation of her sister's son [Freddie]. [Joseph] likes to visit his sister. Her name is [Michele]. [Dana] was eager to spend time with her son, [Joseph]. [Dana] and her son, [Larry], went to the park to fly a kite. They had fun doing it all day. [Gordon] and his son [Larry] went to look at cars. [Gordon] ended up buying the Mustang.",
+    "goal": "relation(gordon, daughter_in_law, judy)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nson(X, Y) ::: X is a son of Y.\nbrother(X, Y) ::: X is a brother of Y.\nsister(X, Y) ::: X is a sister of Y.\ndaughter_in_law(X, Y) ::: X is a daughter in law of Y.\n\nFacts: \nsibling(judy, william) ::: judy is a sibling of william.\nbrother(joseph, william) ::: joseph is a brother of william.\nparent(joseph, lawrence) ::: joseph is a parent of lawrence.\nsibling(lawrence, freddie) ::: lawrence is a sibling of freddie.\nsister(michele, joseph) ::: michele is a sister of joseph.\nparent(dana, joseph) ::: dana is a parent of joseph.\nparent(dana, larry) ::: dana is a parent of larry.\nparent(gordon, larry) ::: gordon is a parent of larry.\n\nRules:\n∀X,Y (went_to_party(X,Y) ⇒ sibling(X,Y)) ::: If X went to a birthday party of Y, then X is a sibling of Y.\n∀X,Y,Z ((went_to_mall(X, Y, Z) ∧ brother(Y, X) ∧ son(Z, X)) ⇒ sibling(X, Y) ∧ parent(X, Z)) ::: If X and Y went to the mall with Z, where Y is a brother of X and Z is a son of X, then X and Y are siblings, and X is a parent of Z.\n∀X,Y (attended_graduation(X,Y) ⇒ sister(X, Y)) ::: If X attended the graduation of Y, then X is a sister of Y.\n∀X,Y (likes_to_visit(X,Y) ⇒ sister(Y, X)) ::: If X likes to visit Y, then Y is a sister of X.\n∀X,Y (spend_time_with(X,Y) ⇒ parent(X,Y)) ::: If X was eager to spend time with Y, then X is a parent of Y.\n∀X,Y (went_to_park(X,Y) ⇒ parent(X,Y)) ::: If X went to the park with Y, then X is a parent of Y.\n∀X,Y (look_at_cars(X,Y) ⇒ parent(X,Y)) ::: If X went to look at cars with Y, then X is a parent of Y.\n\nQuery:\ndaughter_in_law(judy, gordon) ::: judy is a daughter in law of gordon."
+    ]
+  },
+  {
+    "id": 14,
+    "context": "[Pennie] went to her brother [Darren]'s birthday party [Sean] enjoys going fishing with his brother. His name is [Darren]. [Evelyn] took her son [Sean] to the dentist. [Evelyn]'s daughter [Nichole] did n't go because she takes care of her teeth. [Nichole] vowed to never trust her father, [Christian] with her debit card again.",
+    "goal": "relation(christian, daughter_in_law, pennie)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\ndaughter_in_law(X, Y) ::: X is a daughter-in-law of Y.\n\nFacts:\nsibling(pennie, darren) ::: pennie is a sibling of darren.\nsibling(sean, darren) ::: sean is a sibling of darren.\nparent(evelyn, sean) ::: evelyn is a parent of sean.\nparent(evelyn, nichole) ::: evelyn is a parent of nichole.\nparent(christian, nichole) ::: christian is a parent of nichole.\n\nRules:\n∀X,Y (went_to_birthday_party(X, Y) ⇒ sibling(X, Y)) ::: If X went to Y's birthday party, then X is a sibling of Y.\n∀X,Y (enjoys_fishing_with(X, Y) ⇒ sibling(X, Y)) ::: If X enjoys going fishing with Y, then X and Y are siblings.\n∀X,Y (took_to_dentist(X, Y) ⇒ parent(X, Y)) ::: If X took Y to the dentist, then X is a parent of Y.\n∀X,Y (takes_care_of_teeth(X) ⇒ parent(Y, X)) ::: If X takes care of her teeth, then Y is a parent of X.\n∀X,Y (vowed_never_to_trust_with_debit_card(X, Y) ⇒ parent(Y, X)) ::: If X vowed to never trust Y with her debit card again, then Y is a parent of X.\n\nQuery:\ndaughter_in_law(pennie, christian) ::: pennie is a daughter-in-law of christian."
+    ]
+  },
+  {
+    "id": 15,
+    "context": "[Bruce] went to his brother [John]'s Birthday party [Linda] enjoys playing cards with her brother. His name is [Bruce]. [Brian] is buying his daughter [Linda] a brand new car for her birthday. [Melissa] asked her husband [Brian] if he could chop up some vegetables for dinner. [Melissa] was excited to visit her son, [Scott], at college. [Brian] picked up his son [Scott] from baseball practice and his daughter [Linda] from ballet practice. [Scott] and his sister, [Linda] love it when their grandmother visits because she spoils them. She is coming this week to watch them while their parents are out of town. [Debra] went to church with her daughter [Melissa]. [Melissa]'s son [Scott] is the preacher at the church.",
+    "goal": "relation(debra, brother, john)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nhusband(X, Y) ::: X is a husband of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nbrother(X, Y) ::: X is a brother of Y.\n\nFacts:\nsibling(bruce, john) ::: bruce is a sibling of john.\nsibling(bruce, linda) ::: bruce is a sibling of linda.\nparent(brian, linda) ::: brian is a parent of linda.\nhusband(brian, melissa) ::: brian is a husband of melissa.\nparent(melissa, scott) ::: melissa is a parent of scott.\nparent(brian, scott) ::: brian is a parent of scott.\nsibling(scott, linda) ::: scott is a sibling of linda.\nparent(debra, melissa) ::: debra is a parent of melissa.\n\nRules:\n∀X,Y (went_to_party(X,Y) ⇒ sibling(X,Y)) ::: If X went to Y's birthday party, then X is a sibling of Y.\n∀X,Y (playing_cards(X,Y) ⇒ sibling(X,Y)) ::: If X enjoys playing cards with Y, then X is a sibling of Y.\n∀X,Y (buying_car(X,Y) ⇒ parent(X,Y)) ::: If X is buying Y a car, then X is a parent of Y.\n∀X,Y (asked_to_chop(X,Y) ⇒ husband(X,Y)) ::: If X asked Y to chop vegetables, then X is a husband of Y.\n∀X,Y (picked_up_from_practice(X,Y) ⇒ parent(X,Y)) ::: If X picked up Y from practice, then X is a parent of Y.\n∀X,Y (visiting_college(X,Y) ⇒ parent(X,Y)) ::: If X is excited to visit Y at college, then X is a parent of Y.\n∀X,Y (went_to_church(X,Y) ⇒ parent(X,Y)) ::: If X went to church with Y, then X is a parent of Y.\n\nQuery:\nbrother(debra, john) ::: debra is a brother of john."
+    ]
+  },
+  {
+    "id": 16,
+    "context": "[Stanley] went to lunch with his wife [Molly]. [Matthew] was playing on his bike outside his grandfather [Stanley]'s house and his brother [Ellis] told him he needed to come inside and finish his homework before it got dark.",
+    "goal": "relation(ellis, uncle, molly)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nhusband(X, Y) ::: X is a husband of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nbrother(X, Y) ::: X is a brother of Y.\nuncle(X, Y) ::: X is an uncle of Y.\n\nFacts:\nhusband(stanley, molly) ::: stanley is a husband of molly.\ngrandparent(stanley, matthew) ::: stanley is a grandparent of matthew.\nbrother(ellis, matthew) ::: ellis is a brother of matthew.\n\nRules:\n∀X,Y (went_to_lunch_with(X, Y) ⇒ husband(X, Y)) ::: If X went to lunch with Y, then X is a husband of Y.\n∀X,Y (playing_outside(X, Y) ⇒ grandparent(Y, X)) ::: If X was playing outside Y's house, then Y is a grandparent of X.\n∀X,Y (told_to_come_inside(X, Y) ⇒ brother(X, Y)) ::: If X told Y to come inside, then X is a brother of Y.\n\nQuery:\nuncle(ellis, molly) ::: ellis is an uncle of molly."
+    ]
+  },
+  {
+    "id": 17,
+    "context": "[Jonathan] is out playing tennis with his daughter [Diana] because it is nice and sunny outside. [Diana] and her mother [Jonathan] made breakfast together. [Cristina] invited her sister [Rosa] and son [William] to breakfast. [William]'s sister [Diana] slept in instead.",
+    "goal": "relation(rosa, aunt, diana)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\naunt(X, Y) ::: X is an aunt of Y.\n\nFacts:\nparent(jonathan, diana) ::: jonathan is a parent of diana.\nparent(cristina, william) ::: cristina is a parent of william.\nsibling(diana, william) ::: diana is a sibling of william.\nsibling(cristina, rosa) ::: cristina is a sibling of rosa.\n\nRules:\nâˆ€X, YÂ (playing_tennis(X, Y) â‡’ parent(X, Y)) ::: If X is playing tennis with Y, then X is a parent of Y.\nâˆ€X, YÂ (made_breakfast(X, Y) â‡’ parent(Y, X)) ::: If X made breakfast with Y, then Y is a parent of X.\nâˆ€X, Y, ZÂ (invited_to_breakfast(X, Y, Z) â‡’ parent(X, Z) âˆ§ sibling(X, Y)) ::: If X invited Y and Z to breakfast, then X is a parent of Z and a sibling of Y.\nâˆ€X, YÂ (slept_in(X) â‡’ sibling(X, Y)) ::: If X slept in, then X is a sibling of Y.\n\nQuery:\naunt(rosa, diana) ::: rosa is an aunt of diana."
+    ]
+  },
+  {
+    "id": 18,
+    "context": "[Stephanie] went shoe shopping with her sister [Gloria]. [Ruth] and her daughter [Stephanie] went to see a movie yesterday and then got ice cream afterwards. [Stephanie] cooked dinner for her mother [Ruth] and her brothers [Jeff] and [Jeremy].",
+    "goal": "relation(jeremy, brother, gloria)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\nbrother(X, Y) ::: X is a brother of Y.\n\nFacts:\nsibling(stephanie, gloria) ::: stephanie is a sibling of gloria.\nparent(ruth, stephanie) ::: ruth is a parent of stephanie.\nbrother(jeff, stephanie) ::: jeff is a brother of stephanie.\nbrother(jeremy, stephanie) ::: jeremy is a brother of stephanie.\n\nRules:\n∀X,Y (went_shopping_with(X, Y) ⇒ sibling(X, Y)) ::: If X went shopping with Y, then X and Y are siblings.\n∀X,Y (went_to_movie_with(X, Y) ⇒ parent(Y, X)) ::: If X went to see a movie with Y, then Y is a parent of X.\n∀X,Y,Z (cooked_dinner_for(X, Y, Z) ⇒ parent(Y, X) ∧ brother(Z, X)) ::: If X cooked dinner for Y and Z, then Y is a parent of X and Z is a brother of X.\n\nQuery:\nbrother(jeremy, gloria) ::: jeremy is a brother of gloria."
+    ]
+  },
+  {
+    "id": 19,
+    "context": "[Beverly] and her sister, [Rachel], frequently bicker. However, they always make up quickly. [Charles] and his sister, [Beverly] love it when their grandmother visits because she spoils them. She is coming this week to watch them while their parents are out of town. [Dorothy] was wondering where her daughter [Julia] was, so she texted her. [Julia] replied that she was with her brother [Charles] at the mall.",
+    "goal": "relation(dorothy, mother, rachel)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nparent(X, Y) ::: X is a parent of Y.\n\nFacts:\nsibling(beverly, rachel) ::: beverly is a sibling of rachel.\nsibling(charles, beverly) ::: charles is a sibling of beverly.\nparent(dorothy, julia) ::: dorothy is a parent of julia.\nsibling(julia, charles) ::: julia is a sibling of charles.\n\nRules:\n∀X,Y (bicker(X, Y) ⇒ sibling(X, Y)) ::: If X and Y bicker, then X and Y are siblings.\n∀X,Y (love_visits_from(X, Y) ⇒ grandparent(Y, X)) ::: If X loves visits from Y, then Y is a grandparent of X.\n∀X,Y (texted(X, Y) ⇒ parent(X, Y)) ::: If X texted Y, then X is a parent of Y.\n∀X,Y (with(X, Y) ⇒ sibling(X, Y)) ::: If X is with Y, then X and Y are siblings.\n\nQuery:\nparent(dorothy, rachel) ::: dorothy is a parent of rachel."
+    ]
+  },
+  {
+    "id": 20,
+    "context": "[Myrna] and her husband [Christopher] went on a cruise. They had a wonderful time. [Christopher] and his daughter [Lucille] took a day off school to go to the zoo.",
+    "goal": "relation(lucille, daughter, myrna)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nhusband(X, Y) ::: X is a husband of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\n\nFacts:\nhusband(christopher, myrna) ::: christopher is a husband of myrna.\nparent(christopher, lucille) ::: christopher is a parent of lucille.\n\nRules:\n∀X,Y (went_on_cruise(X, Y) ⇒ husband(X, Y)) ::: If X went on a cruise with Y, then X is a husband of Y.\n∀X,Y (took_day_off(X, Y) ⇒ parent(X, Y)) ::: If X took a day off with Y, then X is a parent of Y.\n\nQuery:\ndaughter(lucille, myrna) ::: lucille is a daughter of myrna."
+    ]
+  },
+  {
+    "id": 21,
+    "context": "[Ruth] and her son, [Jeff], went to the park, and had a wonderful time. [Jeff] bought a steak dinner for himself and his brother [Jeremy]. [Jeremy] went to the game with his sister [Stephanie]. [Stephanie] went to her father [Jason] Birthday party [Jason] took his daughter, [Gloria], to a baseball game.",
+    "goal": "relation(gloria, daughter, ruth)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\n\nFacts:\nparent(ruth, jeff) ::: ruth is a parent of jeff.\nsibling(jeff, jeremy) ::: jeff is a sibling of jeremy.\nsibling(jeremy, stephanie) ::: jeremy is a sibling of stephanie.\nparent(jason, stephanie) ::: jason is a parent of stephanie.\nparent(jason, gloria) ::: jason is a parent of gloria.\n\nRules:\n∀X,Y (went_to_park(X,Y) ⇒ parent(X,Y)) ::: If X went to the park with Y, then X is a parent of Y.\n∀X,Y (bought_dinner_for(X,Y) ⇒ sibling(X,Y)) ::: If X bought a dinner for Y, then X and Y are siblings.\n∀X,Y (went_to_game_with(X,Y) ⇒ sibling(X,Y)) ::: If X went to the game with Y, then X and Y are siblings.\n∀X,Y (went_to_birthday_party_of(X,Y) ⇒ parent(Y,X)) ::: If X went to the birthday party of Y, then Y is a parent of X.\n∀X,Y (took_to_baseball_game(X,Y) ⇒ parent(X,Y)) ::: If X took Y to a baseball game, then X is a parent of Y.\n\nQuery:\ndaughter(gloria, ruth) ::: gloria is a daughter of ruth."
+    ]
+  },
+  {
+    "id": 22,
+    "context": "[Maxine] was on her way to pick up her daughter [Diane] from the park. [Diane] had spent the entire day there playing soccer with her sister [Joyce]. [Reynaldo] went with his wife [Maxine] and their daughter [Joyce] to the park. [Joyce]'s brother [Philip] has bad allergies and decided to stay home. [Philip]'s father [Reynaldo] has been in prison for 5 years. [Reynaldo]'s sister, [Martha] is the only one who visits him.",
+    "goal": "relation(martha, aunt, joyce)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nhusband(X, Y) ::: X is a husband of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\naunt(X, Y) ::: X is an aunt of Y.\nFacts:\nparent(maxine, diane) ::: maxine is a parent of diane.\nsibling(diane, joyce) ::: diane is a sibling of joyce.\nhusband(reynaldo, maxine) ::: reynaldo is a husband of maxine.\ndaughter(joyce, maxine) ::: joyce is a daughter of maxine.\nsibling(philip, joyce) ::: philip is a sibling of joyce.\nparent(reynaldo, philip) ::: reynaldo is a parent of philip.\nsibling(reynaldo, martha) ::: reynaldo is a sibling of martha.\nRules:\nâˆ€X, YÂ (pick_up(X, Y) â‡’ parent(X, Y)) ::: If X was on her way to pick up Y, then X is a parent of Y.\nâˆ€X, YÂ (played_with(X, Y) â‡’ sibling(X, Y)) ::: If X played soccer with Y, then X and Y are siblings.\nâˆ€X, Y, ZÂ (went_with(X, Y, Z) â‡’ husband(X, Y) âˆ§ daughter(Z, Y)) ::: If X went with Y and their daughter Z, then X is a husband of Y and Z is a daughter of Y.\nâˆ€X, YÂ (stay_home(X) â‡’ sibling(X, Y)) ::: If X decided to stay home, then X is a sibling of Y.\nâˆ€X, YÂ (in_prison(X) â‡’ parent(X, Y)) ::: If X has been in prison, then X is a parent of Y.\nâˆ€X, YÂ (visits(X, Y) â‡’ sibling(X, Y)) ::: If X visits Y, then X and Y are siblings.\nQuery:\naunt(martha, joyce) ::: martha is an aunt of joyce."
+    ]
+  },
+  {
+    "id": 23,
+    "context": "[Annie] and her sisters [Margaret] went to the spa. [Melissa], another sister of [Annie], had to babysit and could n't join them. [Lisa] took her sister, [Margaret], out to dinner for her birthday. [Lisa] just had a baby and presented the baby proudly to the new maternal grandmother, [Rosa]. [Cristina], who is the sister of [Rosa], is a lovely girl.",
+    "goal": "relation(cristina, aunt, melissa)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\naunt(X, Y) ::: X is an aunt of Y.\n\nFacts:\nsibling(annie, margaret) ::: annie is a sibling of margaret.\nsibling(annie, melissa) ::: annie is a sibling of melissa.\nsibling(margaret, lisa) ::: margaret is a sibling of lisa.\nparent(lisa, baby) ::: lisa is a parent of the baby.\ngrandparent(rosa, baby) ::: rosa is a grandparent of the baby.\nsibling(rosa, cristina) ::: rosa is a sibling of cristina.\n\nRules:\n∀X,Y (went_to_spa(X,Y) ⇒ sibling(X,Y)) ::: If X went to the spa with Y, then X and Y are siblings.\n∀X,Y (babysit(X,Y) ⇒ sibling(X,Y)) ::: If X had to babysit Y, then X and Y are siblings.\n∀X,Y (dinner_out(X,Y) ⇒ sibling(X,Y)) ::: If X took Y out to dinner, then X and Y are siblings.\n∀X,Y (had_baby(X,Y) ⇒ parent(X,Y)) ::: If X had a baby, then X is a parent of Y.\n∀X,Y (presented_baby(X,Y) ⇒ grandparent(Y,X)) ::: If X presented the baby to Y, then Y is a grandparent of X.\n∀X,Y (sister_of(X,Y) ⇒ sibling(X,Y)) ::: If X is a sister of Y, then X and Y are siblings.\n\nQuery:\naunt(cristina, melissa) ::: cristina is an aunt of melissa."
+    ]
+  },
+  {
+    "id": 24,
+    "context": "[Kerrie] and her brother [Victor] went to see a movie. [Harry] and his son [Victor] went to the cinema together. [Harry] bought a new dress for his daughter [Machelle]. [Isabel], who is the sister of [Machelle], is a lovely girl. [Joy] and her daughter [Isabel] went to see a movie yesterday and then got ice cream afterwards. [Joy] did the laundry with her son [Victor]. [Victor]'s sister [Isabel] never washes clothes. [Kerrie] took her sister, [Isabel], out to dinner for her birthday. [Harry] took his daughter, [Kerrie], ice skating. [Harry]'s father, [Kevin], watched them ice skate from the stands.",
+    "goal": "relation(kevin, daughter_in_law, kerrie)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ndaughter_in_law(X, Y) ::: X is a daughter-in-law of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\n\nFacts:\nsibling(kerrie, victor) ::: kerrie is a sibling of victor.\nparent(harry, victor) ::: harry is a parent of victor.\nparent(harry, machelle) ::: harry is a parent of machelle.\nsibling(isabel, machelle) ::: isabel is a sibling of machelle.\nparent(joy, isabel) ::: joy is a parent of isabel.\nparent(joy, victor) ::: joy is a parent of victor.\nsibling(victor, isabel) ::: victor is a sibling of isabel.\nsibling(kerrie, isabel) ::: kerrie is a sibling of isabel.\nparent(harry, kerrie) ::: harry is a parent of kerrie.\ngrandparent(kevin, harry) ::: kevin is a grandparent of harry.\n\nRules:\n∀X,Y (went_to_movie(X, Y) ⇒ sibling(X, Y)) ::: If X went to see a movie with Y, then X and Y are siblings.\n∀X,Y (went_to_cinema(X, Y) ⇒ parent(X, Y)) ::: If X went to the cinema with Y, then X is a parent of Y.\n∀X,Y (bought_for(X, Y) ⇒ parent(X, Y)) ::: If X bought something for Y, then X is a parent of Y.\n∀X,Y (did_laundry_with(X, Y) ⇒ parent(X, Y)) ::: If X did the laundry with Y, then X is a parent of Y.\n∀X,Y (took_out(X, Y) ⇒ sibling(X, Y)) ::: If X took Y out to dinner, then X and Y are siblings.\n∀X,Y (took_ice_skating(X, Y) ⇒ parent(X, Y)) ::: If X took Y ice skating, then X is a parent of Y.\n∀X,Y (watched(X, Y) ⇒ grandparent(X, Y)) ::: If X watched Y, then X is a grandparent of Y.\n\nQuery:\ndaughter_in_law(kerrie, kevin) ::: kerrie is a daughter-in-law of kevin."
+    ]
+  },
+  {
+    "id": 25,
+    "context": "[Stanley] asked his wife [Molly] if she did the shopping. [Stanley] spent Saturday afternoon helping his grandson, [Clarence], build a model airplane. [Clarence] was excited about the new airplane, and showed it to his brother [Jason] as soon as he got home.",
+    "goal": "relation(jason, brother, molly)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nhusband(X, Y) ::: X is a husband of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nbrother(X, Y) ::: X is a brother of Y.\nFacts: \nhusband(stanley, molly) ::: stanley is a husband of molly.\ngrandparent(stanley, clarence) ::: stanley is a grandparent of clarence.\nsibling(clarence, jason) ::: clarence is a sibling of jason.\nRules:\nâˆ€X,YÂ (asked(X, Y) â‡’ husband(X, Y)) ::: If X asked Y, then X is a husband of Y.\nâˆ€X,YÂ (helped(X, Y) â‡’ grandparent(X, Y)) ::: If X helped Y, then X is a grandparent of Y.\nâˆ€X,YÂ (showed_to(X, Y) â‡’ sibling(X, Y)) ::: If X showed something to Y, then X and Y are siblings.\nQuery:\nbrother(jason, molly) ::: jason is a brother of molly."
+    ]
+  },
+  {
+    "id": 26,
+    "context": "[William] took his son [Timothy] to the park to feed the squirrels. [Timothy] and his sister, [Christina], went to a sneak preview of the Avengers movie and loved it. [Christina] went to her brother [Timothy]'s birthday party [Connie] and [Timothy] are siblings who are enjoying lunch together.",
+    "goal": "relation(connie, daughter, william)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\n\nFacts:\nparent(william, timothy) ::: william is a parent of timothy.\nsibling(timothy, christina) ::: timothy is a sibling of christina.\nsibling(timothy, connie) ::: timothy is a sibling of connie.\n\nRules:\n∀X,Y (took_to_park(X,Y) ⇒ parent(X,Y)) ::: If X took Y to the park, then X is a parent of Y.\n∀X,Y (went_to_movie(X,Y) ⇒ sibling(X,Y)) ::: If X went to a movie with Y, then X and Y are siblings.\n∀X,Y (went_to_party(X,Y) ⇒ sibling(X,Y)) ::: If X went to a party with Y, then X and Y are siblings.\n∀X,Y (had_lunch_together(X,Y) ⇒ sibling(X,Y)) ::: If X had lunch with Y, then X and Y are siblings.\n\nQuery:\ndaughter(connie, william) ::: connie is a daughter of william."
+    ]
+  },
+  {
+    "id": 27,
+    "context": "[Tommy] went fishing with his daughter [Judy]. [Judy]'s sister, [Maxine], was n't invited because she hates fishing. [Maxine] and her son, [Philip], went to the park to fly a kite. They had fun doing it all day. [Reynaldo] was so proud of his son, [Philip]. he received a great scholarship to college. [Elizabeth] told a secret to her sister, [Judy]. [Judy] passed it along to her brother, [Reynaldo]. [Martha] went to the store with her sister [Elizabeth]",
+    "goal": "relation(martha, daughter, tommy)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\n\nFacts: \nparent(tommy, judy) ::: tommy is a parent of judy.\nsibling(judy, maxine) ::: judy is a sibling of maxine.\nparent(maxine, philip) ::: maxine is a parent of philip.\nparent(reynaldo, philip) ::: reynaldo is a parent of philip.\nsibling(elizabeth, judy) ::: elizabeth is a sibling of judy.\nsibling(judy, reynaldo) ::: judy is a sibling of reynaldo.\nsibling(martha, elizabeth) ::: martha is a sibling of elizabeth.\n\nRules:\n∀X,Y (went_fishing_with(X,Y) ⇒ parent(X,Y)) ::: If X went fishing with Y, then X is a parent of Y.\n∀X,Y (not_invited(X,Y) ⇒ sibling(X,Y)) ::: If X was not invited by Y, then X and Y are siblings.\n∀X,Y (went_to_park(X,Y) ⇒ parent(X,Y)) ::: If X went to the park with Y, then X is a parent of Y.\n∀X,Y (proud_of(X,Y) ⇒ parent(X,Y)) ::: If X is proud of Y, then X is a parent of Y.\n∀X,Y (told_secret(X,Y) ⇒ sibling(X,Y)) ::: If X told a secret to Y, then X and Y are siblings.\n∀X,Y (passed_along(X,Y) ⇒ sibling(X,Y)) ::: If X passed something along to Y, then X and Y are siblings.\n∀X,Y (went_to_store(X,Y) ⇒ sibling(X,Y)) ::: If X went to the store with Y, then X and Y are siblings.\n\nQuery:\ndaughter(martha, tommy) ::: martha is a daughter of tommy."
+    ]
+  },
+  {
+    "id": 28,
+    "context": "[Jason] and his wife [Gabrielle] baked a cake for [Lisa], his daughter.",
+    "goal": "relation(lisa, daughter, gabrielle)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nspouse(X, Y) ::: X is a spouse of Y.\n\nFacts:\nparent(jason, lisa) ::: jason is a parent of lisa.\nspouse(jason, gabrielle) ::: jason is a spouse of gabrielle.\n\nRules:\n∀X,Y,Z (baked_for(X, Y, Z) ∧ spouse(X, Y) ⇒ parent(Y, Z)) ::: If X and Y baked a cake for Z, and X and Y are spouses, then Y is a parent of Z.\n\nQuery:\nparent(gabrielle, lisa) ::: gabrielle is a parent of lisa."
+    ]
+  },
+  {
+    "id": 29,
+    "context": "[Julie] went shopping at the mall with her father [Carlos]. [Carlos] rushed to the hospital to find out that his wife and already given birth to a boy and had named him [Roger]. [Dustin] got his son, [Roger], a car for his birthday. [Dustin] went to the game with his sister [Lisa]. [Lisa] went to her aunt [Faye]'s house for dinner. [Faye] made meatloaf, and it was delicious. [Faye] wanted her sister, [Jamie], to go the same college she attends. [Jamie] chose to attend college with her brother, [Roger], instead. [Charles] played chess with his brother [Roger].",
+    "goal": "relation(charles, niece, julie)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\naunt(X, Y) ::: X is an aunt of Y.\nniece(X, Y) ::: X is a niece of Y.\nFacts:\nparent(carlos, julie) ::: carlos is a parent of julie.\nparent(dustin, roger) ::: dustin is a parent of roger.\nsibling(dustin, lisa) ::: dustin is a sibling of lisa.\naunt(faye, lisa) ::: faye is an aunt of lisa.\nsibling(faye, jamie) ::: faye is a sibling of jamie.\nsibling(jamie, roger) ::: jamie is a sibling of roger.\nsibling(charles, roger) ::: charles is a sibling of roger.\nRules:\nâˆ€X, YÂ (went_shopping_with(X, Y) â‡’ parent(Y, X)) ::: If X went shopping with Y, then Y is a parent of X.\nâˆ€X, YÂ (rushed_to_hospital(X, Y) â‡’ parent(X, Y)) ::: If X rushed to the hospital for Y, then X is a parent of Y.\nâˆ€X, YÂ (got_car_for(X, Y) â‡’ parent(X, Y)) ::: If X got a car for Y, then X is a parent of Y.\nâˆ€X, YÂ (went_to_game_with(X, Y) â‡’ sibling(X, Y)) ::: If X went to the game with Y, then X and Y are siblings.\nâˆ€X, YÂ (went_to_dinner_with(X, Y) â‡’ aunt(Y, X)) ::: If X went to dinner with Y, then Y is an aunt of X.\nâˆ€X, YÂ (wanted_to_go_to_college_with(X, Y) â‡’ sibling(X, Y)) ::: If X wanted to go to college with Y, then X and Y are siblings.\nâˆ€X, YÂ (chose_to_attend_college_with(X, Y) â‡’ sibling(X, Y)) ::: If X chose to attend college with Y, then X and Y are siblings.\nâˆ€X, YÂ (played_chess_with(X, Y) â‡’ sibling(X, Y)) ::: If X played chess with Y, then X and Y are siblings.\nQuery:\nniece(julie, charles) ::: julie is a niece of charles."
+    ]
+  },
+  {
+    "id": 30,
+    "context": "[William] and his sister [Traci] went out for ice cream. [Traci] went to her father [Jonathan] Birthday party [Jonathan] walked his daughter [Sheila] down the aisle on her wedding day. [Sheila] was excited to play Dress up with her sister [Traci]. [Traci] was on her way back from her grandmother [Laura]'s house.",
+    "goal": "relation(laura, nephew, william)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nnephew(X, Y) ::: X is a nephew of Y.\n\nFacts:\nsibling(william, traci) ::: william is a sibling of traci.\nparent(jonathan, traci) ::: jonathan is a parent of traci.\nparent(jonathan, sheila) ::: jonathan is a parent of sheila.\nsibling(sheila, traci) ::: sheila is a sibling of traci.\ngrandparent(laura, traci) ::: laura is a grandparent of traci.\n\nRules:\n∀X,Y (went_out_for_ice_cream(X, Y) ⇒ sibling(X, Y)) ::: If X went out for ice cream with Y, then X and Y are siblings.\n∀X,Y (went_to_birthday_party(X, Y) ⇒ parent(Y, X)) ::: If X went to Y's birthday party, then Y is a parent of X.\n∀X,Y (walked_down_aisle(X, Y) ⇒ parent(X, Y)) ::: If X walked Y down the aisle on her wedding day, then X is a parent of Y.\n∀X,Y (played_dress_up(X, Y) ⇒ sibling(X, Y)) ::: If X played dress up with Y, then X and Y are siblings.\n∀X,Y (visited_grandmother(X, Y) ⇒ grandparent(Y, X)) ::: If X visited her grandmother Y, then Y is a grandparent of X.\n\nQuery:\nnephew(william, laura) ::: william is a nephew of laura."
+    ]
+  },
+  {
+    "id": 31,
+    "context": "[James] and his wife [Dorothy] went to the beach to watch the fireworks on the 4th of July. [James] and his daughter [Theresa] took a day off school to go to the zoo.",
+    "goal": "relation(theresa, sister, dorothy)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nspouse(X, Y) ::: X is a spouse of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\n\nFacts:\nspouse(james, dorothy) ::: james is a spouse of dorothy.\nparent(james, theresa) ::: james is a parent of theresa.\n\nRules:\n∀X,Y (went_to_beach(X, Y) ⇒ spouse(X, Y)) ::: If X went to the beach with Y, then X is a spouse of Y.\n∀X,Y (took_day_off(X, Y) ⇒ parent(X, Y)) ::: If X took a day off with Y, then X is a parent of Y.\n\nQuery:\nsibling(theresa, dorothy) ::: theresa is a sibling of dorothy."
+    ]
+  },
+  {
+    "id": 32,
+    "context": "[Harry] played basketball with his brother [Kenneth]. [Valerie] called her mother, [Debra], and asked if she could borrow a book. [Debra] said she could have her son, [Kenneth], send it over. [Kevin] hung his son [Brian]'s finger paintings on the refrigerator. The paintings were right next to the paintings of [Morgan], [Brian]'s sister. [Valerie] was n't old enough to make any paintings for her father, [Kevin]. [Joy] went to the store with her sister [Morgan] [Morgan] took her sister, [Joy], out to dinner for her birthday. As a female, [Morgan] sometimes had a hard time relating to her husband [Dale] since he was a male. [Dale] and his daughter [Danielle] took a day off school to go to the zoo.",
+    "goal": "relation(danielle, niece, harry)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nhusband(X, Y) ::: X is a husband of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\nniece(X, Y) ::: X is a niece of Y.\n\nFacts:\nsibling(harry, kenneth) ::: harry is a sibling of kenneth.\nparent(debra, kenneth) ::: debra is a parent of kenneth.\nparent(kevin, brian) ::: kevin is a parent of brian.\nsibling(brian, morgan) ::: brian is a sibling of morgan.\nparent(kevin, valerie) ::: kevin is a parent of valerie.\nsibling(morgan, joy) ::: morgan is a sibling of joy.\nhusband(dale, morgan) ::: dale is a husband of morgan.\nparent(dale, danielle) ::: dale is a parent of danielle.\n\nRules:\n∀X,Y (played_with(X, Y) ⇒ sibling(X, Y)) ::: If X played basketball with Y, then X is a sibling of Y.\n∀X,Y (called(X, Y) ⇒ parent(Y, X)) ::: If X called Y, then Y is a parent of X.\n∀X,Y (hung(X, Y) ⇒ parent(X, Y)) ::: If X hung Y's finger paintings, then X is a parent of Y.\n∀X,Y (not_old_enough(X, Y) ⇒ parent(Y, X)) ::: If X is not old enough to make paintings for Y, then Y is a parent of X.\n∀X,Y (went_to_store(X, Y) ⇒ sibling(X, Y)) ::: If X went to the store with Y, then X and Y are siblings.\n∀X,Y (took_out(X, Y) ⇒ sibling(X, Y)) ::: If X took Y out to dinner, then X and Y are siblings.\n∀X,Y (relating_to(X, Y) ⇒ husband(Y, X)) ::: If X has a hard time relating to Y, then Y is a husband of X.\n∀X,Y (took_day_off(X, Y) ⇒ parent(X, Y)) ::: If X and Y took a day off to go to the zoo, then X is a parent of Y.\n\nQuery:\nniece(danielle, harry) ::: danielle is a niece of harry."
+    ]
+  },
+  {
+    "id": 33,
+    "context": "[Anthony] and his sister, [Ashley] love it when their grandmother visits because she spoils them. She is coming this week to watch them while their parents are out of town. [Charles] made sandwiches for his sons [Floyd] and [Brad]. [Floyd]'s brother [Anthony] ate a salad instead. [Mary] took her son [Floyd] to the state fair. [Charles] gave his wife, [Mary] tickets so that they could get in. [Mary] was eager to spend time with her son, [Floyd]. [Faye] took her sister, [Mary], out to dinner for her birthday.",
+    "goal": "relation(faye, aunt, ashley)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\naunt(X, Y) ::: X is an aunt of Y.\n\nFacts:\nsibling(anthony, ashley) ::: anthony is a sibling of ashley.\nparent(charles, floyd) ::: charles is a parent of floyd.\nparent(charles, brad) ::: charles is a parent of brad.\nsibling(floyd, anthony) ::: floyd is a sibling of anthony.\nparent(mary, floyd) ::: mary is a parent of floyd.\nsibling(mary, faye) ::: mary is a sibling of faye.\n\nRules:\n∀X,Y (spoils(X, Y) ⇒ grandparent(X, Y)) ::: If X spoils Y, then X is a grandparent of Y.\n∀X,Y (made_for(X, Y) ⇒ parent(X, Y)) ::: If X made sandwiches for Y, then X is a parent of Y.\n∀X,Y (took_to_fair(X, Y) ⇒ parent(X, Y)) ::: If X took Y to the state fair, then X is a parent of Y.\n∀X,Y (gave_to(X, Y) ⇒ spouse(X, Y)) ::: If X gave something to Y, then X and Y are spouses.\n∀X,Y (took_out(X, Y) ⇒ sibling(X, Y)) ::: If X took Y out to dinner, then X and Y are siblings.\n\nQuery:\naunt(faye, ashley) ::: faye is an aunt of ashley."
+    ]
+  },
+  {
+    "id": 34,
+    "context": "[Lee] and her sister, [Laura], frequently bicker. However, they always make up quickly. [Laura] took her sister, [Lee], out to dinner for her birthday. [Thomas] bought toys for his son [Matthew] and his daughter [Laura]. [Kecia] took her son [Matthew] to school because he missed the bus. [Sharon] and her sister, [Kecia], frequently bicker. However, they always make up quickly.",
+    "goal": "relation(sharon, daughter_in_law, laura)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\ndaughter_in_law(X, Y) ::: X is a daughter in law of Y.\n\nFacts:\nsibling(lee, laura) ::: lee is a sibling of laura.\nparent(thomas, matthew) ::: thomas is a parent of matthew.\nparent(thomas, laura) ::: thomas is a parent of laura.\nparent(kecia, matthew) ::: kecia is a parent of matthew.\nsibling(sharon, kecia) ::: sharon is a sibling of kecia.\n\nRules:\n∀X,Y (bicker(X, Y) ⇒ sibling(X, Y)) ::: If X bickers with Y, then X and Y are siblings.\n∀X,Y (took_out_to_dinner(X, Y) ⇒ sibling(X, Y)) ::: If X took Y out to dinner, then X and Y are siblings.\n∀X,Y (bought_toys_for(X, Y) ⇒ parent(X, Y)) ::: If X bought toys for Y, then X is a parent of Y.\n∀X,Y (took_to_school(X, Y) ⇒ parent(X, Y)) ::: If X took Y to school, then X is a parent of Y.\n\nQuery:\ndaughter_in_law(sharon, laura) ::: sharon is a daughter in law of laura."
+    ]
+  },
+  {
+    "id": 35,
+    "context": "[Toni], who is the sister of [Lucille], is a lovely girl. [Sharon]'s mother, [April], thought [Sharon] should wear a black dress. [Sharon]'s sister [Toni], however, thought she would look better in a blue one. [April] took her father, [Cornelius], out to dinner.",
+    "goal": "relation(cornelius, granddaughter, lucille)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\ngranddaughter(X, Y) ::: X is a granddaughter of Y.\n\nFacts:\nsibling(toni, lucille) ::: toni is a sibling of lucille.\nparent(april, sharon) ::: april is a parent of sharon.\nsibling(sharon, toni) ::: sharon is a sibling of toni.\nparent(april, cornelius) ::: april is a parent of cornelius.\n\nRules:\n∀X,Y (is_sister(X, Y) ⇒ sibling(X, Y)) ::: If X is a sister of Y, then X and Y are siblings.\n∀X,Y (mother_of(X, Y) ⇒ parent(X, Y)) ::: If X is a mother of Y, then X is a parent of Y.\n∀X,Y (sister_of(X, Y) ⇒ sibling(X, Y)) ::: If X is a sister of Y, then X and Y are siblings.\n∀X,Y (father_of(X, Y) ⇒ parent(Y, X)) ::: If X is a father of Y, then Y is a parent of X.\n\nQuery:\ngranddaughter(lucille, cornelius) ::: lucille is a granddaughter of cornelius."
+    ]
+  },
+  {
+    "id": 36,
+    "context": "[April] took her brother [Frank] and other brother [William] with her to eat pasta at a pasta buffet. [Dorothy] just recently married her husband, [Frank]. [Dorothy] asked her daughter, [Beverly], if she would like to go to a movie with her on Saturday night.",
+    "goal": "relation(beverly, mother, william)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nspouse(X, Y) ::: X is a spouse of Y.\nparent(X, Y) ::: X is a parent of Y.\nmother(X, Y) ::: X is a mother of Y.\n\nFacts:\nsibling(april, frank) ::: april is a sibling of frank.\nsibling(april, william) ::: april is a sibling of william.\nspouse(dorothy, frank) ::: dorothy is a spouse of frank.\nparent(dorothy, beverly) ::: dorothy is a parent of beverly.\n\nRules:\n∀X,Y,Z (ate_pasta_with(X, Y, Z) ⇒ sibling(X, Y) ∧ sibling(X, Z)) ::: If X ate pasta with Y and Z, then X is a sibling of Y and Z.\n∀X,Y (married(X, Y) ⇒ spouse(X, Y)) ::: If X married Y, then X is a spouse of Y.\n∀X,Y (asked_to_movie(X, Y) ⇒ parent(X, Y)) ::: If X asked Y to go to a movie, then X is a parent of Y.\n\nQuery:\nmother(dorothy, william) ::: dorothy is a mother of william."
+    ]
+  },
+  {
+    "id": 37,
+    "context": "[Cristina], who is the sister of [Ruth], is a lovely girl. [Cristina] wanted her sister, [Rosa], to go the same college she attends. [Rosa] chose to attend college with her brother, [Christian], instead. [Rosa] and [Christian] are siblings who are enjoying lunch together. [Jonathan] and his sister, [Rosa] love it when their grandmother visits because she spoils them. She is coming this week to watch them while their parents are out of town.",
+    "goal": "relation(jonathan, grandfather, ruth)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\ngrandfather(X, Y) ::: X is a grandfather of Y.\n\nFacts:\nsibling(cristina, ruth) ::: cristina is a sibling of ruth.\nsibling(cristina, rosa) ::: cristina is a sibling of rosa.\nsibling(rosa, christian) ::: rosa is a sibling of christian.\nsibling(jonathan, rosa) ::: jonathan is a sibling of rosa.\n\nRules:\n∀X,Y (wanted_sister_to_attend_same_college(X, Y) ⇒ sibling(X, Y)) ::: If X wanted her sister Y to attend the same college she attends, then X is a sibling of Y.\n∀X,Y (chose_to_attend_college_with(X, Y) ⇒ sibling(X, Y)) ::: If X chose to attend college with Y, then X and Y are siblings.\n∀X,Y (enjoying_lunch_together(X, Y) ⇒ sibling(X, Y)) ::: If X and Y are enjoying lunch together, then X and Y are siblings.\n∀X,Y (love_when_grandmother_visits(X, Y) ⇒ grandparent(Y, X)) ::: If X and Y love it when their grandmother visits, then Y is a grandparent of X.\n\nQuery:\ngrandfather(jonathan, ruth) ::: jonathan is a grandfather of ruth."
+    ]
+  },
+  {
+    "id": 38,
+    "context": "[Ashley] went to her brother [Floyd]'s birthday party [Brad] was thrilled his brother, [Floyd], was able to make it to the party. [Brad] and his brother, [Anthony] run a turtle farm. [Charles] was so proud of his son, [Anthony]. he received a great scholarship to college. [Brad] invited his father [Charles] and his brother [Floyd] to go on a weekend fishing trip. [Mary] and her son [Floyd] went to visit [Mary]'s mother [Sarah] in the hospital.",
+    "goal": "relation(sarah, daughter_in_law, ashley)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\nson(X, Y) ::: X is a son of Y.\nbrother(X, Y) ::: X is a brother of Y.\nfather(X, Y) ::: X is a father of Y.\ndaughter_in_law(X, Y) ::: X is a daughter-in-law of Y.\n\nFacts:\nsibling(ashley, floyd) ::: ashley is a sibling of floyd.\nsibling(brad, floyd) ::: brad is a sibling of floyd.\nsibling(brad, anthony) ::: brad is a sibling of anthony.\nparent(charles, anthony) ::: charles is a parent of anthony.\nparent(charles, brad) ::: charles is a parent of brad.\nparent(mary, floyd) ::: mary is a parent of floyd.\n\nRules:\n∀X,Y (went_to_birthday_party(X, Y) ⇒ sibling(X, Y)) ::: If X went to Y's birthday party, then X is a sibling of Y.\n∀X,Y (thrilled(X, Y) ⇒ sibling(X, Y)) ::: If X is thrilled that Y was able to make it to the party, then X is a sibling of Y.\n∀X,Y (run_turtle_farm(X, Y) ⇒ sibling(X, Y)) ::: If X and Y run a turtle farm, then X and Y are siblings.\n∀X,Y (proud_of(X, Y) ⇒ parent(X, Y)) ::: If X is proud of Y, then X is a parent of Y.\n∀X,Y,Z (invited_to_fishing_trip(X, Y, Z) ⇒ father(X, Y) ∧ sibling(Y, Z)) ::: If X invited Y and Z to go on a weekend fishing trip, then X is a father of Y and Y is a sibling of Z.\n∀X,Y,Z (visited(X, Y, Z) ⇒ parent(X, Y) ∧ parent(Z, X)) ::: If X and Y went to visit Z, then X is a parent of Y and Z is a parent of X.\n\nQuery:\ndaughter_in_law(ashley, sarah) ::: ashley is a daughter-in-law of sarah."
+    ]
+  },
+  {
+    "id": 39,
+    "context": "[Oscar] got his son, [Daniel], a car for his birthday. [Oscar] likes to sing with his brother [Joel]. [Joel]'s sister [Nola] hates when they sing. [Nola] and her uncle [Charles] went to the pet shop. [Nola] saw a puppy that she loved, so [Charles] bought it for her. [Charles]'s mother, [Sarah], took him shopping for a new television [Faye] and her sister, [Julie], went to church. [Julie]'s mom, [Sarah], was sick, and could n't make it, and [Julie] told the pastor so he would pray for a speedy recovery. [Mary] went to the store with her sister [Faye]",
+    "goal": "relation(mary, grandfather, daniel)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nuncle(X, Y) ::: X is an uncle of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\ngrandfather(X, Y) ::: X is a grandfather of Y.\nsister(X, Y) ::: X is a sister of Y.\nmother(X, Y) ::: X is a mother of Y.\n\nFacts: \nparent(oscar, daniel) ::: oscar is a parent of daniel.\nsibling(oscar, joel) ::: oscar is a sibling of joel.\nsibling(nola, oscar) ::: nola is a sibling of oscar.\nuncle(charles, nola) ::: charles is an uncle of nola.\nparent(sarah, charles) ::: sarah is a parent of charles.\nsibling(faye, julie) ::: faye is a sibling of julie.\nmother(sarah, julie) ::: sarah is a mother of julie.\nsibling(mary, faye) ::: mary is a sibling of faye.\n\nRules:\n∀X,Y (got_car_for(X,Y) ⇒ parent(X,Y)) ::: If X got a car for Y, then X is a parent of Y.\n∀X,Y (sings_with(X,Y) ⇒ sibling(X,Y)) ::: If X sings with Y, then X and Y are siblings.\n∀X,Y (went_to_pet_shop(X,Y) ⇒ uncle(X,Y)) ::: If X went to the pet shop with Y, then X is an uncle of Y.\n∀X,Y (bought_puppy_for(X,Y) ⇒ uncle(X,Y)) ::: If X bought a puppy for Y, then X is an uncle of Y.\n∀X,Y (took_shopping(X,Y) ⇒ parent(X,Y)) ::: If X took Y shopping, then X is a parent of Y.\n∀X,Y (went_to_church(X,Y) ⇒ sibling(X,Y)) ::: If X went to church with Y, then X and Y are siblings.\n∀X,Y (told_pastor(X,Y) ⇒ mother(Y,X)) ::: If X told the pastor about Y, then Y is a mother of X.\n∀X,Y (went_to_store(X,Y) ⇒ sibling(X,Y)) ::: If X went to the store with Y, then X and Y are siblings.\n\nQuery:\ngrandfather(mary, daniel) ::: mary is a grandfather of daniel."
+    ]
+  },
+  {
+    "id": 40,
+    "context": "[Rosa] vowed to never trust her father, [Seth] with her debit card again. [Jason] and his brother, [Stephen], went to the movies with their father, [Seth]. Afterwards, [Jason]'s brother [Christian] met them for dinner at a restaurant. [Christian] took his daughter, [Nichole], to a baseball game.",
+    "goal": "relation(nichole, niece, rosa)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nuncle(X, Y) ::: X is an uncle of Y.\nniece(X, Y) ::: X is a niece of Y.\n\nFacts:\nparent(seth, rosa) ::: seth is a parent of rosa.\nparent(seth, jason) ::: seth is a parent of jason.\nparent(seth, stephen) ::: seth is a parent of stephen.\nparent(seth, christian) ::: seth is a parent of christian.\nparent(christian, nichole) ::: christian is a parent of nichole.\n\nRules:\n∀X,Y (vowed(X, Y) ⇒ parent(Y, X)) ::: If X vowed to never trust Y, then Y is a parent of X.\n∀X,Y,Z ((went_to_movies(X, Y, Z) ∧ brother(Y, X)) ⇒ parent(Z, X) ∧ parent(Z, Y)) ::: If X and Y went to the movies with Z, where Y is a brother of X, then Z is a parent of X and Y.\n∀X,Y,Z ((met_for_dinner(X, Y, Z) ∧ brother(Y, X)) ⇒ sibling(X, Y)) ::: If X met Y and Z for dinner, where Y is a brother of X, then X and Y are siblings.\n∀X,Y (took_to_game(X, Y) ⇒ parent(X, Y)) ::: If X took Y to a baseball game, then X is a parent of Y.\n\nQuery:\nniece(nichole, rosa) ::: nichole is a niece of rosa."
+    ]
+  },
+  {
+    "id": 41,
+    "context": "[Sharon] and her sister, [Toni], frequently bicker. However, they always make up quickly. [Melba] went to the store with her sister [Sharon] [Melba] asked her mother, [April], what they were going to have for lunch. [April] went to the mall, because she wanted to look for a present for her daughter, [Melba].",
+    "goal": "relation(melba, niece, toni)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\nniece(X, Y) ::: X is a niece of Y.\n\nFacts:\nsibling(sharon, toni) ::: sharon is a sibling of toni.\nsibling(melba, sharon) ::: melba is a sibling of sharon.\nparent(april, melba) ::: april is a parent of melba.\n\nRules:\n∀X,Y (bicker(X, Y) ⇒ sibling(X, Y)) ::: If X bickers with Y, then X and Y are siblings.\n∀X,Y (went_to_store(X, Y) ⇒ sibling(X, Y)) ::: If X went to the store with Y, then X and Y are siblings.\n∀X,Y (asked(X, Y) ⇒ parent(Y, X)) ::: If X asked Y, then Y is a parent of X.\n∀X,Y (went_to_mall(X, Y) ⇒ parent(X, Y)) ::: If X went to the mall for Y, then X is a parent of Y.\n\nQuery:\nniece(melba, toni) ::: melba is a niece of toni."
+    ]
+  },
+  {
+    "id": 42,
+    "context": "[Sharon] went to her son [Brian]'s House [Brian] likes to watch baseball with his brother. His name is [Oliver]. [Sharon] took her son [Oliver] to school because he missed the bus. [Kent] and [Sharon] were married twenty years ago today, becoming husband and wife on a glorious spring day. [Davis] bought to dress for his father [Kent] [Rick] and his brother [Davis] always played pranks on each other",
+    "goal": "relation(rick, sister, sharon)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nmarried(X, Y) ::: X is married to Y.\nson(X, Y) ::: X is a son of Y.\nbrother(X, Y) ::: X is a brother of Y.\nsister(X, Y) ::: X is a sister of Y.\n\nFacts:\nparent(sharon, brian) ::: sharon is a parent of brian.\nparent(sharon, oliver) ::: sharon is a parent of oliver.\nmarried(kent, sharon) ::: kent is married to sharon.\nson(davis, kent) ::: davis is a son of kent.\nbrother(rick, davis) ::: rick is a brother of davis.\nsibling(brian, oliver) ::: brian is a sibling of oliver.\n\nRules:\n∀X,Y (went_to_son_house(X,Y) ⇒ parent(X,Y)) ::: If X went to Y's house, then X is a parent of Y.\n∀X,Y (watch_with(X,Y) ⇒ sibling(X,Y)) ::: If X watches baseball with Y, then X and Y are siblings.\n∀X,Y (took_to_school(X,Y) ⇒ parent(X,Y)) ::: If X took Y to school, then X is a parent of Y.\n∀X,Y (married(X,Y) ⇒ husband_and_wife(X,Y)) ::: If X and Y are married, then X and Y are husband and wife.\n∀X,Y (bought_for(X,Y) ⇒ son(X,Y)) ::: If X bought something for Y, then X is a son of Y.\n∀X,Y (played_pranks(X,Y) ⇒ brother(X,Y)) ::: If X and Y played pranks on each other, then X and Y are brothers.\n\nQuery:\nsister(sharon, rick) ::: sharon is a sister of rick."
+    ]
+  },
+  {
+    "id": 43,
+    "context": "[Rachel], who is the sister of [Julia], is a lovely girl. [Beverly] and her sister [Rachel] can now be heard gossiping about [Beverly]'s father [Frank]. [Charles] and his son [Frank] went to look at cars. [Charles] ended up buying the Mustang.",
+    "goal": "relation(charles, brother, julia)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\nbrother(X, Y) ::: X is a brother of Y.\nFacts:\nsibling(rachel, julia) ::: rachel is a sibling of julia.\nsibling(beverly, rachel) ::: beverly is a sibling of rachel.\nparent(frank, beverly) ::: frank is a parent of beverly.\nparent(charles, frank) ::: charles is a parent of frank.\nRules:\n∀X,Y (is_sister_of(X, Y) ⇒ sibling(X, Y)) ::: If X is a sister of Y, then X and Y are siblings.\n∀X,Y (gossiping_about(X, Y) ⇒ parent(Y, X)) ::: If X is gossiping about Y, then Y is a parent of X.\n∀X,Y (went_to_look_at_cars(X, Y) ⇒ parent(X, Y)) ::: If X went to look at cars with Y, then X is a parent of Y.\nQuery:\nbrother(charles, julia) ::: charles is a brother of julia."
+    ]
+  },
+  {
+    "id": 44,
+    "context": "[Frank] took his son [Cornelius] out to play gold later that night. [William] and his brother [Richard] went shopping at an electronics store. [William] found the perfect pair of headphones for his brother [Frank]'s birthday. [Richard] bought a new dress for his daughter [Kimberley].",
+    "goal": "relation(kimberley, granddaughter, cornelius)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nuncle(X, Y) ::: X is an uncle of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\ngranddaughter(X, Y) ::: X is a granddaughter of Y.\n\nFacts:\nparent(frank, cornelius) ::: frank is a parent of cornelius.\nsibling(william, richard) ::: william is a sibling of richard.\nsibling(frank, william) ::: frank is a sibling of william.\nparent(richard, kimberley) ::: richard is a parent of kimberley.\n\nRules:\n∀X,Y (took_out_to_play(X,Y) ⇒ parent(X,Y)) ::: If X took Y out to play, then X is a parent of Y.\n∀X,Y (went_shopping_with(X,Y) ⇒ sibling(X,Y)) ::: If X went shopping with Y, then X and Y are siblings.\n∀X,Y (found_gift_for(X,Y) ⇒ sibling(X,Y)) ::: If X found a gift for Y, then X and Y are siblings.\n∀X,Y (bought_for(X,Y) ⇒ parent(X,Y)) ::: If X bought something for Y, then X is a parent of Y.\n\nQuery:\ngranddaughter(kimberley, cornelius) ::: kimberley is a granddaughter of cornelius."
+    ]
+  },
+  {
+    "id": 45,
+    "context": "[Jeff] played basketball with his brother [Jeremy]. [Jeremy] and his sister, [Stephanie], went to a sneak preview of the Avengers movie and loved it. [Stephanie] asked her mother, [Ruth], what they were going to have for lunch. [Laura] enjoys watching her grandson, [Jeremy], every day after school. His mother, [Ruth], picks him up at 5 pm.",
+    "goal": "relation(laura, grandmother, jeff)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\n\nFacts:\nsibling(jeff, jeremy) ::: jeff is a sibling of jeremy.\nsibling(jeremy, stephanie) ::: jeremy is a sibling of stephanie.\nparent(ruth, stephanie) ::: ruth is a parent of stephanie.\nparent(ruth, jeremy) ::: ruth is a parent of jeremy.\ngrandparent(laura, jeremy) ::: laura is a grandparent of jeremy.\n\nRules:\n∀X, Y (played_with(X, Y) ⇒ sibling(X, Y)) ::: If X played basketball with Y, then X and Y are siblings.\n∀X, Y, Z ((went_to_movie(X, Y, Z) ∧ sibling(X, Y)) ⇒ sibling(X, Y)) ::: If X and Y went to a movie and X is a sibling of Y, then X and Y are siblings.\n∀X, Y (asked(X, Y) ⇒ parent(Y, X)) ::: If X asked Y, then Y is a parent of X.\n∀X, Y (watches(X, Y) ⇒ grandparent(X, Y)) ::: If X watches Y, then X is a grandparent of Y.\n∀X, Y (picks_up(X, Y) ⇒ parent(X, Y)) ::: If X picks up Y, then X is a parent of Y.\n\nQuery:\ngrandparent(laura, jeff) ::: laura is a grandparent of jeff."
+    ]
+  },
+  {
+    "id": 46,
+    "context": "[Nicole] spent a great day shopping with her daughter, [Dorothy]. [Patricia] was dancing with her sister [Dorothy], when see saw her father [Cornelius] leaving the party. [Frank] took his son [Cornelius] out to play gold later that night.",
+    "goal": "relation(frank, son, nicole)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nson(X, Y) ::: X is a son of Y.\n\nFacts:\nparent(nicole, dorothy) ::: nicole is a parent of dorothy.\nsibling(patricia, dorothy) ::: patricia is a sibling of dorothy.\nparent(frank, cornelius) ::: frank is a parent of cornelius.\n\nRules:\nâˆ€X, YÂ (shopping_with(X, Y) â‡’ parent(X, Y)) ::: If X went shopping with Y, then X is a parent of Y.\nâˆ€X, YÂ (dancing_with(X, Y) â‡’ sibling(X, Y)) ::: If X was dancing with Y, then X and Y are siblings.\nâˆ€X, YÂ (playing_golf_with(X, Y) â‡’ parent(X, Y)) ::: If X played golf with Y, then X is a parent of Y.\n\nQuery:\nson(frank, nicole) ::: frank is a son of nicole."
+    ]
+  },
+  {
+    "id": 47,
+    "context": "[Lisa] and her sister, [Margaret], frequently bicker. However, they always make up quickly. [Lisa] and her father, [Stephen], went to the marina. [Stephen]'s daughter, [Melissa], had purchased a boat, and they were eager to see it. [Melissa] bought her mother, [Rosa], a puppy for her birthday. [Rosa] asked her mother, [Laura], what they were going to have for lunch.",
+    "goal": "relation(laura, grandson, margaret)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\ngrandson(X, Y) ::: X is a grandson of Y.\n\nFacts:\nsibling(lisa, margaret) ::: lisa is a sibling of margaret.\nparent(stephen, lisa) ::: stephen is a parent of lisa.\nparent(stephen, melissa) ::: stephen is a parent of melissa.\nparent(melissa, rosa) ::: melissa is a parent of rosa.\nparent(rosa, laura) ::: rosa is a parent of laura.\n\nRules:\n∀X,Y (bicker(X, Y) ⇒ sibling(X, Y)) ::: If X bickers with Y, then X and Y are siblings.\n∀X,Y (went_to_marina(X, Y) ⇒ parent(Y, X)) ::: If X went to the marina with Y, then Y is a parent of X.\n∀X,Y (purchased_boat(X) ⇒ parent(stephen, X)) ::: If X purchased a boat, then Stephen is a parent of X.\n∀X,Y (bought_puppy_for(X, Y) ⇒ parent(X, Y)) ::: If X bought a puppy for Y, then X is a parent of Y.\n∀X,Y (asked_about_lunch(X, Y) ⇒ parent(Y, X)) ::: If X asked Y about lunch, then Y is a parent of X.\n\nQuery:\ngrandson(laura, margaret) ::: laura is a grandson of margaret."
+    ]
+  },
+  {
+    "id": 48,
+    "context": "[Martha] likes taking her son [Peter] to baseball practice. She also likes taking her son [Mark] to soccer practice. [Spencer] is teaching his sister, [Elizabeth] and his son, [Mark] how to ski. [George] and his sister, [Elizabeth] love it when their grandmother visits because she spoils them. She is coming this week to watch them while their parents are out of town. [George] and [Martha] asked their mother, if they could go play in the pool. [Martha] 'father [Tommy] became enraged when she failed to complete her homework. [Martha] was grounded for a month and unable to spend time with friends.",
+    "goal": "relation(tommy, grandfather, peter)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\n\nFacts: \nparent(martha, peter) ::: martha is a parent of peter.\nparent(martha, mark) ::: martha is a parent of mark.\nparent(spencer, mark) ::: spencer is a parent of mark.\nsibling(spencer, elizabeth) ::: spencer is a sibling of elizabeth.\nsibling(george, elizabeth) ::: george is a sibling of elizabeth.\nparent(george, martha) ::: george is a parent of martha.\nparent(tommy, martha) ::: tommy is a parent of martha.\n\nRules:\nâˆ€X,YÂ (takes_to_practice(X,Y) â‡’ parent(X,Y)) ::: If X takes Y to practice, then X is a parent of Y.\nâˆ€X,Y,ZÂ (teaches_to_ski(X, Y, Z) â‡’ parent(X, Z) âˆ§ sibling(X, Y)) ::: If X teaches Y and Z to ski, then X is a parent of Z and a sibling of Y.\nâˆ€X,YÂ (asked_to_play(X, Y) â‡’ parent(Y, X)) ::: If X asked Y to play, then Y is a parent of X.\nâˆ€X,YÂ (grounded(X, Y) â‡’ parent(Y, X)) ::: If X is grounded by Y, then Y is a parent of X.\nâˆ€X,YÂ (grandparent(X, Y) â‡” âˆƒZÂ (parent(X, Z) âˆ§ parent(Z, Y))) ::: X is a grandparent of Y if and only if there exists a Z such that X is a parent of Z and Z is a parent of Y.\n\nQuery:\ngrandparent(tommy, peter) ::: tommy is a grandparent of peter."
+    ]
+  },
+  {
+    "id": 49,
+    "context": "[Laura] had picked her daughter [Ruth] out the cutest new dress to wear on her birthday. [Seth] sat with his daughter, [Ruth], for ice cream at a local shop. [Jason] has a few children, [Seth], Bradley and Claire [Jonathan] was thrilled his brother, [Jason], was able to make it to the party. [Evelyn] planned a trip to the zoo for her brother, [Jonathan]. They had a great time.",
+    "goal": "relation(evelyn, father, laura)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nchildren(X, Y) ::: Y is a child of X.\nfather(X, Y) ::: X is a father of Y.\n\nFacts:\nparent(laura, ruth) ::: laura is a parent of ruth.\nparent(seth, ruth) ::: seth is a parent of ruth.\nchildren(jason, seth) ::: seth is a child of jason.\nchildren(jason, bradley) ::: bradley is a child of jason.\nchildren(jason, claire) ::: claire is a child of jason.\nsibling(jonathan, jason) ::: jonathan is a sibling of jason.\n\nRules:\n∀X,Y (picked_out_dress(X, Y) ⇒ parent(X, Y)) ::: If X picked out a dress for Y, then X is a parent of Y.\n∀X,Y (sat_for_ice_cream(X, Y) ⇒ parent(X, Y)) ::: If X sat for ice cream with Y, then X is a parent of Y.\n∀X,Y (has_children(X, Y) ⇒ children(X, Y)) ::: If X has children Y, then Y are children of X.\n∀X,Y (brother_came_to_party(X, Y) ⇒ sibling(X, Y)) ::: If X's brother Y came to the party, then X and Y are siblings.\n∀X,Y (planned_trip(X, Y) ⇒ sibling(X, Y)) ::: If X planned a trip for Y, then X and Y are siblings.\n\nQuery:\nfather(evelyn, laura) ::: evelyn is a father of laura."
+    ]
+  },
+  {
+    "id": 50,
+    "context": "[Mary] went to visit her daughter [Ashley] the other day. [Mary]'s son [Anthony] was too busy at work to go along. [Charles] took his son [Floyd] to the junkyard. [Charles]'s son [Anthony] did n't go because he thought is was a gross place. [Floyd] was disappointed that his father, [Charles], would n't be at the play to see him perform. [Charles] and [Mary] got married in 2017 [Mary] was excited to visit her son, [Brad], at college. [Carlos] took his grandson [Brad] to the zoo.",
+    "goal": "relation(carlos, grandfather, ashley)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nmarried(X, Y) ::: X is married to Y.\n\nFacts:\nparent(mary, ashley) ::: mary is a parent of ashley.\nparent(mary, anthony) ::: mary is a parent of anthony.\nparent(charles, floyd) ::: charles is a parent of floyd.\nparent(charles, anthony) ::: charles is a parent of anthony.\nparent(mary, brad) ::: mary is a parent of brad.\ngrandparent(carlos, brad) ::: carlos is a grandparent of brad.\nmarried(charles, mary) ::: charles is married to mary.\n\nRules:\n∀X,Y (visited(X, Y) ⇒ parent(X, Y)) ::: If X visited Y, then X is a parent of Y.\n∀X,Y (busy_at_work(X) ⇒ ¬visited(X, Y)) ::: If X was too busy at work, then X did not visit Y.\n∀X,Y (took_to_junkyard(X, Y) ⇒ parent(X, Y)) ::: If X took Y to the junkyard, then X is a parent of Y.\n∀X,Y (did_not_go(X, Y) ⇒ ¬parent(X, Y)) ::: If X did not go with Y, then X is not a parent of Y.\n∀X,Y (disappointed(X, Y) ⇒ parent(Y, X)) ::: If X was disappointed in Y, then Y is a parent of X.\n∀X,Y (married(X, Y) ⇒ parent(X, Z) ∧ parent(Y, Z)) ::: If X and Y are married, then X and Y are parents of Z.\n∀X,Y (visited(X, Y) ⇒ parent(X, Y)) ::: If X visited Y, then X is a parent of Y.\n∀X,Y (took_to_zoo(X, Y) ⇒ grandparent(X, Y)) ::: If X took Y to the zoo, then X is a grandparent of Y.\n\nQuery:\ngrandparent(carlos, ashley) ::: carlos is a grandparent of ashley."
+    ]
+  },
+  {
+    "id": 51,
+    "context": "[Frank] went to lunch with his wife [Dorothy]. [Frank] bought a new dress for his daughter [Rachel]. [Beverly] took her sister, [Rachel], out to dinner for her birthday. [Beverly] and her uncle [William] went to the pet shop. [Beverly] saw a puppy that she loved, so [William] bought it for her.",
+    "goal": "relation(william, grandmother, dorothy)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nhusband(X, Y) ::: X is a husband of Y.\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nuncle(X, Y) ::: X is an uncle of Y.\ngrandmother(X, Y) ::: X is a grandmother of Y.\n\nFacts:\nhusband(frank, dorothy) ::: frank is a husband of dorothy.\nparent(frank, rachel) ::: frank is a parent of rachel.\nsibling(beverly, rachel) ::: beverly is a sibling of rachel.\nuncle(william, beverly) ::: william is an uncle of beverly.\n\nRules:\n∀X,Y (went_to_lunch_with(X,Y) ⇒ husband(X,Y)) ::: If X went to lunch with Y, then X is a husband of Y.\n∀X,Y (bought_for(X,Y) ⇒ parent(X,Y)) ::: If X bought something for Y, then X is a parent of Y.\n∀X,Y (took_out_to_dinner(X,Y) ⇒ sibling(X,Y)) ::: If X took Y out to dinner, then X is a sibling of Y.\n∀X,Y (went_to_pet_shop_with(X,Y) ⇒ uncle(X,Y)) ::: If X went to the pet shop with Y, then X is an uncle of Y.\n\nQuery:\ngrandmother(william, dorothy) ::: william is a grandmother of dorothy."
+    ]
+  },
+  {
+    "id": 52,
+    "context": "[Jonathan] went to the Farmer's market with his mother [Laura] and his brother [Stephen]. [Darren] and his sister [Nichole] bought a painting for [Darren]'s father [Christian]. [Christian]'s brother [Stephen] said it was an ugly painting.",
+    "goal": "relation(nichole, granddaughter, laura)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nuncle(X, Y) ::: X is an uncle of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\ngranddaughter(X, Y) ::: X is a granddaughter of Y.\n\nFacts:\nparent(laura, jonathan) ::: laura is a parent of jonathan.\nparent(laura, stephen) ::: laura is a parent of stephen.\nsibling(darren, nichole) ::: darren is a sibling of nichole.\nparent(christian, darren) ::: christian is a parent of darren.\nsibling(stephen, christian) ::: stephen is a sibling of christian.\n\nRules:\n∀X,Y (went_to_market(X, Y) ⇒ parent(Y, X)) ::: If X went to the market with Y, then Y is a parent of X.\n∀X,Y,Z (bought_for(X, Y, Z) ∧ sibling(X, Y) ⇒ parent(Z, X)) ::: If X and Y bought something for Z, and X and Y are siblings, then Z is a parent of X.\n∀X,Y (said(X, Y) ⇒ sibling(X, Y)) ::: If X said something about Y, then X is a sibling of Y.\n\nQuery:\ngranddaughter(nichole, laura) ::: nichole is a granddaughter of laura."
+    ]
+  },
+  {
+    "id": 53,
+    "context": "[Johnny] was so excited to surprise his son, [Leo], with the tickets to the playoffs. [Joanne] took her father [Johnny] to his doctor's appointment and afterward her brother [Clyde] came over and visited for awhile. [Gene] asked his brother [Clyde] if he would come help him fix his car next weekend. [Gene]'s mother [Helen] had to help him with his homework because he was having a test soon. [Kecia] and her sister, [Helen], frequently bicker. However, they always make up quickly.",
+    "goal": "relation(kecia, aunt, leo)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\naunt(X, Y) ::: X is an aunt of Y.\n\nFacts:\nparent(johnny, leo) ::: johnny is a parent of leo.\nparent(johnny, clyde) ::: johnny is a parent of clyde.\nparent(helen, gene) ::: helen is a parent of gene.\nsibling(joanne, clyde) ::: joanne is a sibling of clyde.\nsibling(clyde, gene) ::: clyde is a sibling of gene.\nsibling(kecia, helen) ::: kecia is a sibling of helen.\n\nRules:\n∀X,Y (surprised(X, Y) ⇒ parent(X, Y)) ::: If X surprised Y, then X is a parent of Y.\n∀X,Y,Z ((took_to_doctor(X, Y) ∧ visited(X, Z)) ⇒ (parent(Y, X) ∧ sibling(X, Z))) ::: If X took Y to the doctor and Z visited X, then Y is a parent of X and X and Z are siblings.\n∀X,Y (asked_help(X, Y) ⇒ sibling(X, Y)) ::: If X asked Y for help, then X and Y are siblings.\n∀X,Y (helped_with_homework(X, Y) ⇒ parent(X, Y)) ::: If X helped Y with homework, then X is a parent of Y.\n∀X,Y (bicker(X, Y) ⇒ sibling(X, Y)) ::: If X and Y bicker, then X and Y are siblings.\n\nQuery:\naunt(kecia, leo) ::: kecia is an aunt of leo."
+    ]
+  },
+  {
+    "id": 54,
+    "context": "[Paul] and his son [Michael] went to look at cars. [Paul] ended up buying the Mustang. [Paul]'s brother, [Kirk], recently made it into town. [Kirk] loves talking to his grandfather [Stanley] on the phone.",
+    "goal": "relation(stanley, father, michael)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nfather(X, Y) ::: X is a father of Y.\n\nFacts:\nparent(paul, michael) ::: paul is a parent of michael.\nsibling(paul, kirk) ::: paul is a sibling of kirk.\ngrandparent(stanley, kirk) ::: stanley is a grandparent of kirk.\n\nRules:\n∀X,Y (went_to_look_at_cars(X, Y) ⇒ parent(X, Y)) ::: If X went to look at cars with Y, then X is a parent of Y.\n∀X,Y (made_it_into_town(X, Y) ⇒ sibling(X, Y)) ::: If X made it into town, then X and Y are siblings.\n∀X,Y (loves_talking_on_phone(X, Y) ⇒ grandparent(Y, X)) ::: If X loves talking to Y on the phone, then Y is a grandparent of X.\n\nQuery:\nfather(stanley, michael) ::: stanley is a father of michael."
+    ]
+  },
+  {
+    "id": 55,
+    "context": "[Pennie] went to her brother [Darren]'s birthday party [Christian] was n't able to leave work early to go watch his son [Darren] play in his first high school football game. [Christian] instead sent his oldest daughter, [Nichole], to film the game for him so that he could watch it later that night. [Evelyn] made a pizza for her son [Sean]. [Sean]'s sister [Nichole] tried a piece and liked it.",
+    "goal": "relation(evelyn, mother, pennie)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nson(X, Y) ::: X is a son of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\nmother(X, Y) ::: X is a mother of Y.\nFacts: \nsibling(pennie, darren) ::: pennie is a sibling of darren.\nparent(christian, darren) ::: christian is a parent of darren.\nparent(christian, nichole) ::: christian is a parent of nichole.\nparent(evelyn, sean) ::: evelyn is a parent of sean.\nsibling(sean, nichole) ::: sean is a sibling of nichole.\nRules:\nâˆ€X,YÂ (went_to_birthday_party(X,Y) â‡’ sibling(X,Y)) ::: If X went to Y's birthday party, then X is a sibling of Y.\nâˆ€X,YÂ (could_not_watch_game(X,Y) â‡’ parent(X,Y)) ::: If X could not watch Y's game, then X is a parent of Y.\nâˆ€X,YÂ (sent_to_film_game(X,Y) â‡’ parent(X,Y)) ::: If X sent Y to film the game, then X is a parent of Y.\nâˆ€X,YÂ (made_pizza_for(X,Y) â‡’ parent(X,Y)) ::: If X made a pizza for Y, then X is a parent of Y.\nâˆ€X,YÂ (tried_pizza(X,Y) â‡’ sibling(X,Y)) ::: If X tried Y's pizza, then X is a sibling of Y.\nQuery:\nmother(evelyn, pennie) ::: evelyn is a mother of pennie."
+    ]
+  },
+  {
+    "id": 56,
+    "context": "[Carlos] took his son [Gregory] out for ice cream. [Mary] was always arguing with her mother's husband [Carlos]. [Julie] went to the store with her sister [Mary] [Mary] went shoe shopping with her sister [Julie]. [Sarah] and her daughter [Mary] went to see a movie yesterday and then got ice cream afterwards. [Jamie]'s mother [Sarah] was teaching her how to teach when [Jamie]'s husband [Daniel] arrived home. [Oscar] took his favorite son [Daniel] to a baseball game where he caught a foul ball as a souvenir.",
+    "goal": "relation(oscar, son_in_law, gregory)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nhusband(X, Y) ::: X is a husband of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\nson_in_law(X, Y) ::: X is a son-in-law of Y.\n\nFacts:\nparent(carlos, gregory) ::: carlos is a parent of gregory.\nhusband(carlos, mary's mother) ::: carlos is a husband of mary's mother.\nsibling(mary, julie) ::: mary is a sibling of julie.\nparent(sarah, mary) ::: sarah is a parent of mary.\nparent(sarah, jamie) ::: sarah is a parent of jamie.\nhusband(daniel, jamie) ::: daniel is a husband of jamie.\nparent(oscar, daniel) ::: oscar is a parent of daniel.\n\nRules:\n∀X,Y (took_out_for_ice_cream(X,Y) ⇒ parent(X,Y)) ::: If X took Y out for ice cream, then X is a parent of Y.\n∀X,Y (arguing_with(X,Y) ⇒ husband(Y, X's mother)) ::: If X was always arguing with Y, then Y is a husband of X's mother.\n∀X,Y (went_to_store_with(X,Y) ⇒ sibling(X,Y)) ::: If X went to the store with Y, then X and Y are siblings.\n∀X,Y (went_to_see_movie_with(X,Y) ⇒ parent(X,Y)) ::: If X went to see a movie with Y, then X is a parent of Y.\n∀X,Y (teaching(X,Y) ⇒ parent(X,Y)) ::: If X was teaching Y, then X is a parent of Y.\n∀X,Y (arrived_home(X,Y) ⇒ husband(X,Y)) ::: If X arrived home when Y was there, then X is a husband of Y.\n∀X,Y (took_to_baseball_game(X,Y) ⇒ parent(X,Y)) ::: If X took Y to a baseball game, then X is a parent of Y.\n\nQuery:\nson_in_law(oscar, gregory) ::: oscar is a son-in-law of gregory."
+    ]
+  },
+  {
+    "id": 57,
+    "context": "[Gabrielle] has a grandson who is [Kevin]. [Dan] went to his brother [Kevin]'s Birthday party",
+    "goal": "relation(dan, niece, gabrielle)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nbrother(X, Y) ::: X is a brother of Y.\ngrandson(X, Y) ::: X is a grandson of Y.\nniece(X, Y) ::: X is a niece of Y.\n\nFacts:\ngrandson(kevin, gabrielle) ::: kevin is a grandson of gabrielle.\nbrother(dan, kevin) ::: dan is a brother of kevin.\n\nRules:\n∀X,Y (has_grandson(X, Y) ⇒ grandson(Y, X)) ::: If X has a grandson who is Y, then Y is a grandson of X.\n∀X,Y (went_to_birthday_party(X, Y) ⇒ brother(X, Y)) ::: If X went to Y's birthday party, then X is a brother of Y.\n\nQuery:\nniece(dan, gabrielle) ::: dan is a niece of gabrielle."
+    ]
+  },
+  {
+    "id": 58,
+    "context": "[Kimberley] and her sister, [Kelley], frequently bicker. However, they always make up quickly. [Anne] wanted to go shopping with her grandmother, [Nicole] instead of having dinner with her sister [Kimberley] and father, [Richard].",
+    "goal": "relation(nicole, granddaughter, kelley)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nparent(X, Y) ::: X is a parent of Y.\ngranddaughter(X, Y) ::: X is a granddaughter of Y.\n\nFacts:\nsibling(kimberley, kelley) ::: kimberley is a sibling of kelley.\ngrandparent(nicole, anne) ::: nicole is a grandparent of anne.\nparent(richard, anne) ::: richard is a parent of anne.\nsibling(anne, kimberley) ::: anne is a sibling of kimberley.\n\nRules:\n∀X,Y (bicker(X, Y) ⇒ sibling(X, Y)) ::: If X bickers with Y, then X and Y are siblings.\n∀X,Y (wanted_to_go_shopping(X, Y) ⇒ grandparent(Y, X)) ::: If X wanted to go shopping with Y, then Y is a grandparent of X.\n∀X,Y,Z ((having_dinner(X, Y, Z) ∧ sibling(X, Z) ∧ parent(Y, Z)) ⇒ sibling(X, Z) ∧ parent(Y, Z)) ::: If X is having dinner with Y and Z, where Z is a sibling of X and Y is a parent of Z, then X and Z are siblings, and Y is a parent of Z.\n\nQuery:\ngranddaughter(kelley, nicole) ::: kelley is a granddaughter of nicole."
+    ]
+  },
+  {
+    "id": 59,
+    "context": "[Alan] would n't let his son [Jason] go to the park by himself. [Jason]'s brother [Clarence] offered to go with him. [Stanley] enjoys reading books to his grandson, [Clarence].",
+    "goal": "relation(stanley, uncle, alan)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nuncle(X, Y) ::: X is an uncle of Y.\n\nFacts:\nparent(alan, jason) ::: alan is a parent of jason.\nsibling(jason, clarence) ::: jason is a sibling of clarence.\ngrandparent(stanley, clarence) ::: stanley is a grandparent of clarence.\n\nRules:\nâˆ€X, YÂ (would_not_let(X, Y) â‡’ parent(X, Y)) ::: If X would not let Y do something, then X is a parent of Y.\nâˆ€X, YÂ (offered_to_go_with(X, Y) â‡’ sibling(X, Y)) ::: If X offered to go with Y, then X and Y are siblings.\nâˆ€X, YÂ (enjoys_reading_to(X, Y) â‡’ grandparent(X, Y)) ::: If X enjoys reading books to Y, then X is a grandparent of Y.\n\nQuery:\nuncle(stanley, alan) ::: stanley is an uncle of alan."
+    ]
+  },
+  {
+    "id": 60,
+    "context": "[Margaret] took her sister, [Melissa], out to dinner for her birthday. [Annie] took her sister, [Margaret], out to dinner for her birthday. [Lisa] took her sister, [Annie], out to dinner for her birthday. [Stephen] loves to fish with his brother, [Jonathan] and his daughter [Lisa].",
+    "goal": "relation(jonathan, uncle, melissa)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\nuncle(X, Y) ::: X is an uncle of Y.\n\nFacts:\nsibling(margaret, melissa) ::: margaret is a sibling of melissa.\nsibling(annie, margaret) ::: annie is a sibling of margaret.\nsibling(lisa, annie) ::: lisa is a sibling of annie.\nparent(stephen, lisa) ::: stephen is a parent of lisa.\nsibling(stephen, jonathan) ::: stephen is a sibling of jonathan.\n\nRules:\n∀X, Y (took_out_to_dinner(X, Y) ⇒ sibling(X, Y)) ::: If X took Y out to dinner, then X is a sibling of Y.\n∀X, Y, Z ((loves_to_fish(X, Y, Z) ∧ brother(Y, X) ∧ daughter(Z, X)) ⇒ sibling(X, Y) ∧ parent(X, Z)) ::: If X loves to fish with Y and Z, where Y is a brother of X and Z is a daughter of X, then X and Y are siblings, and X is a parent of Z.\n\nQuery:\nuncle(jonathan, melissa) ::: jonathan is an uncle of melissa."
+    ]
+  },
+  {
+    "id": 61,
+    "context": "[Philip] took his sister [Diane] out to lunch after learning that she got accepted into her first choice for university. [Joyce] and her brother [Philip] enlisted in the army [Reynaldo] took his son [Philip] and his daughter [Joyce] out for pizza. [Joyce] and [Philip], a brother and sister, asked their mother, [Maxine], if they can go to the arcade with her brother [Chuck].",
+    "goal": "relation(chuck, sister, diane)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nuncle(X, Y) ::: X is an uncle of Y.\nFacts:\nsibling(philip, diane) ::: philip is a sibling of diane.\nsibling(joyce, philip) ::: joyce is a sibling of philip.\nparent(reynaldo, philip) ::: reynaldo is a parent of philip.\nparent(reynaldo, joyce) ::: reynaldo is a parent of joyce.\nsibling(maxine, chuck) ::: maxine is a sibling of chuck.\nRules:\nâˆ€X, YÂ (took_out_to_lunch(X, Y) â‡’ sibling(X, Y)) ::: If X took Y out to lunch, then X is a sibling of Y.\nâˆ€X, YÂ (enlisted_in_army(X, Y) â‡’ sibling(X, Y)) ::: If X and Y enlisted in the army, then X and Y are siblings.\nâˆ€X, Y, ZÂ (took_out_for_pizza(X, Y, Z) â‡’ parent(X, Y) âˆ§ parent(X, Z)) ::: If X took Y and Z out for pizza, then X is a parent of Y and Z.\nâˆ€X, Y, ZÂ (asked_to_go_to_arcade(X, Y, Z) â‡’ sibling(X, Y) âˆ§ sibling(Z, X) âˆ§ sibling(Z, Y)) ::: If X and Y asked Z to go to the arcade, then X, Y, and Z are siblings.\nQuery:\nuncle(chuck, diane) ::: chuck is an uncle of diane."
+    ]
+  },
+  {
+    "id": 62,
+    "context": "[Ruth] told her son [Jeremy] to give the dog a bath. [Jeremy]'s sister [Gloria] helped him. [Ruth] and her son, [Jeff], went to the park to fly a kite. They had fun doing it all day. [Jeff] bought gifts for his lovely sister, [Stephanie] [Stephanie] bought her grandfather, [Seth], a tie for his birthday.",
+    "goal": "relation(seth, grandfather, gloria)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\n\nFacts: \nparent(ruth, jeremy) ::: ruth is a parent of jeremy.\nsibling(jeremy, gloria) ::: jeremy is a sibling of gloria.\nparent(ruth, jeff) ::: ruth is a parent of jeff.\nsibling(jeff, stephanie) ::: jeff is a sibling of stephanie.\ngrandparent(seth, stephanie) ::: seth is a grandparent of stephanie.\n\nRules:\nâˆ€X,YÂ (told(X,Y) â‡’ parent(X,Y)) ::: If X told Y, then X is a parent of Y.\nâˆ€X,YÂ (helped(X, Y) â‡’ sibling(X, Y)) ::: If X helped Y, then X and Y are siblings.\nâˆ€X,YÂ (went_to_park(X, Y) â‡’ parent(X, Y)) ::: If X went to the park with Y, then X is a parent of Y.\nâˆ€X,YÂ (bought_for(X, Y) â‡’ sibling(X, Y)) ::: If X bought gifts for Y, then X and Y are siblings.\nâˆ€X,YÂ (bought_for(X, Y) â‡’ grandparent(Y, X)) ::: If X bought for Y, then Y is a grandparent of X.\n\nQuery:\ngrandparent(seth, gloria) ::: seth is a grandfather of gloria."
+    ]
+  },
+  {
+    "id": 63,
+    "context": "[Lucille] and her father [Christopher] are having a very nice chicken dinner with [Christopher]'s wife [Myrna].",
+    "goal": "relation(lucille, daughter, myrna)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nspouse(X, Y) ::: X is a spouse of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\n\nFacts:\nparent(christopher, lucille) ::: christopher is a parent of lucille.\nspouse(christopher, myrna) ::: christopher is a spouse of myrna.\n\nRules:\n∀X,Y (having_dinner_with(X, Y) ⇒ parent(Y, X)) ::: If X is having dinner with Y, then Y is a parent of X.\n∀X,Y (spouse(X, Y) ⇒ parent(Y, X)) ::: If X is a spouse of Y, then Y is a parent of X.\n\nQuery:\ndaughter(lucille, myrna) ::: lucille is a daughter of myrna."
+    ]
+  },
+  {
+    "id": 64,
+    "context": "Since retiring, [Laura] spends much of her time with daughter [Rosa] and son [Jonathan]. She enjoys playing with [Rosa]'s daughter [Annie] especially. [Lisa], who is the sister of [Annie], is a lovely girl. [Melissa] and her sister, [Lisa], frequently bicker. However, they always make up quickly.",
+    "goal": "relation(melissa, granddaughter, laura)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\ngranddaughter(X, Y) ::: X is a granddaughter of Y.\n\nFacts:\nparent(laura, rosa) ::: laura is a parent of rosa.\nparent(laura, jonathan) ::: laura is a parent of jonathan.\nparent(rosa, annie) ::: rosa is a parent of annie.\nsibling(annie, lisa) ::: annie is a sibling of lisa.\nsibling(lisa, melissa) ::: lisa is a sibling of melissa.\n\nRules:\n∀X,Y (spends_time_with(X, Y) ⇒ parent(X, Y)) ::: If X spends much of her time with Y, then X is a parent of Y.\n∀X,Y (plays_with(X, Y) ⇒ grandparent(X, Y)) ::: If X plays with Y, then X is a grandparent of Y.\n∀X,Y (sister_of(X, Y) ⇒ sibling(X, Y)) ::: If X is the sister of Y, then X and Y are siblings.\n∀X,Y (bicker_with(X, Y) ⇒ sibling(X, Y)) ::: If X bickers with Y, then X and Y are siblings.\n\nQuery:\ngranddaughter(melissa, laura) ::: melissa is a granddaughter of laura."
+    ]
+  },
+  {
+    "id": 65,
+    "context": "[Donald] invited his father [Chuck] and his brother [Leandro] to go on a weekend fishing trip. [Leandro] waited at dinner for his sister, [Sara]. She was running late due to a phone call with her brother, [Donald]. [Donald]'s mother, [Elizabeth], waited impatiently for him at the diner. [Elizabeth] asked her daughter, [Sara], if she would like to go to a movie with her on Saturday night. [Sara] decided to give her uncle, [Spencer], a call on his birthday.",
+    "goal": "relation(spencer, brother, chuck)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nfather(X, Y) ::: X is a father of Y.\nbrother(X, Y) ::: X is a brother of Y.\nsister(X, Y) ::: X is a sister of Y.\nmother(X, Y) ::: X is a mother of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\nuncle(X, Y) ::: X is an uncle of Y.\nFacts:\nfather(chuck, donald) ::: chuck is a father of donald.\nbrother(leandro, donald) ::: leandro is a brother of donald.\nsister(sara, donald) ::: sara is a sister of donald.\nmother(elizabeth, donald) ::: elizabeth is a mother of donald.\ndaughter(sara, elizabeth) ::: sara is a daughter of elizabeth.\nuncle(spencer, sara) ::: spencer is an uncle of sara.\nRules:\nâˆ€X,YÂ (invited(X, Y) â‡’ father(Y, X)) ::: If X invited Y, then Y is a father of X.\nâˆ€X,YÂ (waited_for(X, Y) â‡’ brother(Y, X)) ::: If X waited for Y, then Y is a brother of X.\nâˆ€X,YÂ (phone_call_with(X, Y) â‡’ sister(Y, X)) ::: If X had a phone call with Y, then Y is a sister of X.\nâˆ€X,YÂ (waited_for(X, Y) â‡’ mother(X, Y)) ::: If X waited for Y, then X is a mother of Y.\nâˆ€X,YÂ (asked(X, Y) â‡’ daughter(Y, X)) ::: If X asked Y, then Y is a daughter of X.\nâˆ€X,YÂ (gave_call_to(X, Y) â‡’ uncle(Y, X)) ::: If X gave a call to Y, then Y is an uncle of X.\nQuery:\nbrother(spencer, chuck) ::: spencer is a brother of chuck."
+    ]
+  },
+  {
+    "id": 66,
+    "context": "[Helen] took her father [James] to his doctor's appointment and afterward her brother [Thomas] came over and visited for awhile. [Thomas] went to the game with his sister [Florence]. [Kecia], who is the sister of [Florence], is a lovely girl. [Thomas] and [Kecia] have a happy marriage. [Thomas] rushed to the hospital to find out that his wife and already given birth to a boy and had named him [Matthew].",
+    "goal": "relation(matthew, grandson, james)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nhusband(X, Y) ::: X is a husband of Y.\nchild(X, Y) ::: X is a child of Y.\ngrandson(X, Y) ::: X is a grandson of Y.\n\nFacts:\nparent(helen, james) ::: helen is a parent of james.\nsibling(helen, thomas) ::: helen is a sibling of thomas.\nsibling(thomas, florence) ::: thomas is a sibling of florence.\nsibling(florence, kecia) ::: florence is a sibling of kecia.\nhusband(thomas, kecia) ::: thomas is a husband of kecia.\nchild(matthew, thomas) ::: matthew is a child of thomas.\n\nRules:\nâˆ€X,YÂ (took_to_doctor(X,Y) â‡’ parent(X,Y)) ::: If X took Y to the doctor, then X is a parent of Y.\nâˆ€X,YÂ (visited(X, Y) â‡’ sibling(X, Y)) ::: If X visited Y, then X and Y are siblings.\nâˆ€X,YÂ (went_to_game_with(X, Y) â‡’ sibling(X, Y)) ::: If X went to the game with Y, then X and Y are siblings.\nâˆ€X,YÂ (married(X, Y) â‡’ husband(X, Y)) ::: If X is married to Y, then X is a husband of Y.\nâˆ€X,YÂ (gave_birth_to(Y, X) â‡’ child(X, Y)) ::: If Y gave birth to X, then X is a child of Y.\n\nQuery:\ngrandson(matthew, james) ::: matthew is a grandson of james."
+    ]
+  },
+  {
+    "id": 67,
+    "context": "[Gabrielle] invited her grandson [Micheal] to go ice skating. [Micheal] was only willing to go if his brother [Kevin] could come along.",
+    "goal": "relation(kevin, grandson, gabrielle)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\ngrandparent(X, Y) ::: X is a grandparent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\n\nFacts:\ngrandparent(gabrielle, micheal) ::: gabrielle is a grandparent of micheal.\nsibling(micheal, kevin) ::: micheal is a sibling of kevin.\n\nRules:\n∀X,Y (invited(X, Y) ⇒ grandparent(X, Y)) ::: If X invited Y to go ice skating, then X is a grandparent of Y.\n∀X,Y (willing_to_go_if(X, Y) ⇒ sibling(X, Y)) ::: If X was only willing to go if Y could come along, then X and Y are siblings.\n\nQuery:\ngrandparent(gabrielle, kevin) ::: gabrielle is a grandparent of kevin."
+    ]
+  },
+  {
+    "id": 68,
+    "context": "[April] asked her daughter, [Sharon], if she would like to go to a movie with her on Saturday night. [Melba] went to the store with her sister [Sharon] [Lucille] was helping her grandmother [Nicole] work in the garden while her sister [Melba] played nearby.",
+    "goal": "relation(nicole, grandmother, april)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nFacts:\nparent(april, sharon) ::: april is a parent of sharon.\nsibling(sharon, melba) ::: sharon is a sibling of melba.\ngrandparent(nicole, lucille) ::: nicole is a grandparent of lucille.\nRules:\nâˆ€X, YÂ (asked_to_go_to_movie(X, Y) â‡’ parent(X, Y)) ::: If X asked Y to go to a movie, then X is a parent of Y.\nâˆ€X, YÂ (went_to_store_with(X, Y) â‡’ sibling(X, Y)) ::: If X went to the store with Y, then X and Y are siblings.\nâˆ€X, YÂ (helping_in_garden(X, Y) â‡’ grandparent(Y, X)) ::: If X was helping Y in the garden, then Y is a grandparent of X.\nQuery:\ngrandparent(nicole, april) ::: nicole is a grandmother of april."
+    ]
+  },
+  {
+    "id": 69,
+    "context": "[Ellen] went shoe shopping with her sister [Lisa]. [Carolyn] and her sister, [Ellen], frequently bicker. However, they always make up quickly. [Roger] is buying his daughter [Carolyn] a brand new car for her birthday. [Roger]'s daughter, [Carolyn], made a dinner for her sister, [Ellen]. [Lisa] and her sister, [Ellen], frequently bicker. However, they always make up quickly. [Lisa]'s mother, [Julie], wanted to throw a surprise birthday party for [Julie]'s sister, [Mary], this weekend.",
+    "goal": "relation(mary, son_in_law, lisa)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\nmother(X, Y) ::: X is a mother of Y.\nson_in_law(X, Y) ::: X is a son-in-law of Y.\n\nFacts:\nsibling(ellen, lisa) ::: ellen is a sibling of lisa.\nsibling(ellen, carolyn) ::: ellen is a sibling of carolyn.\nparent(roger, carolyn) ::: roger is a parent of carolyn.\nsibling(lisa, ellen) ::: lisa is a sibling of ellen.\nmother(julie, lisa) ::: julie is a mother of lisa.\n\nRules:\n∀X,Y (went_shopping_with(X,Y) ⇒ sibling(X,Y)) ::: If X went shoe shopping with Y, then X is a sibling of Y.\n∀X,Y (bicker_with(X,Y) ⇒ sibling(X,Y)) ::: If X frequently bickers with Y, then X is a sibling of Y.\n∀X,Y (buying_for(X,Y) ⇒ parent(X,Y)) ::: If X is buying something for Y, then X is a parent of Y.\n∀X,Y (made_dinner_for(X,Y) ⇒ sibling(X,Y)) ::: If X made dinner for Y, then X is a sibling of Y.\n∀X,Y (throw_party_for(X,Y) ⇒ sibling(X,Y)) ::: If X wanted to throw a surprise birthday party for Y, then X is a sibling of Y.\n\nQuery:\nson_in_law(mary, lisa) ::: mary is a son-in-law of lisa."
+    ]
+  },
+  {
+    "id": 70,
+    "context": "[Nola] went to her brother [Oscar]'s birthday party [Oscar] was so happy for his brother, [Joel], getting a promotion. [Joel] adored his brother, [Richard]. [Richard]'s brother, [Oscar], also adored him. [Daniel] was so proud of his son, [Oscar]. he received a great scholarship to college. [Richard] took his son [Daniel] out to play gold later that night. [Richard]'s mother [Jamie] had to help him with his homework because he was having a test soon. [Faye] took her sister, [Jamie], out to dinner for her birthday.",
+    "goal": "relation(faye, aunt, nola)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nson(X, Y) ::: X is a son of Y.\nbrother(X, Y) ::: X is a brother of Y.\nmother(X, Y) ::: X is a mother of Y.\naunt(X, Y) ::: X is an aunt of Y.\nFacts: \nsibling(nola, oscar) ::: nola is a sibling of oscar.\nbrother(oscar, joel) ::: oscar is a brother of joel.\nbrother(joel, richard) ::: joel is a brother of richard.\nparent(daniel, oscar) ::: daniel is a parent of oscar.\nparent(richard, daniel) ::: richard is a parent of daniel.\nmother(jamie, richard) ::: jamie is a mother of richard.\nsibling(faye, jamie) ::: faye is a sibling of jamie.\nRules:\nâˆ€X,YÂ (went_to_birthday_party(X,Y) â‡’ sibling(X,Y)) ::: If X went to Y's birthday party, then X is a sibling of Y.\nâˆ€X,YÂ (happy_for(X, Y) â‡’ brother(X, Y)) ::: If X is happy for Y, then X is a brother of Y.\nâˆ€X,YÂ (adored(X, Y) â‡’ brother(X, Y)) ::: If X adored Y, then X is a brother of Y.\nâˆ€X,YÂ (proud_of(X, Y) â‡’ parent(X, Y)) ::: If X is proud of Y, then X is a parent of Y.\nâˆ€X,YÂ (took_out_to_play(X, Y) â‡’ parent(X, Y)) ::: If X took Y out to play, then X is a parent of Y.\nâˆ€X,YÂ (helped_with_homework(X, Y) â‡’ mother(X, Y)) ::: If X helped Y with homework, then X is a mother of Y.\nâˆ€X,YÂ (took_out_to_dinner(X, Y) â‡’ sibling(X, Y)) ::: If X took Y out to dinner, then X is a sibling of Y.\nQuery:\naunt(faye, nola) ::: faye is an aunt of nola."
+    ]
+  },
+  {
+    "id": 71,
+    "context": "[Margaret] took her sister, [Melissa], out to dinner for her birthday. [Margaret] asked her mother, [Rosa], what they were going to have for lunch. [Rosa] asked her daughter, [Lisa], if she would like to go to a movie with her on Saturday night. [Annie] went shoe shopping with her sister [Lisa]. [Annie] went shopping at the mall with her father [Stephen].",
+    "goal": "relation(stephen, grandson, melissa)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\nfather(X, Y) ::: X is a father of Y.\ngrandson(X, Y) ::: X is a grandson of Y.\n\nFacts:\nsibling(margaret, melissa) ::: margaret is a sibling of melissa.\nparent(rosa, margaret) ::: rosa is a parent of margaret.\ndaughter(lisa, rosa) ::: lisa is a daughter of rosa.\nsibling(annie, lisa) ::: annie is a sibling of lisa.\nfather(stephen, annie) ::: stephen is a father of annie.\n\nRules:\n∀X,Y (took_out_to_dinner(X, Y) ⇒ sibling(X, Y)) ::: If X took Y out to dinner, then X is a sibling of Y.\n∀X,Y (asked_about_lunch(X, Y) ⇒ parent(Y, X)) ::: If X asked Y about lunch, then Y is a parent of X.\n∀X,Y (asked_about_movie(X, Y) ⇒ daughter(Y, X)) ::: If X asked Y about a movie, then Y is a daughter of X.\n∀X,Y (went_shoe_shopping_with(X, Y) ⇒ sibling(X, Y)) ::: If X went shoe shopping with Y, then X is a sibling of Y.\n∀X,Y (went_shopping_with(X, Y) ⇒ father(Y, X)) ::: If X went shopping with Y, then Y is a father of X.\n\nQuery:\ngrandson(stephen, melissa) ::: stephen is a grandson of melissa."
+    ]
+  },
+  {
+    "id": 72,
+    "context": "[Faye] just recently married her husband, [Gregory]. [Thomas] and [Christopher] were both still very upset with their mother, [Faye]. [Thomas] loved going to the store with his mom [Faye]. She always bought him snacks [Faye] put her son [Thomas] into the car and began to drive to Florida. [Thomas] was beyond excited to see his grandfather [Carlos]. [Carlos] went fishing with his daughter [Faye]. [Faye]'s sister, [Julie], was n't invited because she hates fishing.",
+    "goal": "relation(julie, sister, gregory)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nmarried(X, Y) ::: X is married to Y.\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nFacts:\nmarried(faye, gregory) ::: faye is married to gregory.\nparent(faye, thomas) ::: faye is a parent of thomas.\nparent(faye, christopher) ::: faye is a parent of christopher.\ngrandparent(carlos, thomas) ::: carlos is a grandparent of thomas.\nsibling(faye, julie) ::: faye is a sibling of julie.\nRules:\n∀X,Y (married(X, Y) ⇒ husband(Y, X)) ::: If X is married to Y, then Y is a husband of X.\n∀X,Y (upset_with(X, Y) ⇒ parent(Y, X)) ::: If X is upset with Y, then Y is a parent of X.\n∀X,Y (goes_to_store_with(X, Y) ⇒ parent(Y, X)) ::: If X goes to the store with Y, then Y is a parent of X.\n∀X,Y (drives_to(X, Y) ⇒ parent(Y, X)) ::: If X drives to a place with Y, then Y is a parent of X.\n∀X,Y (excited_to_see(X, Y) ⇒ grandparent(Y, X)) ::: If X is excited to see Y, then Y is a grandparent of X.\n∀X,Y (goes_fishing_with(X, Y) ⇒ parent(Y, X)) ::: If X goes fishing with Y, then Y is a parent of X.\n∀X,Y (not_invited(X, Y) ⇒ sibling(Y, X)) ::: If X is not invited by Y, then Y is a sibling of X.\nQuery:\nsibling(julie, gregory) ::: julie is a sibling of gregory."
+    ]
+  },
+  {
+    "id": 73,
+    "context": "[Rosa] made breakfast for her daughter [Melissa] before calling her husband [Stephen] to pick her up. [Annie] went shoe shopping with her sister [Melissa]. [Lisa] went to the store with her sister [Annie] [Annie] and her sister, [Lisa], frequently bicker. However, they always make up quickly.",
+    "goal": "relation(annie, niece, stephen)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nhusband(X, Y) ::: X is a husband of Y.\nniece(X, Y) ::: X is a niece of Y.\n\nFacts:\nparent(rosa, melissa) ::: rosa is a parent of melissa.\nhusband(stephen, rosa) ::: stephen is a husband of rosa.\nsibling(melissa, annie) ::: melissa is a sibling of annie.\nsibling(annie, lisa) ::: annie is a sibling of lisa.\n\nRules:\n∀X,Y (made_breakfast_for(X,Y) ⇒ parent(X,Y)) ::: If X made breakfast for Y, then X is a parent of Y.\n∀X,Y (called(X,Y) ⇒ husband(Y,X)) ::: If X called Y, then Y is a husband of X.\n∀X,Y (went_shopping_with(X,Y) ⇒ sibling(X,Y)) ::: If X went shopping with Y, then X and Y are siblings.\n∀X,Y (bicker_with(X,Y) ⇒ sibling(X,Y)) ::: If X bickers with Y, then X and Y are siblings.\n\nQuery:\nniece(annie, stephen) ::: annie is a niece of stephen."
+    ]
+  },
+  {
+    "id": 74,
+    "context": "[Frank] took his daughter [Beverly] to dance practice. [Frank] drove his daughter [Julia] to soccer practice. [Frank]'s daughter [Rachel] was playing on the swings in the park. [Julia], his other daughter, was napping in the stroller.",
+    "goal": "relation(rachel, sister, beverly)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nFacts:\nparent(frank, beverly) ::: frank is a parent of beverly.\nparent(frank, julia) ::: frank is a parent of julia.\nparent(frank, rachel) ::: frank is a parent of rachel.\nRules:\nâˆ€X, YÂ (took_to_dance_practice(X, Y) â‡’ parent(X, Y)) ::: If X took Y to dance practice, then X is a parent of Y.\nâˆ€X, YÂ (drove_to_soccer_practice(X, Y) â‡’ parent(X, Y)) ::: If X drove Y to soccer practice, then X is a parent of Y.\nâˆ€X, YÂ (playing_on_swings(X, Y) â‡’ parent(X, Y)) ::: If X was playing on the swings, then Y is a parent of X.\nâˆ€X, YÂ (napping_in_stroller(X, Y) â‡’ parent(X, Y)) ::: If X was napping in the stroller, then Y is a parent of X.\nâˆ€X, YÂ (parent(X, Y) âˆ§ parent(X, Z) â‡’ sibling(Y, Z)) ::: If X is a parent of Y and X is a parent of Z, then Y and Z are siblings.\nQuery:\nsibling(rachel, beverly) ::: rachel is a sibling of beverly."
+    ]
+  },
+  {
+    "id": 75,
+    "context": "[Toni] was ready to leave for the airport when she got a call from her sister [Sharon] that [Sharon]'s father [Benjamin] had fallen ill. [Benjamin]'s wife [April] had found him collapsed at the desk. [Toni] and her aunt, [Patricia], went to the bookstore. [Toni] bought some fantasy books, while [Patricia] picked up some mysteries.",
+    "goal": "relation(patricia, sister, april)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\nspouse(X, Y) ::: X is a spouse of Y.\naunt(X, Y) ::: X is an aunt of Y.\nFacts:\nsibling(toni, sharon) ::: toni is a sibling of sharon.\nparent(benjamin, sharon) ::: benjamin is a parent of sharon.\nspouse(benjamin, april) ::: benjamin is a spouse of april.\naunt(patricia, toni) ::: patricia is an aunt of toni.\nRules:\n∀X,Y (got_call_from(X, Y) ⇒ sibling(X, Y)) ::: If X got a call from Y, then X and Y are siblings.\n∀X,Y (father(X, Y) ⇒ parent(X, Y)) ::: If X is a father of Y, then X is a parent of Y.\n∀X,Y (found_collapsed(X, Y) ⇒ spouse(X, Y)) ::: If X found Y collapsed, then X and Y are spouses.\n∀X,Y (went_to_bookstore(X, Y) ⇒ aunt(Y, X)) ::: If X went to the bookstore with Y, then Y is an aunt of X.\nQuery:\nsibling(patricia, april) ::: patricia is a sister of april."
+    ]
+  },
+  {
+    "id": 76,
+    "context": "[Cornelius] took his grandaughter [Anne] to the carnival. [Anne] later told [Jenny], her mother, that they had a great time [Cornelius] took his daughter [Patricia] to the park that afternoon to play. [Patricia] had picked her daughter [Connie] out the cutest new dress to wear on her birthday.",
+    "goal": "relation(connie, niece, jenny)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nniece(X, Y) ::: X is a niece of Y.\n\nFacts:\ngrandparent(cornelius, anne) ::: cornelius is a grandparent of anne.\nparent(jenny, anne) ::: jenny is a parent of anne.\nparent(cornelius, patricia) ::: cornelius is a parent of patricia.\nparent(patricia, connie) ::: patricia is a parent of connie.\n\nRules:\n∀X,Y (took_to_carnival(X,Y) ⇒ grandparent(X,Y)) ::: If X took Y to the carnival, then X is a grandparent of Y.\n∀X,Y (told(X,Y) ⇒ parent(Y,X)) ::: If X told Y, then Y is a parent of X.\n∀X,Y (took_to_park(X,Y) ⇒ parent(X,Y)) ::: If X took Y to the park, then X is a parent of Y.\n∀X,Y (picked_out_dress(X,Y) ⇒ parent(X,Y)) ::: If X picked out a dress for Y, then X is a parent of Y.\n\nQuery:\nniece(connie, jenny) ::: connie is a niece of jenny."
+    ]
+  },
+  {
+    "id": 77,
+    "context": "[Gloria] went to the store with her sister [Stephanie] [Gloria] bought her mother, [Ruth], a puppy for her birthday. [Ruth] and her son, [Jeff], went to the park to fly a kite. They had fun doing it all day. [Jeff] was disappointed that his father, [Jason], would n't be at the play to see him perform. [Jason] and his sister [Cristina] went out for ice cream.",
+    "goal": "relation(cristina, aunt, stephanie)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\naunt(X, Y) ::: X is an aunt of Y.\n\nFacts:\nsibling(gloria, stephanie) ::: gloria is a sibling of stephanie.\nparent(ruth, gloria) ::: ruth is a parent of gloria.\nparent(ruth, jeff) ::: ruth is a parent of jeff.\nparent(jason, jeff) ::: jason is a parent of jeff.\nsibling(jason, cristina) ::: jason is a sibling of cristina.\n\nRules:\n∀X,Y (went_to_store_with(X,Y) ⇒ sibling(X,Y)) ::: If X went to the store with Y, then X and Y are siblings.\n∀X,Y (bought_for(X,Y) ⇒ parent(Y,X)) ::: If X bought something for Y, then Y is a parent of X.\n∀X,Y (went_to_park_with(X,Y) ⇒ parent(X,Y)) ::: If X went to the park with Y, then X is a parent of Y.\n∀X,Y (disappointed(X,Y) ⇒ parent(Y,X)) ::: If X is disappointed that Y is not present, then Y is a parent of X.\n∀X,Y (went_out_with(X,Y) ⇒ sibling(X,Y)) ::: If X went out with Y, then X and Y are siblings.\n\nQuery:\naunt(cristina, stephanie) ::: cristina is an aunt of stephanie."
+    ]
+  },
+  {
+    "id": 78,
+    "context": "[Stanley] asked his wife [Molly] to help him pick a gift for his grandson [Thomas]. [Thomas]'s brother, [Jeremy], recently made it into town.",
+    "goal": "relation(jeremy, grandson, molly)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nhusband(X, Y) ::: X is a husband of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\n\nFacts: \nhusband(stanley, molly) ::: stanley is a husband of molly.\ngrandparent(stanley, thomas) ::: stanley is a grandparent of thomas.\nsibling(thomas, jeremy) ::: thomas is a sibling of jeremy.\n\nRules:\n∀X,Y (asked_to_help(X, Y) ⇒ husband(X, Y)) ::: If X asked Y to help him, then X is a husband of Y.\n∀X,Y (pick_gift_for(X, Y) ⇒ grandparent(X, Y)) ::: If X picked a gift for Y, then X is a grandparent of Y.\n∀X,Y (made_it_into_town(X, Y) ⇒ sibling(X, Y)) ::: If X made it into town, then X is a sibling of Y.\n\nQuery:\ngrandparent(molly, jeremy) ::: molly is a grandparent of jeremy."
+    ]
+  },
+  {
+    "id": 79,
+    "context": "[Nicole] went to the mall, because she wanted to look for a present for her daughter, [Patricia]. [Patricia] always goes to the park with her son [Timothy] on Saturdays. [Christine] asked her sister [Connie] if she wanted to go to the movies with her. [Connie] said no, so [Christine] went with her brother [Timothy] instead.",
+    "goal": "relation(connie, niece, nicole)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\naunt(X, Y) ::: X is an aunt of Y.\nniece(X, Y) ::: X is a niece of Y.\n\nFacts:\nparent(nicole, patricia) ::: nicole is a parent of patricia.\nparent(patricia, timothy) ::: patricia is a parent of timothy.\nsibling(christine, connie) ::: christine is a sibling of connie.\nsibling(christine, timothy) ::: christine is a sibling of timothy.\n\nRules:\n∀X,Y (look_for_present(X, Y) ⇒ parent(X, Y)) ::: If X is looking for a present for Y, then X is a parent of Y.\n∀X,Y (go_to_park(X, Y) ⇒ parent(X, Y)) ::: If X goes to the park with Y, then X is a parent of Y.\n∀X,Y (ask_to_go_to_movies(X, Y) ⇒ sibling(X, Y)) ::: If X asks Y to go to the movies, then X and Y are siblings.\n∀X,Y (go_to_movies(X, Y) ⇒ sibling(X, Y)) ::: If X goes to the movies with Y, then X and Y are siblings.\n\nQuery:\nniece(connie, nicole) ::: connie is a niece of nicole."
+    ]
+  },
+  {
+    "id": 80,
+    "context": "[Beverly] went to her brother [Charles]'s birthday party [Charles] and his sister [Julia] have been best friends ever since childhood. [Julia] vowed to never trust her father, [Frank] with her debit card again. [Frank] was disappointed that his father, [Cornelius], would n't be at the play to see him perform.",
+    "goal": "relation(cornelius, father, beverly)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\n\nFacts:\nsibling(beverly, charles) ::: beverly is a sibling of charles.\nsibling(charles, julia) ::: charles is a sibling of julia.\nparent(frank, julia) ::: frank is a parent of julia.\nparent(cornelius, frank) ::: cornelius is a parent of frank.\n\nRules:\nâˆ€X, YÂ (went_to_birthday_party(X, Y) â‡’ sibling(X, Y)) ::: If X went to Y's birthday party, then X is a sibling of Y.\nâˆ€X, YÂ (best_friends(X, Y) â‡’ sibling(X, Y)) ::: If X and Y are best friends, then X and Y are siblings.\nâˆ€X, YÂ (vowed_never_to_trust(X, Y) â‡’ parent(Y, X)) ::: If X vowed never to trust Y, then Y is a parent of X.\nâˆ€X, YÂ (disappointed(X, Y) â‡’ parent(Y, X)) ::: If X is disappointed that Y won't be at the play to see him perform, then Y is a parent of X.\n\nQuery:\ngrandparent(cornelius, beverly) ::: cornelius is a grandparent of beverly."
+    ]
+  },
+  {
+    "id": 81,
+    "context": "[Christian] got his son, [Seth], a car for his birthday. [Christian] and his brother [Jonathan] went to a basketball game. [Jonathan]'s sister [Ruth] decided to tag along with them. [Ruth] invited her daughter [Stephanie] to lunch. [Stephanie]'s brother [Jeremy] could n't leave work to join them.",
+    "goal": "relation(jeremy, grandmother, seth)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nuncle(X, Y) ::: X is an uncle of Y.\naunt(X, Y) ::: X is an aunt of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nFacts: \nparent(christian, seth) ::: christian is a parent of seth.\nsibling(christian, jonathan) ::: christian is a sibling of jonathan.\nsibling(jonathan, ruth) ::: jonathan is a sibling of ruth.\nparent(ruth, stephanie) ::: ruth is a parent of stephanie.\nsibling(stephanie, jeremy) ::: stephanie is a sibling of jeremy.\nRules:\nâˆ€X,YÂ (got_car_for(X,Y) â‡’ parent(X,Y)) ::: If X got a car for Y, then X is a parent of Y.\nâˆ€X,YÂ (went_to_game(X,Y) â‡’ sibling(X,Y)) ::: If X went to a game with Y, then X and Y are siblings.\nâˆ€X,YÂ (tagged_along(X,Y) â‡’ sibling(X,Y)) ::: If X tagged along with Y, then X and Y are siblings.\nâˆ€X,YÂ (invited_to_lunch(X,Y) â‡’ parent(X,Y)) ::: If X invited Y to lunch, then X is a parent of Y.\nâˆ€X,YÂ (could_not_join(X,Y) â‡’ sibling(X,Y)) ::: If X could not join Y, then X and Y are siblings.\nQuery:\ngrandparent(jeremy, seth) ::: jeremy is a grandparent of seth."
+    ]
+  },
+  {
+    "id": 82,
+    "context": "[Beverly] went shoe shopping with her sister [Rachel]. [Dorothy] and her daughter [Beverly] went to see a movie yesterday and then got ice cream afterwards. [Julia] went to dinner with her daughter [Dorothy]. They then went to the park afterwards. [Charles] and his sister, [Julia] love it when their grandmother visits because she spoils them. She is coming this week to watch them while their parents are out of town.",
+    "goal": "relation(charles, brother, rachel)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nbrother(X, Y) ::: X is a brother of Y.\n\nFacts:\nsibling(beverly, rachel) ::: beverly is a sibling of rachel.\nparent(dorothy, beverly) ::: dorothy is a parent of beverly.\nparent(julia, dorothy) ::: julia is a parent of dorothy.\nsibling(charles, julia) ::: charles is a sibling of julia.\n\nRules:\n∀X,Y (went_shopping_with(X,Y) ⇒ sibling(X,Y)) ::: If X went shoe shopping with Y, then X is a sibling of Y.\n∀X,Y (went_to_movie_with(X,Y) ⇒ parent(X,Y)) ::: If X went to see a movie with Y, then X is a parent of Y.\n∀X,Y (went_to_dinner_with(X,Y) ⇒ parent(X,Y)) ::: If X went to dinner with Y, then X is a parent of Y.\n∀X,Y (love_visits_from(X,Y) ⇒ grandparent(Y,X)) ::: If X loves it when Y visits, then Y is a grandparent of X.\n\nQuery:\nbrother(charles, rachel) ::: charles is a brother of rachel."
+    ]
+  },
+  {
+    "id": 83,
+    "context": "[Pennie] took her father [Christian] to his doctor's appointment and afterward her brother [Sean] came over and visited for awhile. [Jonathan] took his nephew [Sean] to the football game. [Jonathan] was excited to reveal the elaborate getaway he had planned for his wife [Cristina]. [Cristina] and her son [William] went out to lunch together yesterday.",
+    "goal": "relation(william, nephew, christian)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nnephew(X, Y) ::: X is a nephew of Y.\nhusband(X, Y) ::: X is a husband of Y.\nFacts:\nparent(pennie, christian) ::: pennie is a parent of christian.\nsibling(pennie, sean) ::: pennie is a sibling of sean.\nnephew(sean, jonathan) ::: sean is a nephew of jonathan.\nhusband(jonathan, cristina) ::: jonathan is a husband of cristina.\nparent(cristina, william) ::: cristina is a parent of william.\nRules:\nâˆ€X,YÂ (took_to_doctor(X,Y) â‡’ parent(X,Y)) ::: If X took Y to the doctor, then X is a parent of Y.\nâˆ€X,YÂ (visited(X,Y) â‡’ sibling(X,Y)) ::: If X visited Y, then X and Y are siblings.\nâˆ€X,YÂ (took_to_game(X,Y) â‡’ nephew(X,Y)) ::: If X took Y to the game, then X is a nephew of Y.\nâˆ€X,YÂ (planned_getaway(X,Y) â‡’ husband(X,Y)) ::: If X planned a getaway for Y, then X is a husband of Y.\nâˆ€X,YÂ (went_to_lunch(X,Y) â‡’ parent(X,Y)) ::: If X went to lunch with Y, then X is a parent of Y.\nQuery:\nnephew(william, christian) ::: william is a nephew of christian."
+    ]
+  },
+  {
+    "id": 84,
+    "context": "[Mary] went shopping at the mall with her father [Richard]. [Richard] took his daughter, [Kimberley], to a baseball game. [Jenny] called her sister [April] and asked if [April] could babysit her daughter [Kimberley].",
+    "goal": "relation(april, aunt, mary)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\naunt(X, Y) ::: X is an aunt of Y.\nFacts:\nparent(richard, mary) ::: richard is a parent of mary.\nparent(richard, kimberley) ::: richard is a parent of kimberley.\nsibling(jenny, april) ::: jenny is a sibling of april.\nparent(jenny, kimberley) ::: jenny is a parent of kimberley.\nRules:\nâˆ€X, YÂ (went_shopping_with(X, Y) â‡’ parent(Y, X)) ::: If X went shopping with Y, then Y is a parent of X.\nâˆ€X, YÂ (took_to_game(X, Y) â‡’ parent(X, Y)) ::: If X took Y to a game, then X is a parent of Y.\nâˆ€X, Y, ZÂ (called_for_babysit(X, Y, Z) â‡’ sibling(X, Y) âˆ§ parent(X, Z)) ::: If X called Y to babysit Z, then X and Y are siblings and X is a parent of Z.\nQuery:\naunt(april, mary) ::: april is an aunt of mary."
+    ]
+  },
+  {
+    "id": 85,
+    "context": "[Lucille] and her sister [Toni] were arguing over a toy. While they were fighting, [Lucille]'s sister [Melba] grabbed the toy, and ran off to play with it by herself. [Toni] bought her mother, [April], a puppy for her birthday. [Frank] took his sister [April] out to lunch after learning that she got accepted into her first choice for university.",
+    "goal": "relation(frank, mother, melba)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nmother(X, Y) ::: X is a mother of Y.\nFacts:\nsibling(lucille, toni) ::: lucille is a sibling of toni.\nsibling(lucille, melba) ::: lucille is a sibling of melba.\nmother(april, toni) ::: april is a mother of toni.\nsibling(frank, april) ::: frank is a sibling of april.\nRules:\n∀X,Y (argued_over_toy(X, Y) ⇒ sibling(X, Y)) ::: If X and Y argued over a toy, then X and Y are siblings.\n∀X,Y (grabbed_toy(X, Y) ⇒ sibling(X, Y)) ::: If X grabbed the toy while Y was fighting, then X and Y are siblings.\n∀X,Y (bought_puppy_for(X, Y) ⇒ mother(Y, X)) ::: If X bought a puppy for Y, then Y is a mother of X.\n∀X,Y (took_out_to_lunch(X, Y) ⇒ sibling(X, Y)) ::: If X took Y out to lunch, then X and Y are siblings.\nQuery:\nmother(frank, melba) ::: frank is a mother of melba."
+    ]
+  },
+  {
+    "id": 86,
+    "context": "[Manuel] likes to visit his sister. Her name is [Jami]. [Charlie] was thrilled his brother, [Manuel], was able to make it to the party. [Charlie] is [Jami]'s older brother. He has never liked any of her boyfriends. [Jami] bought a plant for her dad, [Kenneth]. [Jami] took her father [Kenneth] to his doctor's appointment and afterward her brother [Gino] came over and visited for awhile. [Gino] invited his sister [Jami] to dinner this Friday because it is her birthday. [Jami] and her brother [Charlie] went to see a movie. [Charlie]'s mother, [Michele], waited impatiently for him at the diner.",
+    "goal": "relation(michele, brother, jami)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nolder_sibling(X, Y) ::: X is an older sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\nFacts:\nsibling(manuel, jami) ::: manuel is a sibling of jami.\nsibling(charlie, manuel) ::: charlie is a sibling of manuel.\nolder_sibling(charlie, jami) ::: charlie is an older sibling of jami.\nparent(kenneth, jami) ::: kenneth is a parent of jami.\nsibling(gino, jami) ::: gino is a sibling of jami.\nparent(michele, charlie) ::: michele is a parent of charlie.\nRules:\n∀X,Y (likes_to_visit(X, Y) ⇒ sibling(X, Y)) ::: If X likes to visit Y, then X is a sibling of Y.\n∀X,Y (thrilled(X, Y) ⇒ sibling(X, Y)) ::: If X is thrilled that Y was able to make it to the party, then X is a sibling of Y.\n∀X,Y (older_brother(X, Y) ⇒ older_sibling(X, Y)) ::: If X is an older brother of Y, then X is an older sibling of Y.\n∀X,Y (bought_for(X, Y) ⇒ parent(Y, X)) ::: If X bought something for Y, then Y is a parent of X.\n∀X,Y (invited_to_dinner(X, Y) ⇒ sibling(X, Y)) ::: If X invited Y to dinner, then X is a sibling of Y.\n∀X,Y (went_to_movie(X, Y) ⇒ sibling(X, Y)) ::: If X went to see a movie with Y, then X is a sibling of Y.\n∀X,Y (waited_for(X, Y) ⇒ parent(X, Y)) ::: If X waited for Y, then X is a parent of Y.\nQuery:\nsibling(michele, jami) ::: michele is a sibling of jami."
+    ]
+  },
+  {
+    "id": 87,
+    "context": "[Beverly] went to the store with her sister [Julia] [Rachel] and her brother [Charles] were out playing when their mother [Dorothy] called them in for dinner. When they got inside [Rachel]'s sister [Beverly] was already at the table.",
+    "goal": "relation(dorothy, mother, julia)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\n\nFacts:\nsibling(beverly, julia) ::: beverly is a sibling of julia.\nsibling(rachel, charles) ::: rachel is a sibling of charles.\nsibling(beverly, rachel) ::: beverly is a sibling of rachel.\n\nRules:\n∀X,Y (went_to_store_with(X,Y) ⇒ sibling(X,Y)) ::: If X went to the store with Y, then X is a sibling of Y.\n∀X,Y,Z ((playing_outside(X, Y) ∧ called_in_by(Z, X, Y)) ⇒ parent(Z, X) ∧ parent(Z, Y)) ::: If X and Y were playing outside and were called in by Z, then Z is a parent of X and Y.\n∀X,Y (at_table(X, Y) ⇒ sibling(X, Y)) ::: If X is at the table with Y, then X is a sibling of Y.\n\nQuery:\nparent(dorothy, julia) ::: dorothy is a parent of julia."
+    ]
+  },
+  {
+    "id": 88,
+    "context": "[Jenny] spent a great day shopping with her daughter, [Kelley]. [Kelley] and her uncle [Frank] went to the pet shop. [Kelley] saw a puppy that she loved, so [Frank] bought it for her. [Frank] and [Dorothy] got married in 2017 [Dorothy] went to her son [Charles]'s House",
+    "goal": "relation(charles, grandmother, jenny)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nuncle(X, Y) ::: X is an uncle of Y.\nmarried(X, Y) ::: X is married to Y.\ngrandmother(X, Y) ::: X is a grandmother of Y.\n\nFacts:\nparent(jenny, kelley) ::: jenny is a parent of kelley.\nuncle(frank, kelley) ::: frank is an uncle of kelley.\nmarried(frank, dorothy) ::: frank is married to dorothy.\n\nRules:\nâˆ€X, YÂ (shopped_with(X, Y) â‡’ parent(X, Y)) ::: If X shopped with Y, then X is a parent of Y.\nâˆ€X, YÂ (went_to_pet_shop(X, Y) â‡’ uncle(X, Y)) ::: If X went to the pet shop with Y, then X is an uncle of Y.\nâˆ€X, YÂ (bought_puppy_for(X, Y) â‡’ uncle(X, Y)) ::: If X bought a puppy for Y, then X is an uncle of Y.\nâˆ€X, YÂ (married(X, Y) â‡’ married(X, Y)) ::: If X got married to Y, then X is married to Y.\nâˆ€X, YÂ (visited_son(X, Y) â‡’ parent(X, Y)) ::: If X visited her son Y, then X is a parent of Y.\n\nQuery:\ngrandmother(jenny, charles) ::: jenny is a grandmother of charles."
+    ]
+  },
+  {
+    "id": 89,
+    "context": "[Stanley] told his wife [Molly] that he received a very lovely letter from his grandson [Matthew]. [Matthew] and his brother, [Ellis] run a turtle farm.",
+    "goal": "relation(ellis, father, molly)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nhusband(X, Y) ::: X is a husband of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nfather(X, Y) ::: X is a father of Y.\n\nFacts:\nhusband(stanley, molly) ::: stanley is a husband of molly.\ngrandparent(stanley, matthew) ::: stanley is a grandparent of matthew.\nsibling(matthew, ellis) ::: matthew is a sibling of ellis.\n\nRules:\n∀X,Y (told(X, Y) ⇒ husband(X, Y)) ::: If X told Y, then X is a husband of Y.\n∀X,Y (received_from(X, Y) ⇒ grandparent(X, Y)) ::: If X received a letter from Y, then X is a grandparent of Y.\n∀X,Y (run_turtle_farm(X, Y) ⇒ sibling(X, Y)) ::: If X and Y run a turtle farm, then X and Y are siblings.\n\nQuery:\nfather(ellis, molly) ::: ellis is a father of molly."
+    ]
+  },
+  {
+    "id": 90,
+    "context": "[Alma] took her husband, [Michael], to have dinner with his daughter, [Annette].",
+    "goal": "relation(annette, daughter, alma)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nhusband(X, Y) ::: X is a husband of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\n\nFacts:\nhusband(michael, alma) ::: michael is a husband of alma.\ndaughter(annette, michael) ::: annette is a daughter of michael.\n\nRules:\n∀X,Y,Z (took_to_dinner(X, Y, Z) ∧ husband(Y, X) ⇒ daughter(Z, Y)) ::: If X took Y to have dinner with Z, and Y is a husband of X, then Z is a daughter of Y.\n\nQuery:\ndaughter(annette, alma) ::: annette is a daughter of alma."
+    ]
+  },
+  {
+    "id": 91,
+    "context": "[Ethel] had picked her daughter [Leila] out the cutest new dress to wear on her birthday. [Leila] was excited because today she was going to the zoo with her uncle [Kenneth]. [Janice] asked her sister [Judy] if she wanted to go to the movies with her. [Judy] said no, so [Janice] went with her brother [Kenneth] instead. [Larry]'s brothers, [Joseph] and [William], went to a hockey game. [William]'s sister, [Judy], went to a football game instead. [Dana] was wondering where her daughter [Michele] was, so she texted her. [Michele] replied that she was with her brother [Joseph] at the mall.",
+    "goal": "relation(dana, uncle, ethel)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nuncle(X, Y) ::: X is an uncle of Y.\nbrother(X, Y) ::: X is a brother of Y.\nsister(X, Y) ::: X is a sister of Y.\n\nFacts: \nparent(ethel, leila) ::: ethel is a parent of leila.\nuncle(kenneth, leila) ::: kenneth is an uncle of leila.\nsibling(janice, judy) ::: janice is a sibling of judy.\nbrother(kenneth, janice) ::: kenneth is a brother of janice.\nbrother(joseph, larry) ::: joseph is a brother of larry.\nbrother(william, larry) ::: william is a brother of larry.\nsister(judy, william) ::: judy is a sister of william.\nparent(dana, michele) ::: dana is a parent of michele.\nsibling(michele, joseph) ::: michele is a sibling of joseph.\n\nRules:\n∀X,Y (picked_out_dress(X,Y) ⇒ parent(X,Y)) ::: If X picked out a dress for Y, then X is a parent of Y.\n∀X,Y (going_to_zoo(X,Y) ⇒ uncle(Y,X)) ::: If X is going to the zoo with Y, then Y is an uncle of X.\n∀X,Y (asked_to_movies(X,Y) ⇒ sibling(X,Y)) ::: If X asked Y to go to the movies, then X and Y are siblings.\n∀X,Y (went_to_movies(X,Y) ⇒ brother(Y,X)) ::: If X went to the movies with Y, then Y is a brother of X.\n∀X,Y,Z (went_to_hockey_game(X,Y,Z) ⇒ brother(Y,X) ∧ brother(Z,X)) ::: If X went to a hockey game with Y and Z, then Y and Z are brothers of X.\n∀X,Y (went_to_football_game(X,Y) ⇒ sister(Y,X)) ::: If X went to a football game with Y, then Y is a sister of X.\n∀X,Y (texted(X,Y) ⇒ parent(X,Y)) ::: If X texted Y, then X is a parent of Y.\n∀X,Y (at_mall(X,Y) ⇒ sibling(Y,X)) ::: If X is at the mall with Y, then Y is a sibling of X.\n\nQuery:\nuncle(dana, ethel) ::: dana is an uncle of ethel."
+    ]
+  },
+  {
+    "id": 92,
+    "context": "[Gabrielle] has a grandson who is [Micheal]. [Micheal] and his brother [Kevin] went to the park to play basketball.",
+    "goal": "relation(kevin, mother, gabrielle)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\ngrandparent(X, Y) ::: X is a grandparent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nmother(X, Y) ::: X is a mother of Y.\n\nFacts:\ngrandparent(gabrielle, micheal) ::: gabrielle is a grandparent of micheal.\nsibling(micheal, kevin) ::: micheal is a sibling of kevin.\n\nRules:\n∀X,Y (has_grandson(X, Y) ⇒ grandparent(X, Y)) ::: If X has a grandson Y, then X is a grandparent of Y.\n∀X,Y (went_to_park(X, Y) ⇒ sibling(X, Y)) ::: If X went to the park with Y, then X and Y are siblings.\n\nQuery:\nmother(gabrielle, kevin) ::: gabrielle is a mother of kevin."
+    ]
+  },
+  {
+    "id": 93,
+    "context": "[Sean] played basketball with his brother [Darren]. [Christian] picked up his son [Darren] from baseball practice and his daughter [Pennie] from ballet practice. [Pennie] bought her mother, [Evelyn], a puppy for her birthday. [Evelyn] asked her daughter, [Nichole], if she would like to go to a movie with her on Saturday night.",
+    "goal": "relation(nichole, sister_in_law, sean)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ndaughter(X, Y) ::: X is a daughter of Y.\nsister_in_law(X, Y) ::: X is a sister-in-law of Y.\nFacts:\nsibling(sean, darren) ::: sean is a sibling of darren.\nparent(christian, darren) ::: christian is a parent of darren.\nparent(christian, pennie) ::: christian is a parent of pennie.\ndaughter(pennie, evelyn) ::: pennie is a daughter of evelyn.\ndaughter(nichole, evelyn) ::: nichole is a daughter of evelyn.\nRules:\nâˆ€X, YÂ (played_basketball_with(X, Y) â‡’ sibling(X, Y)) ::: If X played basketball with Y, then X and Y are siblings.\nâˆ€X, Y, ZÂ (picked_up_from_practice(X, Y, Z) â‡’ parent(X, Y) âˆ§ parent(X, Z)) ::: If X picked up Y from baseball practice and Z from ballet practice, then X is a parent of Y and Z.\nâˆ€X, YÂ (bought_for(X, Y) â‡’ daughter(X, Y)) ::: If X bought a puppy for Y, then X is a daughter of Y.\nâˆ€X, YÂ (asked_to_go_to_movie(X, Y) â‡’ daughter(Y, X)) ::: If X asked Y to go to a movie, then Y is a daughter of X.\nQuery:\nsister_in_law(nichole, sean) ::: nichole is a sister-in-law of sean."
+    ]
+  },
+  {
+    "id": 94,
+    "context": "[Nicole] spent a great day shopping with her daughter, [Jenny]. [Jenny] took her father [Cornelius] and brother [Frank] to the mall with [Frank]'s brother, [William].",
+    "goal": "relation(william, son, nicole)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nbrother(X, Y) ::: X is a brother of Y.\nson(X, Y) ::: X is a son of Y.\n\nFacts:\nparent(nicole, jenny) ::: nicole is a parent of jenny.\nparent(cornelius, jenny) ::: cornelius is a parent of jenny.\nsibling(jenny, frank) ::: jenny is a sibling of frank.\nbrother(frank, william) ::: frank is a brother of william.\n\nRules:\n∀X,Y (spent_day_shopping(X, Y) ⇒ parent(X, Y)) ::: If X spent a day shopping with Y, then X is a parent of Y.\n∀X,Y,Z (took_to_mall(X, Y, Z) ⇒ parent(Y, X) ∧ sibling(Z, X)) ::: If X took Y and Z to the mall, then Y is a parent of X and Z is a sibling of X.\n∀X,Y (brother(X, Y) ⇒ sibling(X, Y)) ::: If X is a brother of Y, then X is a sibling of Y.\n\nQuery:\nson(william, nicole) ::: william is a son of nicole."
+    ]
+  },
+  {
+    "id": 95,
+    "context": "[Frank] took his son [Charles] and daughter [Beverly] to the zoo on Saturday and they had a great time. [Dorothy] stayed with her mother [Nicole] before the birth of her son [Charles]",
+    "goal": "relation(nicole, grandmother, beverly)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\n\nFacts:\nparent(frank, charles) ::: frank is a parent of charles.\nparent(frank, beverly) ::: frank is a parent of beverly.\nparent(dorothy, charles) ::: dorothy is a parent of charles.\nparent(nicole, dorothy) ::: nicole is a parent of dorothy.\n\nRules:\n∀X,Y,Z (took_to_zoo(X, Y, Z) ⇒ parent(X, Y) ∧ parent(X, Z)) ::: If X took Y and Z to the zoo, then X is a parent of Y and X is a parent of Z.\n∀X,Y (stayed_with(X, Y) ⇒ parent(Y, X)) ::: If X stayed with Y, then Y is a parent of X.\n\nQuery:\ngrandparent(nicole, beverly) ::: nicole is a grandparent of beverly."
+    ]
+  },
+  {
+    "id": 96,
+    "context": "[Jamie] fixed her husband [Daniel] dinner and then they watched a movie they rented. [Daniel] took his son [Richard] to the park to feed the squirrels. [Jamie] was wondering where her daughter [Nola] was, so she texted her. [Nola] replied that she was with her brother [Richard] at the mall. [Jamie] was excited to visit her son, [Joel], at college. [Joel] was so happy for his brother, [Oscar], getting a promotion. [Gregory] was so pleased to spend time with his nephew, [Oscar]. [Thomas] took his son [Gregory] out to play gold later that night.",
+    "goal": "relation(thomas, nephew, jamie)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nhusband(X, Y) ::: X is a husband of Y.\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nnephew(X, Y) ::: X is a nephew of Y.\n\nFacts:\nhusband(daniel, jamie) ::: daniel is a husband of jamie.\nparent(daniel, richard) ::: daniel is a parent of richard.\nparent(jamie, nola) ::: jamie is a parent of nola.\nsibling(nola, richard) ::: nola is a sibling of richard.\nparent(jamie, joel) ::: jamie is a parent of joel.\nsibling(joel, oscar) ::: joel is a sibling of oscar.\nnephew(oscar, gregory) ::: oscar is a nephew of gregory.\nparent(thomas, gregory) ::: thomas is a parent of gregory.\n\nRules:\n∀X,Y (fixed_dinner(X, Y) ⇒ husband(Y, X)) ::: If X fixed dinner for Y, then Y is a husband of X.\n∀X,Y (took_to_park(X, Y) ⇒ parent(X, Y)) ::: If X took Y to the park, then X is a parent of Y.\n∀X,Y (texted(X, Y) ⇒ parent(X, Y)) ::: If X texted Y, then X is a parent of Y.\n∀X,Y,Z ((replied(X, Y, Z) ∧ sibling(Z, X)) ⇒ sibling(X, Z)) ::: If X replied to Y that she was with Z, and Z is a sibling of X, then X and Z are siblings.\n∀X,Y (visited(X, Y) ⇒ parent(X, Y)) ::: If X visited Y, then X is a parent of Y.\n∀X,Y (happy_for(X, Y) ⇒ sibling(X, Y)) ::: If X was happy for Y, then X and Y are siblings.\n∀X,Y (spent_time_with(X, Y) ⇒ nephew(Y, X)) ::: If X spent time with Y, then Y is a nephew of X.\n∀X,Y (took_out(X, Y) ⇒ parent(X, Y)) ::: If X took Y out, then X is a parent of Y.\n\nQuery:\nnephew(jamie, thomas) ::: thomas is a nephew of jamie."
+    ]
+  },
+  {
+    "id": 97,
+    "context": "[Melba] and her sister [Lucille] were arguing over a toy. While they were fighting, [Melba]'s sister [Toni] grabbed the toy, and ran off to play with it by herself. [April] and her daughter [Lucille] went to see a movie yesterday and then got ice cream afterwards. [Jenny] went to the store with her sister [April]",
+    "goal": "relation(jenny, aunt, toni)",
+    "label": true,
+    "raw_logic_programs": [
+      "Predicates:\nsibling(X, Y) ::: X is a sibling of Y.\nparent(X, Y) ::: X is a parent of Y.\naunt(X, Y) ::: X is an aunt of Y.\n\nFacts:\nsibling(melba, lucille) ::: melba is a sibling of lucille.\nsibling(melba, toni) ::: melba is a sibling of toni.\nparent(april, lucille) ::: april is a parent of lucille.\nsibling(jenny, april) ::: jenny is a sibling of april.\n\nRules:\nâˆ€X, YÂ (argued_over_toy(X, Y) â‡’ sibling(X, Y)) ::: If X and Y argued over a toy, then X and Y are siblings.\nâˆ€X, YÂ (grabbed_toy(X, Y) â‡’ sibling(X, Y)) ::: If X grabbed the toy while Y was fighting, then X and Y are siblings.\nâˆ€X, YÂ (went_to_movie(X, Y) â‡’ parent(X, Y)) ::: If X and Y went to see a movie, then X is a parent of Y.\nâˆ€X, YÂ (went_to_store(X, Y) â‡’ sibling(X, Y)) ::: If X and Y went to the store, then X and Y are siblings.\n\nQuery:\naunt(jenny, toni) ::: jenny is an aunt of toni."
+    ]
+  },
+  {
+    "id": 98,
+    "context": "[Jeff] and [Jeremy] were both still very upset with their mother, [Ruth]. [Jason] was so excited to surprise his son, [Jeff], with the tickets to the playoffs. [Laura] made cookies with her grandson [Jeremy]. [Jeremy]'s father [Jason] is not allowed to eat sugar.",
+    "goal": "relation(laura, sister, ruth)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\ngrandparent(X, Y) ::: X is a grandparent of Y.\nFacts:\nparent(ruth, jeff) ::: ruth is a parent of jeff.\nparent(ruth, jeremy) ::: ruth is a parent of jeremy.\nparent(jason, jeff) ::: jason is a parent of jeff.\ngrandparent(laura, jeremy) ::: laura is a grandparent of jeremy.\nRules:\nâˆ€X, YÂ (upset_with(X, Y) â‡’ parent(Y, X)) ::: If X is upset with Y, then Y is a parent of X.\nâˆ€X, YÂ (surprised(X, Y) â‡’ parent(X, Y)) ::: If X surprised Y, then X is a parent of Y.\nâˆ€X, YÂ (made_cookies_with(X, Y) â‡’ grandparent(X, Y)) ::: If X made cookies with Y, then X is a grandparent of Y.\nQuery:\nsibling(laura, ruth) ::: laura is a sister of ruth."
+    ]
+  },
+  {
+    "id": 99,
+    "context": "[Nichole] was excited because she was meeting her father, [Christian], for lunch. [Darren] and his son [Christian] went to look at cars. [Darren] ended up buying the Mustang. [Pennie] took her brother [Sean] and other brother [Darren] with her to eat pasta at a pasta buffet. [Sean]'s mother, [Evelyn], was disappointed that he failed his math class",
+    "goal": "relation(evelyn, wife, nichole)",
+    "label": false,
+    "raw_logic_programs": [
+      "Predicates:\nparent(X, Y) ::: X is a parent of Y.\nsibling(X, Y) ::: X is a sibling of Y.\nspouse(X, Y) ::: X is a spouse of Y.\nFacts:\nparent(christian, nichole) ::: christian is a parent of nichole.\nparent(darren, christian) ::: darren is a parent of christian.\nsibling(darren, sean) ::: darren is a sibling of sean.\nparent(evelyn, sean) ::: evelyn is a parent of sean.\nRules:\nâˆ€X,YÂ (meeting_for_lunch(X,Y) â‡’ parent(Y,X)) ::: If X is meeting Y for lunch, then Y is a parent of X.\nâˆ€X,YÂ (looking_at_cars(X,Y) â‡’ parent(X,Y)) ::: If X and Y are looking at cars, then X is a parent of Y.\nâˆ€X,Y,ZÂ (eating_pasta(X,Y,Z) â‡’ sibling(X,Y) âˆ§ sibling(X,Z)) ::: If X is eating pasta with Y and Z, then X, Y, and Z are siblings.\nâˆ€X,YÂ (disappointed_in(X,Y) â‡’ parent(X,Y)) ::: If X is disappointed in Y, then X is a parent of Y.\nQuery:\nspouse(evelyn, nichole) ::: evelyn is a spouse of nichole."
+    ]
+  }
+]
